@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QUTAIFAN — Digital Operations HQ</title>
+  <meta name="description" content="Central command for autonomous trading systems, AI intelligence, and digital assets." />
+  <link rel="canonical" href="https://www.qutaifan.com/" />
+  <meta property="og:title" content="QUTAIFAN — Digital Operations HQ" />
+  <meta property="og:url" content="https://www.qutaifan.com/" />
+  <meta property="og:type" content="website" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #09090b;
+      --bg-2:      #111114;
+      --bg-3:      #18181c;
+      --border:    rgba(255,255,255,.07);
+      --border-2:  rgba(255,255,255,.12);
+      --text:      #f2f2f3;
+      --text-2:    #a0a0ab;
+      --text-3:    #6b6b76;
+      --accent:    #7c5cf6;
+      --accent-lt: rgba(124,92,246,.15);
+      --accent-glow: rgba(124,92,246,.35);
+      --green:     #10b981;
+      --green-lt:  rgba(16,185,129,.12);
+      --amber:     #f59e0b;
+      --amber-lt:  rgba(245,158,11,.12);
+      --red:       #ef4444;
+      --cyan:      #06b6d4;
+      --cyan-lt:   rgba(6,182,212,.12);
+      --radius:    10px;
+      --radius-lg: 16px;
+      --font: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font);
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+    /* ── Grid overlay ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,.015) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.015) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(9,9,11,.85);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+    }
+    .nav-brand {
+      font-weight: 900;
+      font-size: 1rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .nav-brand .dot {
+      width: 7px; height: 7px;
+      border-radius: 99px;
+      background: var(--green);
+      box-shadow: 0 0 8px var(--green);
+      animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: .4; }
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: .8rem;
+      font-weight: 500;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--text-3);
+      transition: color .15s;
+    }
+    .nav-links a:hover { color: var(--text); }
+
+    /* ── Hero ── */
+    .hero {
+      position: relative;
+      padding: 100px 0 80px;
+      text-align: center;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: -80px; left: 50%;
+      transform: translateX(-50%);
+      width: 600px; height: 400px;
+      background: radial-gradient(ellipse at center, rgba(124,92,246,.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 5px 14px;
+      background: var(--accent-lt);
+      border: 1px solid rgba(124,92,246,.3);
+      border-radius: 99px;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 28px;
+    }
+    .hero h1 {
+      font-size: clamp(3rem, 8vw, 6rem);
+      font-weight: 900;
+      letter-spacing: -.04em;
+      line-height: 1;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, #fff 40%, rgba(255,255,255,.4));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-sub {
+      font-size: 1.05rem;
+      color: var(--text-2);
+      max-width: 480px;
+      margin: 0 auto 40px;
+    }
+    .status-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .status-pill {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 16px;
+      background: var(--bg-2);
+      border: 1px solid var(--border-2);
+      border-radius: 99px;
+      font-size: .78rem;
+      font-weight: 600;
+      letter-spacing: .04em;
+      color: var(--text-2);
+    }
+    .status-pill .led {
+      width: 6px; height: 6px;
+      border-radius: 99px;
+    }
+    .led-green  { background: var(--green);  box-shadow: 0 0 6px var(--green); animation: pulse 2s ease-in-out infinite; }
+    .led-amber  { background: var(--amber);  box-shadow: 0 0 6px var(--amber); }
+    .led-purple { background: var(--accent); box-shadow: 0 0 6px var(--accent); animation: pulse 3s ease-in-out infinite; }
+
+    /* ── Sections ── */
+    section { padding: 72px 0; position: relative; z-index: 1; }
+    .section-label {
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+    .section-title {
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      font-weight: 800;
+      letter-spacing: -.02em;
+      margin-bottom: 40px;
+      color: var(--text);
+    }
+    .section-divider {
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* ── System cards ── */
+    .systems-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 16px;
+    }
+    .sys-card {
+      background: var(--bg-2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      transition: border-color .2s, box-shadow .2s;
+      position: relative;
+      overflow: hidden;
+    }
+    .sys-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    }
+    .sys-card.live::before   { background: linear-gradient(90deg, var(--green), transparent); }
+    .sys-card.intel::before  { background: linear-gradient(90deg, var(--accent), transparent); }
+    .sys-card.build::before  { background: linear-gradient(90deg, var(--cyan), transparent); }
+    .sys-card.paused::before { background: linear-gradient(90deg, var(--amber), transparent); }
+    .sys-card:hover {
+      border-color: var(--border-2);
+      box-shadow: 0 8px 32px rgba(0,0,0,.4);
+    }
+    .sys-card-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .sys-icon {
+      width: 40px; height: 40px;
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .sys-icon.green  { background: var(--green-lt); }
+    .sys-icon.purple { background: var(--accent-lt); }
+    .sys-icon.cyan   { background: var(--cyan-lt); }
+    .sys-icon.amber  { background: var(--amber-lt); }
+    .sys-status {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+    }
+    .sys-status.live   { color: var(--green); }
+    .sys-status.intel  { color: var(--accent); }
+    .sys-status.build  { color: var(--cyan); }
+    .sys-status.paused { color: var(--amber); }
+    .sys-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+    .sys-card p {
+      font-size: .85rem;
+      color: var(--text-2);
+      line-height: 1.55;
+    }
+    .sys-meta {
+      margin-top: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .sys-tag {
+      padding: 3px 10px;
+      background: var(--bg-3);
+      border: 1px solid var(--border);
+      border-radius: 99px;
+      font-size: .72rem;
+      font-weight: 500;
+      color: var(--text-3);
+    }
+
+    /* ── Content grid ── */
+    .content-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+    }
+    .content-card {
+      background: var(--bg-2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transition: border-color .2s, transform .2s;
+    }
+    .content-card:hover {
+      border-color: var(--border-2);
+      transform: translateY(-2px);
+    }
+    .content-card-label {
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .content-card h3 {
+      font-size: .95rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.35;
+    }
+    .content-card p {
+      font-size: .82rem;
+      color: var(--text-2);
+      flex: 1;
+    }
+    .content-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: .78rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-top: auto;
+    }
+    .content-link:hover { text-decoration: underline; }
+    .content-card.coming {
+      opacity: .5;
+      pointer-events: none;
+    }
+
+    /* ── Properties ── */
+    .props-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 16px;
+    }
+    .prop-card {
+      background: var(--bg-2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      transition: border-color .2s;
+    }
+    .prop-card:hover { border-color: var(--border-2); }
+    .prop-card h3 {
+      font-size: .9rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .prop-card p { font-size: .78rem; color: var(--text-2); }
+    .prop-arrow {
+      font-size: 1.1rem;
+      color: var(--text-3);
+      flex-shrink: 0;
+    }
+
+    /* ── Intelligence section ── */
+    .intel-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 16px;
+    }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 0;
+      text-align: center;
+      font-size: .78rem;
+      color: var(--text-3);
+      position: relative;
+      z-index: 1;
+    }
+    footer strong { color: var(--text-2); }
+
+    /* ── Responsive ── */
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      .hero { padding: 64px 0 48px; }
+      section { padding: 48px 0; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════ NAV ═══════════ -->
+<nav>
+  <div class="wrap nav-inner">
+    <div class="nav-brand">
+      <span class="dot"></span>
+      QUTAIFAN
+    </div>
+    <ul class="nav-links">
+      <li><a href="#operations">Operations</a></li>
+      <li><a href="#intelligence">Intelligence</a></li>
+      <li><a href="#content">Content</a></li>
+      <li><a href="#properties">Properties</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<!-- ═══════════ HERO ═══════════ -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-tag">
+      <span class="led led-green"></span>
+      All Systems Operational
+    </div>
+    <h1>QUTAIFAN</h1>
+    <p class="hero-sub">
+      Digital operations headquarters. Autonomous trading, AI intelligence, and content infrastructure — all running 24/7.
+    </p>
+    <div class="status-bar">
+      <div class="status-pill"><span class="led led-green"></span> Trading Live</div>
+      <div class="status-pill"><span class="led led-purple"></span> Hermes Active</div>
+      <div class="status-pill"><span class="led led-green"></span> Money Engine Running</div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+
+<!-- ═══════════ OPERATIONS ═══════════ -->
+<section id="operations">
+  <div class="wrap">
+    <div class="section-label">Active Systems</div>
+    <div class="section-title">Trading Operations</div>
+
+    <div class="systems-grid">
+
+      <div class="sys-card live">
+        <div class="sys-card-header">
+          <div class="sys-icon green">⚡</div>
+          <div class="sys-status live"><span class="led led-green"></span> Live</div>
+        </div>
+        <h3>Copy Trade Bot</h3>
+        <p>WebSocket mirror of 14 elite Polymarket wallets. Real-time trade copying with proportional sizing, 25% safety drop, and auto-drop after 4 consecutive losses.</p>
+        <div class="sys-meta">
+          <span class="sys-tag">Python / asyncio</span>
+          <span class="sys-tag">14 wallets</span>
+          <span class="sys-tag">WebSocket</span>
+          <span class="sys-tag">PRIMARY BOT</span>
+        </div>
+      </div>
+
+      <div class="sys-card live">
+        <div class="sys-card-header">
+          <div class="sys-icon green">🎯</div>
+          <div class="sys-status live"><span class="led led-green"></span> Live</div>
+        </div>
+        <h3>Near-Resolution Bot</h3>
+        <p>Autonomous maker orders on outcomes priced ≥ 0.96. Zero maker fee on Polymarket. Scans sports, politics, and crypto rolling-window markets continuously.</p>
+        <div class="sys-meta">
+          <span class="sys-tag">Python</span>
+          <span class="sys-tag">≥ 0.96 certainty</span>
+          <span class="sys-tag">GTC maker orders</span>
+        </div>
+      </div>
+
+      <div class="sys-card build">
+        <div class="sys-card-header">
+          <div class="sys-icon cyan">⚔️</div>
+          <div class="sys-status build"><span class="led" style="background:var(--cyan);box-shadow:0 0 6px var(--cyan);width:6px;height:6px;border-radius:99px;"></span> Active</div>
+        </div>
+        <h3>Binary Arbitrage</h3>
+        <p>High-performance YES+NO arbitrage. Buys both sides when combined ask &lt; $1.00, locking in a risk-free spread. C++ for order signing and WebSocket streaming.</p>
+        <div class="sys-meta">
+          <span class="sys-tag">C++ / Bun</span>
+          <span class="sys-tag">secp256k1</span>
+          <span class="sys-tag">WebSocket</span>
+          <span class="sys-tag">Dry-run</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+
+<!-- ═══════════ INTELLIGENCE ═══════════ -->
+<section id="intelligence">
+  <div class="wrap">
+    <div class="section-label">Intelligence Layer</div>
+    <div class="section-title">AI Systems</div>
+
+    <div class="intel-grid">
+
+      <div class="sys-card intel">
+        <div class="sys-card-header">
+          <div class="sys-icon purple">🧠</div>
+          <div class="sys-status intel"><span class="led led-purple"></span> Active</div>
+        </div>
+        <h3>Hermes Prime</h3>
+        <p>Autonomous NousResearch Hermes agent running prediction-market intelligence. Evidence cycles, Monte Carlo drift, market resolution tracking — all scheduled and self-managing.</p>
+        <div class="sys-meta">
+          <span class="sys-tag">Hermes v0.14</span>
+          <span class="sys-tag">5-layer memory</span>
+          <span class="sys-tag">Cron-driven</span>
+          <span class="sys-tag">Falcon MCP</span>
+        </div>
+      </div>
+
+      <div class="sys-card intel">
+        <div class="sys-card-header">
+          <div class="sys-icon purple">💰</div>
+          <div class="sys-status intel"><span class="led led-purple"></span> Active</div>
+        </div>
+        <h3>Money Engine</h3>
+        <p>Hermes-driven affiliate content pipeline. Weekly auto-generates high-intent comparison pages, deploys them directly to this domain via Cloudflare Pages.</p>
+        <div class="sys-meta">
+          <span class="sys-tag">Hermes agent</span>
+          <span class="sys-tag">Kanban queue</span>
+          <span class="sys-tag">Weekly cron</span>
+          <span class="sys-tag">Wrangler deploy</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+
+<!-- ═══════════ CONTENT ═══════════ -->
+<section id="content">
+  <div class="wrap">
+    <div class="section-label">Published Content</div>
+    <div class="section-title">Affiliate Pages</div>
+
+    <div class="content-grid">
+
+      <div class="content-card">
+        <div class="content-card-label">AI Tools · June 2026</div>
+        <h3>Best AI Writing Tools 2026 — Top Picks, Reviews &amp; Comparison</h3>
+        <p>8 tools tested across 200+ hours. Jasper, Copy.ai, Writesonic, Rytr and more — ranked by use case.</p>
+        <a href="/best-ai-writing-tools-2026" class="content-link">Read article →</a>
+      </div>
+
+      <div class="content-card">
+        <div class="content-card-label">Web Hosting · June 2026</div>
+        <h3>Best Web Hosting for Small Business 2026 — Tested Picks</h3>
+        <p>8 hosts compared on speed, uptime, support, and real renewal pricing. SiteGround, Hostinger, Bluehost and more.</p>
+        <a href="/best-web-hosting-small-business-2026" class="content-link">Read article →</a>
+      </div>
+
+      <div class="content-card">
+        <div class="content-card-label">Insurance · June 2026</div>
+        <h3>Best Business Insurance for Contractors 2026</h3>
+        <p>General liability, professional liability, workers comp, and equipment coverage — 8 providers compared.</p>
+        <a href="/best-business-insurance-contractors-2026" class="content-link">Read article →</a>
+      </div>
+
+      <div class="content-card">
+        <div class="content-card-label">Security · June 2026</div>
+        <h3>Best VPN 2026 — Top Picks Reviewed</h3>
+        <p>NordVPN, ExpressVPN, Surfshark, ProtonVPN compared on speed, privacy, and price. 8 providers tested.</p>
+        <a href="/best-vpn-2026" class="content-link">Read article →</a>
+      </div>
+
+      <div class="content-card">
+        <div class="content-card-label">Security · June 2026</div>
+        <h3>Best Password Manager 2026 — Reviewed &amp; Compared</h3>
+        <p>1Password, Bitwarden, Dashlane, Keeper and more — ranked on security, usability, and price.</p>
+        <a href="/best-password-manager-2026" class="content-link">Read article →</a>
+      </div>
+
+      <div class="content-card">
+        <div class="content-card-label">Marketing · June 2026</div>
+        <h3>Best Email Marketing Software 2026 — Compared</h3>
+        <p>Mailchimp, ActiveCampaign, Klaviyo, ConvertKit and more — ranked on automation, deliverability, and price.</p>
+        <a href="/best-email-marketing-software-2026" class="content-link">Read article →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+
+<!-- ═══════════ PROPERTIES ═══════════ -->
+<section id="properties">
+  <div class="wrap">
+    <div class="section-label">Network</div>
+    <div class="section-title">Properties</div>
+
+    <div class="props-grid">
+
+      <a href="https://www.qutaifan.com" class="prop-card">
+        <div>
+          <h3>www.qutaifan.com</h3>
+          <p>Headquarters — you are here</p>
+        </div>
+        <span class="prop-arrow">●</span>
+      </a>
+
+      <a href="https://lumina.qutaifan.com" class="prop-card">
+        <div>
+          <h3>lumina.qutaifan.com</h3>
+          <p>Lumina — active project</p>
+        </div>
+        <span class="prop-arrow">→</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer>
+  <div class="wrap">
+    <strong>QUTAIFAN</strong> — Digital Operations HQ &nbsp;·&nbsp; All systems autonomous &nbsp;·&nbsp; 2026
+  </div>
+</footer>
+
+</body>
+</html>
