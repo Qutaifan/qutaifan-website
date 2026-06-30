@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="google-adsense-account" content="ca-pub-9640734919758311">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>QUTAIFAN — Digital Operations HQ</title>
-  <meta name="description" content="Central command for autonomous trading systems, AI intelligence, and digital assets." />
+  <title>QUTAIFAN — Free AI Tools Directory</title>
+  <meta name="description" content="The most complete free AI tools directory. 100+ tools tested — chatbots, image generators, video AI, open-source models, and more. No credit card required." />
   <link rel="canonical" href="https://www.qutaifan.com/" />
-  <meta property="og:title" content="QUTAIFAN — Digital Operations HQ" />
+  <meta property="og:title" content="QUTAIFAN — Free AI Tools Directory" />
   <meta property="og:url" content="https://www.qutaifan.com/" />
   <meta property="og:type" content="website" />
   <style>
@@ -27,11 +27,6 @@
       --accent-glow: rgba(124,92,246,.35);
       --green:     #10b981;
       --green-lt:  rgba(16,185,129,.12);
-      --amber:     #f59e0b;
-      --amber-lt:  rgba(245,158,11,.12);
-      --red:       #ef4444;
-      --cyan:      #06b6d4;
-      --cyan-lt:   rgba(6,182,212,.12);
       --radius:    10px;
       --radius-lg: 16px;
       --font: 'Inter', system-ui, -apple-system, sans-serif;
@@ -163,7 +158,7 @@
     .hero-sub {
       font-size: 1.05rem;
       color: var(--text-2);
-      max-width: 480px;
+      max-width: 520px;
       margin: 0 auto 40px;
     }
     .status-bar {
@@ -191,8 +186,23 @@
       border-radius: 99px;
     }
     .led-green  { background: var(--green);  box-shadow: 0 0 6px var(--green); animation: pulse 2s ease-in-out infinite; }
-    .led-amber  { background: var(--amber);  box-shadow: 0 0 6px var(--amber); }
     .led-purple { background: var(--accent); box-shadow: 0 0 6px var(--accent); animation: pulse 3s ease-in-out infinite; }
+
+    .hero-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 32px;
+      padding: 12px 28px;
+      background: var(--accent);
+      border-radius: 99px;
+      font-size: .85rem;
+      font-weight: 700;
+      letter-spacing: .04em;
+      color: #fff;
+      transition: background .2s, transform .2s;
+    }
+    .hero-cta:hover { background: #6c4ce6; transform: translateY(-1px); }
 
     /* ── Sections ── */
     section { padding: 72px 0; position: relative; z-index: 1; }
@@ -214,94 +224,6 @@
     .section-divider {
       height: 1px;
       background: var(--border);
-    }
-
-    /* ── System cards ── */
-    .systems-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 16px;
-    }
-    .sys-card {
-      background: var(--bg-2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 28px;
-      transition: border-color .2s, box-shadow .2s;
-      position: relative;
-      overflow: hidden;
-    }
-    .sys-card::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 2px;
-      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-    }
-    .sys-card.live::before   { background: linear-gradient(90deg, var(--green), transparent); }
-    .sys-card.intel::before  { background: linear-gradient(90deg, var(--accent), transparent); }
-    .sys-card.build::before  { background: linear-gradient(90deg, var(--cyan), transparent); }
-    .sys-card.paused::before { background: linear-gradient(90deg, var(--amber), transparent); }
-    .sys-card:hover {
-      border-color: var(--border-2);
-      box-shadow: 0 8px 32px rgba(0,0,0,.4);
-    }
-    .sys-card-header {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 12px;
-      margin-bottom: 14px;
-    }
-    .sys-icon {
-      width: 40px; height: 40px;
-      border-radius: 10px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1.2rem;
-      flex-shrink: 0;
-    }
-    .sys-icon.green  { background: var(--green-lt); }
-    .sys-icon.purple { background: var(--accent-lt); }
-    .sys-icon.cyan   { background: var(--cyan-lt); }
-    .sys-icon.amber  { background: var(--amber-lt); }
-    .sys-status {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      font-size: .7rem;
-      font-weight: 700;
-      letter-spacing: .07em;
-      text-transform: uppercase;
-    }
-    .sys-status.live   { color: var(--green); }
-    .sys-status.intel  { color: var(--accent); }
-    .sys-status.build  { color: var(--cyan); }
-    .sys-status.paused { color: var(--amber); }
-    .sys-card h3 {
-      font-size: 1rem;
-      font-weight: 700;
-      margin-bottom: 6px;
-      color: var(--text);
-    }
-    .sys-card p {
-      font-size: .85rem;
-      color: var(--text-2);
-      line-height: 1.55;
-    }
-    .sys-meta {
-      margin-top: 16px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-    }
-    .sys-tag {
-      padding: 3px 10px;
-      background: var(--bg-3);
-      border: 1px solid var(--border);
-      border-radius: 99px;
-      font-size: .72rem;
-      font-weight: 500;
-      color: var(--text-3);
     }
 
     /* ── Content grid ── */
@@ -352,47 +274,6 @@
       margin-top: auto;
     }
     .content-link:hover { text-decoration: underline; }
-    .content-card.coming {
-      opacity: .5;
-      pointer-events: none;
-    }
-
-    /* ── Properties ── */
-    .props-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 16px;
-    }
-    .prop-card {
-      background: var(--bg-2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 24px 28px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      transition: border-color .2s;
-    }
-    .prop-card:hover { border-color: var(--border-2); }
-    .prop-card h3 {
-      font-size: .9rem;
-      font-weight: 700;
-      margin-bottom: 4px;
-    }
-    .prop-card p { font-size: .78rem; color: var(--text-2); }
-    .prop-arrow {
-      font-size: 1.1rem;
-      color: var(--text-3);
-      flex-shrink: 0;
-    }
-
-    /* ── Intelligence section ── */
-    .intel-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 16px;
-    }
 
     /* ── Footer ── */
     footer {
@@ -425,9 +306,8 @@
       QUTAIFAN
     </div>
     <ul class="nav-links">
-      <li><a href="#intelligence">Intelligence</a></li>
-      <li><a href="#content">Content</a></li>
-      <li><a href="#properties">Properties</a></li>
+      <li><a href="/best-free-ai-tools-2026">Directory</a></li>
+      <li><a href="/privacy-policy">Privacy</a></li>
     </ul>
   </div>
 </nav>
@@ -438,66 +318,17 @@
   <div class="wrap">
     <div class="hero-tag">
       <span class="led led-green"></span>
-      All Systems Operational
+      100+ Free AI Tools Curated
     </div>
     <h1>QUTAIFAN</h1>
     <p class="hero-sub">
-      Digital operations headquarters. AI intelligence and content infrastructure — all running 24/7.
+      The most complete free AI tools directory. Chatbots, image generators, video AI, open-source models, and more. No credit card required.
     </p>
     <div class="status-bar">
-      <div class="status-pill"><span class="led led-purple"></span> Hermes Active</div>
-      <div class="status-pill"><span class="led led-green"></span> Money Engine Running</div>
+      <div class="status-pill"><span class="led led-purple"></span> Directory Live</div>
+      <div class="status-pill"><span class="led led-green"></span> Updated Weekly</div>
     </div>
-  </div>
-</section>
-
-<div class="section-divider"></div>
-
-
-<!-- ═══════════ OPERATIONS ═══════════ -->
-
-<div class="section-divider"></div>
-
-
-<!-- ═══════════ INTELLIGENCE ═══════════ -->
-<section id="intelligence">
-  <div class="wrap">
-    <div class="section-label">Intelligence Layer</div>
-    <div class="section-title">AI Systems</div>
-
-    <div class="intel-grid">
-
-      <div class="sys-card intel">
-        <div class="sys-card-header">
-          <div class="sys-icon purple">🧠</div>
-          <div class="sys-status intel"><span class="led led-purple"></span> Active</div>
-        </div>
-        <h3>Hermes Prime</h3>
-        <p>Autonomous NousResearch Hermes agent running prediction-market intelligence. Evidence cycles, Monte Carlo drift, market resolution tracking — all scheduled and self-managing.</p>
-        <div class="sys-meta">
-          <span class="sys-tag">Hermes v0.14</span>
-          <span class="sys-tag">5-layer memory</span>
-          <span class="sys-tag">Cron-driven</span>
-          <span class="sys-tag">Falcon MCP</span>
-        </div>
-      </div>
-
-      <div class="sys-card intel">
-        <div class="sys-card-header">
-          <div class="sys-icon purple">💰</div>
-          <div class="sys-status intel"><span class="led led-purple"></span> Active</div>
-        </div>
-        <h3>Money Engine</h3>
-        <p>Hermes-driven affiliate content pipeline. Weekly auto-generates high-intent comparison pages, deploys them directly to this domain via Cloudflare Pages.</p>
-        <div class="sys-meta">
-          <span class="sys-tag">Hermes agent</span>
-          <span class="sys-tag">Kanban queue</span>
-          <span class="sys-tag">Weekly cron</span>
-          <span class="sys-tag">Wrangler deploy</span>
-        </div>
-      </div>
-
-    </div>
+    <a href="/best-free-ai-tools-2026" class="hero-cta">Explore the Directory →</a>
   </div>
 </section>
 
@@ -507,8 +338,8 @@
 <!-- ═══════════ CONTENT ═══════════ -->
 <section id="content">
   <div class="wrap">
-    <div class="section-label">Published Content</div>
-    <div class="section-title">Pages</div>
+    <div class="section-label">Featured</div>
+    <div class="section-title">Free AI Tools Directory</div>
 
     <div class="content-grid">
 
@@ -519,55 +350,6 @@
         <a href="/best-free-ai-tools-2026" class="content-link">Explore directory →</a>
       </div>
 
-      <div class="content-card">
-        <div class="content-card-label">AI Tools · June 2026</div>
-        <h3>Best AI Writing Tools 2026 — Top Picks, Reviews &amp; Comparison</h3>
-        <p>8 tools tested across 200+ hours. Jasper, Copy.ai, Writesonic, Rytr and more — ranked by use case.</p>
-        <a href="/best-ai-writing-tools-2026" class="content-link">Read article →</a>
-      </div>
-
-      <div class="content-card">
-        <div class="content-card-label">Web Hosting · June 2026</div>
-        <h3>Best Web Hosting for Small Business 2026 — Tested Picks</h3>
-        <p>8 hosts compared on speed, uptime, support, and real renewal pricing. SiteGround, Hostinger, Bluehost and more.</p>
-        <a href="/best-web-hosting-small-business-2026" class="content-link">Read article →</a>
-      </div>
-
-      <div class="content-card">
-        <div class="content-card-label">Insurance · June 2026</div>
-        <h3>Best Business Insurance for Contractors 2026</h3>
-        <p>General liability, professional liability, workers comp, and equipment coverage — 8 providers compared.</p>
-        <a href="/best-business-insurance-contractors-2026" class="content-link">Read article →</a>
-      </div>
-
-      <div class="content-card">
-        <div class="content-card-label">Security · June 2026</div>
-        <h3>Best VPN 2026 — Top Picks Reviewed</h3>
-        <p>NordVPN, ExpressVPN, Surfshark, ProtonVPN compared on speed, privacy, and price. 8 providers tested.</p>
-        <a href="/best-vpn-2026" class="content-link">Read article →</a>
-      </div>
-
-      <div class="content-card">
-        <div class="content-card-label">Security · June 2026</div>
-        <h3>Best Password Manager 2026 — Reviewed &amp; Compared</h3>
-        <p>1Password, Bitwarden, Dashlane, Keeper and more — ranked on security, usability, and price.</p>
-        <a href="/best-password-manager-2026" class="content-link">Read article →</a>
-      </div>
-
-      <div class="content-card">
-        <div class="content-card-label">Marketing · June 2026</div>
-        <h3>Best Email Marketing Software 2026 — Compared</h3>
-        <p>Mailchimp, ActiveCampaign, Klaviyo, ConvertKit and more — ranked on automation, deliverability, and price.</p>
-        <a href="/best-email-marketing-software-2026" class="content-link">Read article →</a>
-      </div>
-
-      <div class="content-card">
-        <div class="content-card-label">AI Tools · June 2026</div>
-        <h3>Best AI Meeting Assistants 2026 — Compared</h3>
-        <p>Fathom, Fireflies.ai, Otter.ai, tl;dv and more — ranked on transcription accuracy, integrations, and price.</p>
-        <a href="/best-ai-meeting-assistants-2026" class="content-link">Read article →</a>
-      </div>
-
     </div>
   </div>
 </section>
@@ -575,64 +357,15 @@
 <div class="section-divider"></div>
 
 
-<!-- ═══════════ PROPERTIES ═══════════ -->
-<section id="properties">
-  <div class="wrap">
-    <div class="section-label">Network</div>
-    <div class="section-title">Properties</div>
-
-    <div class="props-grid">
-
-      <a href="https://www.qutaifan.com" class="prop-card" rel="nofollow sponsored noopener">
-        <div>
-          <h3>www.qutaifan.com</h3>
-          <p>Headquarters — you are here</p>
-        </div>
-        <span class="prop-arrow">●</span>
-      </a>
-
-      <a href="https://lumina.qutaifan.com" class="prop-card" rel="nofollow sponsored noopener">
-        <div>
-          <h3>lumina.qutaifan.com</h3>
-          <p>Lumina — active project</p>
-        </div>
-        <span class="prop-arrow">→</span>
-      </a>
-
-    </div>
-  </div>
-</section>
-
-
 <!-- ═══════════ FOOTER ═══════════ -->
 <footer>
   <div class="wrap">
-    <strong>QUTAIFAN</strong> — Digital Operations HQ &nbsp;·&nbsp; All systems autonomous &nbsp;·&nbsp; 2026
+    <strong>QUTAIFAN</strong> — Free AI Tools Directory &nbsp;·&nbsp; Updated Weekly &nbsp;·&nbsp; 2026
     <br><br>
     <a href="/privacy-policy" style="color:#6b6b76;text-decoration:none;">Privacy Policy</a> &nbsp;·&nbsp;
-    <a href="/affiliate-disclosure" style="color:#6b6b76;text-decoration:none;">Affiliate Disclosure</a> &nbsp;·&nbsp;
     <a href="/terms-of-service" style="color:#6b6b76;text-decoration:none;">Terms of Service</a>
   </div>
 </footer>
-
-<!-- Cookie Consent Banner -->
-<style>
-  #cookie-banner{position:fixed;bottom:0;left:0;right:0;background:rgba(9,9,11,.95);-webkit-backdrop-filter: blur(12px);
-      backdrop-filter: blur(12px);border-top:1px solid rgba(255,255,255,.07);padding:16px 24px;z-index:1000;display:flex;align-items:center;justify-content:center;gap:16px;font-size:14px;color:#a0a0ab;font-family:system-ui,sans-serif}
-  #cookie-banner p{margin:0}
-  #cookie-banner a{color:#7c5cf6;text-decoration:none}
-  #cookie-banner button{background:#7c5cf6;color:#fff;border:none;padding:8px 20px;border-radius:8px;font-weight:600;cursor:pointer}
-  #cookie-banner button:hover{background:#6c4ce6}
-</style>
-<div id="cookie-banner" role="dialog" aria-label="Cookie consent">
-  <p>We use cookies and similar technologies to analyze traffic, serve ads, and improve your experience. <a href="/privacy-policy">Learn more</a>.</p>
-  <button onclick="document.getElementById('cookie-banner').style.display='none'">Accept</button>
-</div>
-
-<!-- Affiliate Disclosure Footer -->
-<div class="affiliate-footer" style="text-align:center;padding:16px 24px;font-size:13px;color:#a0a0ab;border-top:1px solid rgba(255,255,255,.07);background:#09090b;">
-  <p>Qutaifan participates in affiliate programs. We may earn commissions when you click links on this page. <a href="/affiliate-disclosure" style="color:#7c5cf6;text-decoration:none;">Read our affiliate disclosure</a>.</p>
-</div>
 
 </body>
 </html>
