@@ -58,7 +58,8 @@
     }
 
     /* Nav */
-    nav { position: sticky; top: 0; z-index: 200; background: rgba(9,9,11,.9); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); }
+    nav { position: sticky; top: 0; z-index: 200; background: rgba(9,9,11,.9); -webkit-backdrop-filter: blur(20px);
+      backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); }
     .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 56px; }
     .nav-brand { font-weight: 900; font-size: .95rem; letter-spacing: .1em; text-transform: uppercase; display: flex; align-items: center; gap: 10px; }
     .nav-brand .dot { width: 7px; height: 7px; border-radius: 99px; background: var(--green); box-shadow: 0 0 8px var(--green); animation: pulse 2s ease-in-out infinite; }
@@ -109,7 +110,8 @@
     .ad-rectangle ins { display: inline-block; width: 300px; height: 250px; }
 
     /* Filter tabs */
-    .filters { position: sticky; top: 56px; z-index: 100; background: rgba(9,9,11,.92); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); padding: 12px 0; }
+    .filters { position: sticky; top: 56px; z-index: 100; background: rgba(9,9,11,.92); -webkit-backdrop-filter: blur(16px);
+      backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); padding: 12px 0; }
     .filter-scroll { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; padding: 0 24px; }
     .filter-scroll::-webkit-scrollbar { display: none; }
     .filter-btn { flex-shrink: 0; padding: 7px 16px; background: var(--bg-3); border: 1px solid var(--border); border-radius: 99px; font-size: .78rem; font-weight: 600; color: var(--text-2); cursor: pointer; transition: all .15s; white-space: nowrap; }
