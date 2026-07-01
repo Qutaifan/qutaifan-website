@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#7c5cf6"/><stop offset="1" stop-color="#06b6d4"/></linearGradient></defs>
+  <rect width="1200" height="630" fill="#09090b"/>
+  <circle cx="1010" cy="80" r="260" fill="url(#g)" opacity="0.28"/>
+  <circle cx="160" cy="540" r="220" fill="url(#g)" opacity="0.18"/>
+  <rect x="80" y="80" width="1040" height="470" rx="36" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.14)"/>
+  <text x="110" y="150" fill="#a0a0ab" font-family="Inter,Arial,sans-serif" font-size="28" font-weight="700" letter-spacing="5">QUTAIFAN</text>
+  <text x="110" y="310" fill="#ffffff" font-family="Inter,Arial,sans-serif" font-size="70" font-weight="900">Qutaifan</text>
+  <text x="110" y="375" fill="#d4d4d8" font-family="Inter,Arial,sans-serif" font-size="32" font-weight="500">Independent free software reviews</text>
+  <text x="110" y="480" fill="#ffffff" opacity="0.75" font-family="Inter,Arial,sans-serif" font-size="26">www.qutaifan.com</text>
+</svg>
