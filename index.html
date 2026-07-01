@@ -4,12 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="google-adsense-account" content="ca-pub-9640734919758311">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>QUTAIFAN — Digital Operations HQ</title>
-  <meta name="description" content="Central command for autonomous trading systems, AI intelligence, and digital assets." />
+  <title>Qutaifan — Expert Software Reviews & Tool Comparisons 2026</title>
+  <meta name="description" content="In-depth software reviews, comparisons, and buying guides. Find the best VPN, AI tools, password managers, hosting, and more — tested and ranked." />
   <link rel="canonical" href="https://www.qutaifan.com/" />
-  <meta property="og:title" content="QUTAIFAN — Digital Operations HQ" />
+  <meta property="og:title" content="Qutaifan — Expert Software Reviews & Tool Comparisons 2026" />
+  <meta property="og:description" content="In-depth software reviews, comparisons, and buying guides for privacy, AI, and productivity tools." />
   <meta property="og:url" content="https://www.qutaifan.com/" />
   <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9640734919758311" crossorigin="anonymous"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -23,565 +28,346 @@
       --text-2:    #a0a0ab;
       --text-3:    #6b6b76;
       --accent:    #7c5cf6;
-      --accent-lt: rgba(124,92,246,.15);
-      --accent-glow: rgba(124,92,246,.35);
+      --accent-lt: rgba(124,92,246,.12);
       --green:     #10b981;
-      --green-lt:  rgba(16,185,129,.12);
       --amber:     #f59e0b;
-      --amber-lt:  rgba(245,158,11,.12);
-      --red:       #ef4444;
-      --cyan:      #06b6d4;
-      --cyan-lt:   rgba(6,182,212,.12);
       --radius:    10px;
       --radius-lg: 16px;
-      --font: 'Inter', system-ui, -apple-system, sans-serif;
+      --font: 'Inter', system-ui, sans-serif;
     }
 
     html { scroll-behavior: smooth; }
-
-    body {
-      font-family: var(--font);
-      font-size: 15px;
-      line-height: 1.6;
-      color: var(--text);
-      background: var(--bg);
-      -webkit-font-smoothing: antialiased;
-    }
-
+    body { font-family: var(--font); font-size: 15px; line-height: 1.6; color: var(--text); background: var(--bg); -webkit-font-smoothing: antialiased; }
     a { color: inherit; text-decoration: none; }
-
     .wrap { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
 
-    /* ── Grid overlay ── */
     body::before {
       content: '';
-      position: fixed;
-      inset: 0;
-      background-image:
-        linear-gradient(rgba(255,255,255,.015) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,.015) 1px, transparent 1px);
+      position: fixed; inset: 0;
+      background-image: linear-gradient(rgba(255,255,255,.015) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.015) 1px, transparent 1px);
       background-size: 40px 40px;
-      pointer-events: none;
-      z-index: 0;
+      pointer-events: none; z-index: 0;
     }
 
     /* ── Nav ── */
     nav {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: rgba(9,9,11,.85);
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(9,9,11,.88);
       -webkit-backdrop-filter: blur(16px);
       backdrop-filter: blur(16px);
       border-bottom: 1px solid var(--border);
     }
-    .nav-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 56px;
-    }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 56px; }
     .nav-brand {
-      font-weight: 900;
-      font-size: 1rem;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-      color: var(--text);
-      display: flex;
-      align-items: center;
-      gap: 10px;
+      font-weight: 900; font-size: .95rem; letter-spacing: .12em; text-transform: uppercase;
+      display: flex; align-items: center; gap: 10px;
     }
     .nav-brand .dot {
-      width: 7px; height: 7px;
-      border-radius: 99px;
-      background: var(--green);
-      box-shadow: 0 0 8px var(--green);
+      width: 7px; height: 7px; border-radius: 99px;
+      background: var(--green); box-shadow: 0 0 8px var(--green);
       animation: pulse 2s ease-in-out infinite;
     }
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50%       { opacity: .4; }
-    }
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 24px;
-      list-style: none;
-    }
-    .nav-links a {
-      font-size: .8rem;
-      font-weight: 500;
-      letter-spacing: .06em;
-      text-transform: uppercase;
-      color: var(--text-3);
-      transition: color .15s;
-    }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .4; } }
+    .nav-links { display: flex; align-items: center; gap: 24px; list-style: none; }
+    .nav-links a { font-size: .78rem; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--text-3); transition: color .15s; }
     .nav-links a:hover { color: var(--text); }
+    .nav-cta {
+      background: var(--accent); color: #fff !important; padding: 6px 16px;
+      border-radius: 8px; font-weight: 600 !important;
+    }
+    .nav-cta:hover { background: #6c4ce6 !important; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+    .hamburger span { display: block; width: 22px; height: 2px; background: var(--text-2); border-radius: 2px; transition: .2s; }
 
     /* ── Hero ── */
     .hero {
-      position: relative;
-      padding: 100px 0 80px;
-      text-align: center;
-      overflow: hidden;
+      position: relative; padding: 96px 0 72px; text-align: center; overflow: hidden; z-index: 1;
     }
     .hero::after {
-      content: '';
-      position: absolute;
-      top: -80px; left: 50%;
-      transform: translateX(-50%);
-      width: 600px; height: 400px;
-      background: radial-gradient(ellipse at center, rgba(124,92,246,.18) 0%, transparent 70%);
+      content: ''; position: absolute; top: -80px; left: 50%; transform: translateX(-50%);
+      width: 700px; height: 450px;
+      background: radial-gradient(ellipse at center, rgba(124,92,246,.16) 0%, transparent 70%);
       pointer-events: none;
     }
-    .hero-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 5px 14px;
-      background: var(--accent-lt);
-      border: 1px solid rgba(124,92,246,.3);
-      border-radius: 99px;
-      font-size: .72rem;
-      font-weight: 700;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 28px;
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 5px 14px; background: var(--accent-lt);
+      border: 1px solid rgba(124,92,246,.3); border-radius: 99px;
+      font-size: .7rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 28px;
     }
     .hero h1 {
-      font-size: clamp(3rem, 8vw, 6rem);
-      font-weight: 900;
-      letter-spacing: -.04em;
-      line-height: 1;
-      margin-bottom: 16px;
-      background: linear-gradient(135deg, #fff 40%, rgba(255,255,255,.4));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+      font-size: clamp(2.4rem, 6vw, 4.5rem); font-weight: 900; letter-spacing: -.03em; line-height: 1.05;
+      margin-bottom: 20px;
+      background: linear-gradient(135deg, #fff 40%, rgba(255,255,255,.45));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
     }
-    .hero-sub {
-      font-size: 1.05rem;
-      color: var(--text-2);
-      max-width: 480px;
-      margin: 0 auto 40px;
+    .hero-sub { font-size: 1.05rem; color: var(--text-2); max-width: 520px; margin: 0 auto 44px; }
+    .hero-actions { display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 28px; background: var(--accent); color: #fff;
+      border-radius: var(--radius); font-weight: 700; font-size: .95rem;
+      transition: background .15s, transform .1s;
     }
-    .status-bar {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 24px;
-      flex-wrap: wrap;
+    .btn-primary:hover { background: #6c4ce6; transform: translateY(-1px); }
+    .btn-secondary {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 28px; background: var(--bg-3);
+      border: 1px solid var(--border-2); color: var(--text-2);
+      border-radius: var(--radius); font-weight: 600; font-size: .95rem;
+      transition: border-color .15s, color .15s;
     }
-    .status-pill {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 7px 16px;
-      background: var(--bg-2);
-      border: 1px solid var(--border-2);
-      border-radius: 99px;
-      font-size: .78rem;
-      font-weight: 600;
-      letter-spacing: .04em;
-      color: var(--text-2);
-    }
-    .status-pill .led {
-      width: 6px; height: 6px;
-      border-radius: 99px;
-    }
-    .led-green  { background: var(--green);  box-shadow: 0 0 6px var(--green); animation: pulse 2s ease-in-out infinite; }
-    .led-amber  { background: var(--amber);  box-shadow: 0 0 6px var(--amber); }
-    .led-purple { background: var(--accent); box-shadow: 0 0 6px var(--accent); animation: pulse 3s ease-in-out infinite; }
+    .btn-secondary:hover { border-color: var(--accent); color: var(--text); }
+    .hero-stats { display: flex; align-items: center; justify-content: center; gap: 40px; margin-top: 56px; flex-wrap: wrap; }
+    .stat { text-align: center; }
+    .stat-num { font-size: 1.8rem; font-weight: 900; color: var(--text); letter-spacing: -.02em; }
+    .stat-label { font-size: .75rem; color: var(--text-3); text-transform: uppercase; letter-spacing: .08em; margin-top: 2px; }
+    .stat-divider { width: 1px; height: 40px; background: var(--border-2); }
 
-    /* ── Sections ── */
-    section { padding: 72px 0; position: relative; z-index: 1; }
-    .section-label {
-      font-size: .7rem;
-      font-weight: 700;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 8px;
-    }
-    .section-title {
-      font-size: clamp(1.4rem, 3vw, 2rem);
-      font-weight: 800;
-      letter-spacing: -.02em;
-      margin-bottom: 40px;
-      color: var(--text);
-    }
-    .section-divider {
-      height: 1px;
-      background: var(--border);
-    }
+    /* ── AdSense ── */
+    .ad-leaderboard { text-align: center; padding: 24px 0; position: relative; z-index: 1; }
 
-    /* ── System cards ── */
-    .systems-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 16px;
-    }
-    .sys-card {
-      background: var(--bg-2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 28px;
-      transition: border-color .2s, box-shadow .2s;
-      position: relative;
-      overflow: hidden;
-    }
-    .sys-card::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 2px;
-      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-    }
-    .sys-card.live::before   { background: linear-gradient(90deg, var(--green), transparent); }
-    .sys-card.intel::before  { background: linear-gradient(90deg, var(--accent), transparent); }
-    .sys-card.build::before  { background: linear-gradient(90deg, var(--cyan), transparent); }
-    .sys-card.paused::before { background: linear-gradient(90deg, var(--amber), transparent); }
-    .sys-card:hover {
-      border-color: var(--border-2);
-      box-shadow: 0 8px 32px rgba(0,0,0,.4);
-    }
-    .sys-card-header {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 12px;
-      margin-bottom: 14px;
-    }
-    .sys-icon {
-      width: 40px; height: 40px;
-      border-radius: 10px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1.2rem;
-      flex-shrink: 0;
-    }
-    .sys-icon.green  { background: var(--green-lt); }
-    .sys-icon.purple { background: var(--accent-lt); }
-    .sys-icon.cyan   { background: var(--cyan-lt); }
-    .sys-icon.amber  { background: var(--amber-lt); }
-    .sys-status {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      font-size: .7rem;
-      font-weight: 700;
-      letter-spacing: .07em;
-      text-transform: uppercase;
-    }
-    .sys-status.live   { color: var(--green); }
-    .sys-status.intel  { color: var(--accent); }
-    .sys-status.build  { color: var(--cyan); }
-    .sys-status.paused { color: var(--amber); }
-    .sys-card h3 {
-      font-size: 1rem;
-      font-weight: 700;
-      margin-bottom: 6px;
-      color: var(--text);
-    }
-    .sys-card p {
-      font-size: .85rem;
-      color: var(--text-2);
-      line-height: 1.55;
-    }
-    .sys-meta {
-      margin-top: 16px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-    }
-    .sys-tag {
-      padding: 3px 10px;
-      background: var(--bg-3);
-      border: 1px solid var(--border);
-      border-radius: 99px;
-      font-size: .72rem;
-      font-weight: 500;
-      color: var(--text-3);
-    }
+    /* ── Categories ── */
+    .section { padding: 72px 0; position: relative; z-index: 1; }
+    .section-label { font-size: .7rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
+    .section-title { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 900; letter-spacing: -.02em; margin-bottom: 12px; }
+    .section-sub { color: var(--text-2); max-width: 480px; margin-bottom: 48px; }
+    .section-divider { height: 1px; background: linear-gradient(90deg, transparent, var(--border-2) 30%, var(--border-2) 70%, transparent); position: relative; z-index: 1; }
 
-    /* ── Content grid ── */
-    .content-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 16px;
+    .cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+    .cat-card {
+      display: flex; flex-direction: column; gap: 12px;
+      padding: 24px; background: var(--bg-2);
+      border: 1px solid var(--border); border-radius: var(--radius-lg);
+      transition: border-color .2s, transform .15s;
+      cursor: pointer;
     }
-    .content-card {
-      background: var(--bg-2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 24px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      transition: border-color .2s, transform .2s;
+    .cat-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .cat-card a { display: contents; }
+    .cat-icon { font-size: 1.8rem; line-height: 1; }
+    .cat-name { font-weight: 700; font-size: .95rem; }
+    .cat-count { font-size: .78rem; color: var(--text-3); }
+    .cat-card.live { border-color: rgba(124,92,246,.25); }
+    .cat-live-badge {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-size: .65rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+      color: var(--green); margin-top: auto;
     }
-    .content-card:hover {
-      border-color: var(--border-2);
-      transform: translateY(-2px);
-    }
-    .content-card-label {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-size: .68rem;
-      font-weight: 700;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-      color: var(--accent);
-    }
-    .content-card h3 {
-      font-size: .95rem;
-      font-weight: 700;
-      color: var(--text);
-      line-height: 1.35;
-    }
-    .content-card p {
-      font-size: .82rem;
-      color: var(--text-2);
-      flex: 1;
-    }
-    .content-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: .78rem;
-      font-weight: 600;
-      color: var(--accent);
-      margin-top: auto;
-    }
-    .content-link:hover { text-decoration: underline; }
-    .content-card.coming {
-      opacity: .5;
-      pointer-events: none;
-    }
-    .coming-badge {
-      display: inline-block;
-      padding: 2px 8px;
-      background: var(--amber-lt);
-      border: 1px solid rgba(245,158,11,.3);
-      border-radius: 99px;
-      font-size: .65rem;
-      font-weight: 700;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      color: var(--amber);
-      margin-left: auto;
-    }
-    .coming-soon-text {
-      font-size: .75rem;
-      color: var(--amber);
-      font-weight: 600;
-      margin-top: 4px;
-    }
+    .led { display: inline-block; width: 6px; height: 6px; border-radius: 99px; }
+    .led-green { background: var(--green); box-shadow: 0 0 6px var(--green); }
+    .led-amber { background: var(--amber); }
 
-    /* ── Properties ── */
-    .props-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 16px;
+    /* ── Featured articles ── */
+    .articles-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
+    .article-card {
+      display: flex; flex-direction: column;
+      background: var(--bg-2); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); overflow: hidden;
+      transition: border-color .2s, transform .15s;
     }
-    .prop-card {
-      background: var(--bg-2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 24px 28px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      transition: border-color .2s;
+    .article-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .article-accent { height: 4px; }
+    .article-body { padding: 28px; display: flex; flex-direction: column; flex: 1; gap: 10px; }
+    .article-meta { display: flex; align-items: center; gap: 8px; }
+    .article-tag {
+      font-size: .65rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+      padding: 3px 10px; border-radius: 99px;
     }
-    .prop-card:hover { border-color: var(--border-2); }
-    .prop-card h3 {
-      font-size: .9rem;
-      font-weight: 700;
-      margin-bottom: 4px;
+    .tag-security { background: rgba(16,185,129,.12); color: var(--green); }
+    .tag-ai { background: rgba(124,92,246,.12); color: var(--accent); }
+    .tag-free { background: rgba(6,182,212,.12); color: #06b6d4; }
+    .article-card h3 { font-size: 1.05rem; font-weight: 700; line-height: 1.35; }
+    .article-card p { font-size: .88rem; color: var(--text-2); flex: 1; }
+    .article-link {
+      display: inline-flex; align-items: center; gap: 6px;
+      color: var(--accent); font-size: .85rem; font-weight: 600;
+      margin-top: 8px; transition: gap .15s;
     }
-    .prop-card p { font-size: .78rem; color: var(--text-2); }
-    .prop-arrow {
-      font-size: 1.1rem;
-      color: var(--text-3);
-      flex-shrink: 0;
-    }
+    .article-link:hover { gap: 10px; }
+    .article-highlights { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+    .highlight { font-size: .72rem; padding: 3px 10px; background: var(--bg-3); border: 1px solid var(--border); border-radius: 99px; color: var(--text-3); }
 
-    /* ── Intelligence section ── */
-    .intel-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 16px;
+    /* ── Why trust ── */
+    .trust-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
+    .trust-card { padding: 24px; background: var(--bg-2); border: 1px solid var(--border); border-radius: var(--radius-lg); }
+    .trust-icon { font-size: 1.6rem; margin-bottom: 12px; }
+    .trust-card h4 { font-weight: 700; margin-bottom: 6px; }
+    .trust-card p { font-size: .85rem; color: var(--text-2); }
+
+    /* ── Newsletter ── */
+    .newsletter-box {
+      background: linear-gradient(135deg, rgba(124,92,246,.1), rgba(124,92,246,.04));
+      border: 1px solid rgba(124,92,246,.25); border-radius: var(--radius-lg);
+      padding: 48px; text-align: center;
     }
+    .newsletter-box h3 { font-size: 1.5rem; font-weight: 800; margin-bottom: 10px; }
+    .newsletter-box p { color: var(--text-2); margin-bottom: 28px; }
+    .newsletter-form { display: flex; gap: 10px; max-width: 440px; margin: 0 auto; }
+    .newsletter-form input {
+      flex: 1; padding: 12px 16px; background: var(--bg-3);
+      border: 1px solid var(--border-2); border-radius: var(--radius);
+      color: var(--text); font-size: .9rem; outline: none;
+    }
+    .newsletter-form input:focus { border-color: var(--accent); }
+    .newsletter-form button {
+      padding: 12px 24px; background: var(--accent); color: #fff;
+      border: none; border-radius: var(--radius); font-weight: 700;
+      cursor: pointer; white-space: nowrap; transition: background .15s;
+    }
+    .newsletter-form button:hover { background: #6c4ce6; }
+    #nl-thanks { display: none; color: var(--green); font-weight: 600; margin-top: 12px; }
 
     /* ── Footer ── */
-    footer {
+    footer { padding: 40px 0; border-top: 1px solid var(--border); position: relative; z-index: 1; }
+    .footer-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+    .footer-brand { font-weight: 900; letter-spacing: .1em; text-transform: uppercase; font-size: .88rem; }
+    .footer-links { display: flex; gap: 20px; flex-wrap: wrap; }
+    .footer-links a { font-size: .8rem; color: var(--text-3); transition: color .15s; }
+    .footer-links a:hover { color: var(--text); }
+    .footer-copy { font-size: .75rem; color: var(--text-3); }
+
+    /* ── Cookie banner ── */
+    #cookie-banner {
+      position: fixed; bottom: 0; left: 0; right: 0;
+      background: rgba(9,9,11,.97);
+      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: blur(12px);
       border-top: 1px solid var(--border);
-      padding: 28px 0;
-      text-align: center;
-      font-size: .78rem;
-      color: var(--text-3);
-      position: relative;
-      z-index: 1;
+      padding: 14px 24px; z-index: 1000;
+      display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap;
+      font-size: .85rem; color: var(--text-2);
     }
-    footer strong { color: var(--text-2); }
+    #cookie-banner p { margin: 0; }
+    #cookie-banner a { color: var(--accent); }
+    #cookie-banner button {
+      background: var(--accent); color: #fff; border: none;
+      padding: 7px 20px; border-radius: 8px; font-weight: 600; cursor: pointer;
+      white-space: nowrap;
+    }
+    #cookie-banner button:hover { background: #6c4ce6; }
+
+    /* ── Affiliate footer note ── */
+    .affiliate-note { text-align: center; padding: 12px 24px; font-size: .78rem; color: var(--text-3); border-top: 1px solid var(--border); }
+    .affiliate-note a { color: var(--accent); }
 
     /* ── Responsive ── */
     @media (max-width: 640px) {
-      .nav-links { display: none; }
       .hero { padding: 64px 0 48px; }
-      section { padding: 48px 0; }
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 56px; left: 0; right: 0; background: var(--bg-2); border-bottom: 1px solid var(--border); padding: 16px 24px; gap: 16px; z-index: 99; }
+      .newsletter-form { flex-direction: column; }
+      .hero-stats { gap: 24px; }
+      .stat-divider { display: none; }
     }
   </style>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9640734919758311" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<!-- ═══════════ NAV ═══════════ -->
+<!-- ── Nav ── -->
 <nav>
   <div class="wrap nav-inner">
-    <div class="nav-brand">
+    <a href="/" class="nav-brand">
       <span class="dot"></span>
-      QUTAIFAN
-    </div>
-    <ul class="nav-links">
-      <li><a href="#intelligence">Intelligence</a></li>
-      <li><a href="#content">Content</a></li>
-      <li><a href="#properties">Properties</a></li>
+      Qutaifan
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="/best-free-ai-tools-2026">Free AI Tools</a></li>
+      <li><a href="/best-vpn-2026">VPN Reviews</a></li>
+      <li><a href="/affiliate-disclosure">Disclosure</a></li>
     </ul>
+    <div class="hamburger" id="hamburger" onclick="document.getElementById('nav-links').classList.toggle('open')" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </div>
   </div>
 </nav>
 
-
-<!-- ═══════════ HERO ═══════════ -->
+<!-- ── Hero ── -->
 <section class="hero">
   <div class="wrap">
-    <div class="hero-tag">
+    <div class="hero-badge">
       <span class="led led-green"></span>
-      All Systems Operational
+      Independent reviews — no paid placements
     </div>
-    <h1>QUTAIFAN</h1>
+    <h1>Find the Best Software<br>For Your Needs</h1>
     <p class="hero-sub">
-      Digital operations headquarters. AI intelligence and content infrastructure — all running 24/7.
+      In-depth reviews, side-by-side comparisons, and honest picks for VPNs, AI tools, password managers, hosting, and more.
     </p>
-    <div class="status-bar">
-      <div class="status-pill"><span class="led led-purple"></span> Hermes Active</div>
-      <div class="status-pill"><span class="led led-green"></span> Money Engine Running</div>
+    <div class="hero-actions">
+      <a href="/best-free-ai-tools-2026" class="btn-primary">Browse Free AI Tools →</a>
+      <a href="/best-vpn-2026" class="btn-secondary">Best VPNs 2026</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">100+</div>
+        <div class="stat-label">Tools Reviewed</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-num">8</div>
+        <div class="stat-label">VPNs Tested</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-num">2026</div>
+        <div class="stat-label">Updated Weekly</div>
+      </div>
     </div>
   </div>
 </section>
 
-<div class="section-divider"></div>
-
-
-<!-- ═══════════ OPERATIONS ═══════════ -->
-<section id="operations">
-  <div class="wrap">
-    <div class="section-label">Operations</div>
-    <div class="section-title">Systems</div>
-
-    <div class="systems-grid">
-
-      <div class="sys-card live">
-        <div class="sys-card-header">
-          <div class="sys-icon green">☯</div>
-          <div class="sys-status live"><span class="led led-green"></span> Live</div>
-        </div>
-        <h3>I Ching Oracle</h3>
-        <p>Real-time divination engine casting hexagrams from the Book of Changes. Consult on decisions, trading, strategy, and life direction.</p>
-        <div class="sys-meta">
-          <span class="sys-tag">Live readings</span>
-          <span class="sys-tag">64 hexagrams</span>
-          <span class="sys-tag">Historical context</span>
-        </div>
-      </div>
-
-      <div class="sys-card live">
-        <div class="sys-card-header">
-          <div class="sys-icon green">📈</div>
-          <div class="sys-status live"><span class="led led-green"></span> Live</div>
-        </div>
-        <h3>Trading Engines</h3>
-        <p>Automated trading systems running 24/7 across crypto, forex, and equities. Technical analysis, signal generation, and order execution.</p>
-        <div class="sys-meta">
-          <span class="sys-tag">Multi-asset</span>
-          <span class="sys-tag">Risk management</span>
-          <span class="sys-tag">Backtested</span>
-        </div>
-      </div>
-
-      <div class="sys-card build">
-        <div class="sys-card-header">
-          <div class="sys-icon cyan">🧪</div>
-          <div class="sys-status build"><span class="led led-amber"></span> Building</div>
-        </div>
-        <h3>Prediction Markets</h3>
-        <p>Hermes Prime prediction market intelligence layer. Calibrated forecasting, evidence cycles, and market resolution tracking.</p>
-        <div class="sys-meta">
-          <span class="sys-tag">Hermes v0.14</span>
-          <span class="sys-tag">Monte Carlo</span>
-          <span class="sys-tag">Evidence cycles</span>
-        </div>
-      </div>
-
-      <div class="sys-card paused">
-        <div class="sys-card-header">
-          <div class="sys-icon amber">🧠</div>
-          <div class="sys-status paused"><span class="led led-amber"></span> Paused</div>
-        </div>
-        <h3>Nous Hermes</h3>
-        <p>Autonomous NousResearch Hermes agent. Multi-agent reasoning, memory layers, and self-improving task orchestration.</p>
-        <div class="sys-meta">
-          <span class="sys-tag">5-layer memory</span>
-          <span class="sys-tag">DSPy evolution</span>
-          <span class="sys-tag">Cron-driven</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
+<!-- AdSense leaderboard -->
+<div class="ad-leaderboard wrap">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9640734919758311" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
 
 <div class="section-divider"></div>
 
-
-<!-- ═══════════ INTELLIGENCE ═══════════ -->
-<section id="intelligence">
+<!-- ── Featured Articles ── -->
+<section class="section">
   <div class="wrap">
-    <div class="section-label">Intelligence Layer</div>
-    <div class="section-title">AI Systems</div>
+    <div class="section-label">Featured</div>
+    <div class="section-title">Latest Reviews</div>
+    <p class="section-sub">Tested, compared, and updated for 2026. No filler — just what actually matters.</p>
 
-    <div class="intel-grid">
+    <div class="articles-grid">
 
-      <div class="sys-card intel">
-        <div class="sys-card-header">
-          <div class="sys-icon purple">🧠</div>
-          <div class="sys-status intel"><span class="led led-purple"></span> Active</div>
-        </div>
-        <h3>Hermes Prime</h3>
-        <p>Autonomous NousResearch Hermes agent running prediction-market intelligence. Evidence cycles, Monte Carlo drift, market resolution tracking — all scheduled and self-managing.</p>
-        <div class="sys-meta">
-          <span class="sys-tag">Hermes v0.14</span>
-          <span class="sys-tag">5-layer memory</span>
-          <span class="sys-tag">Cron-driven</span>
-          <span class="sys-tag">Falcon MCP</span>
+      <div class="article-card">
+        <div class="article-accent" style="background: linear-gradient(90deg, #7c5cf6, #06b6d4);"></div>
+        <div class="article-body">
+          <div class="article-meta">
+            <span class="article-tag tag-free">Free</span>
+            <span class="article-tag tag-ai">AI Tools</span>
+          </div>
+          <h3>Best Free AI Tools 2026 — 100+ Tools, No Credit Card Required</h3>
+          <p>The most complete free AI directory on the web. Chatbots, image generators, video AI, open-source models, coding assistants, and more — all free, all tested.</p>
+          <div class="article-highlights">
+            <span class="highlight">100+ tools</span>
+            <span class="highlight">9 categories</span>
+            <span class="highlight">No signup required</span>
+            <span class="highlight">Open source picks</span>
+          </div>
+          <a href="/best-free-ai-tools-2026" class="article-link">Read the guide →</a>
         </div>
       </div>
 
-      <div class="sys-card intel">
-        <div class="sys-card-header">
-          <div class="sys-icon purple">💰</div>
-          <div class="sys-status intel"><span class="led led-purple"></span> Active</div>
-        </div>
-        <h3>Money Engine</h3>
-        <p>Hermes-driven affiliate content pipeline. Weekly auto-generates high-intent comparison pages, deploys them directly to this domain via Cloudflare Pages.</p>
-        <div class="sys-meta">
-          <span class="sys-tag">Hermes agent</span>
-          <span class="sys-tag">Kanban queue</span>
-          <span class="sys-tag">Weekly cron</span>
-          <span class="sys-tag">Wrangler deploy</span>
+      <div class="article-card">
+        <div class="article-accent" style="background: linear-gradient(90deg, #10b981, #7c5cf6);"></div>
+        <div class="article-body">
+          <div class="article-meta">
+            <span class="article-tag tag-security">Security</span>
+          </div>
+          <h3>Best VPN 2026 — Top Picks Reviewed & Compared</h3>
+          <p>8 VPNs tested across speed, privacy, logging policies, and real-world streaming performance. NordVPN, ExpressVPN, Surfshark, ProtonVPN and more — ranked honestly.</p>
+          <div class="article-highlights">
+            <span class="highlight">8 VPNs tested</span>
+            <span class="highlight">Speed benchmarks</span>
+            <span class="highlight">No-log verified</span>
+            <span class="highlight">Streaming tested</span>
+          </div>
+          <a href="/best-vpn-2026" class="article-link">Read the guide →</a>
         </div>
       </div>
 
@@ -591,136 +377,156 @@
 
 <div class="section-divider"></div>
 
-
-<!-- ═══════════ CONTENT ═══════════ -->
-<section id="content">
+<!-- ── Categories ── -->
+<section class="section">
   <div class="wrap">
-    <div class="section-label">Published Content</div>
-    <div class="section-title">Pages</div>
+    <div class="section-label">Browse by Category</div>
+    <div class="section-title">What Are You Looking For?</div>
+    <p class="section-sub">New guides published weekly across the most searched software categories.</p>
 
-    <div class="content-grid">
+    <div class="cat-grid">
 
-      <div class="content-card">
-        <div class="content-card-label">Directory · Live</div>
-        <h3>Best Free AI Tools 2026 — 100+ Tools, No Credit Card Required</h3>
-        <p>The most complete free AI directory — chatbots, image generators, video AI, open-source models, and more. All free, all tested.</p>
-        <a href="/best-free-ai-tools-2026" class="content-link">Explore directory →</a>
-      </div>
-
-      <div class="content-card">
-        <div class="content-card-label">AI Tools · <span class="coming-badge">Coming Soon</span></div>
-        <h3>Best AI Writing Tools 2026 — Top Picks, Reviews & Comparison</h3>
-        <p>8 tools tested across 200+ hours. Jasper, Copy.ai, Writesonic, Rytr and more — ranked by use case.</p>
-        <span class="coming-soon-text">Launching soon — stay tuned</span>
-      </div>
-
-      <div class="content-card">
-        <div class="content-card-label">Web Hosting · <span class="coming-badge">Coming Soon</span></div>
-        <h3>Best Web Hosting for Small Business 2026 — Tested Picks</h3>
-        <p>8 hosts compared on speed, uptime, support, and real renewal pricing. SiteGround, Hostinger, Bluehost and more.</p>
-        <span class="coming-soon-text">Launching soon — stay tuned</span>
-      </div>
-
-      <div class="content-card">
-        <div class="content-card-label">Insurance · <span class="coming-badge">Coming Soon</span></div>
-        <h3>Best Business Insurance for Contractors 2026</h3>
-        <p>General liability, professional liability, workers comp, and equipment coverage — 8 providers compared.</p>
-        <span class="coming-soon-text">Launching soon — stay tuned</span>
-      </div>
-
-      <div class="content-card">
-        <div class="content-card-label">Security · <span class="coming-badge">Coming Soon</span></div>
-        <h3>Best VPN 2026 — Top Picks Reviewed</h3>
-        <p>NordVPN, ExpressVPN, Surfshark, ProtonVPN compared on speed, privacy, and price. 8 providers tested.</p>
-        <span class="coming-soon-text">Launching soon — stay tuned</span>
-      </div>
-
-      <div class="content-card">
-        <div class="content-card-label">Security · <span class="coming-badge">Coming Soon</span></div>
-        <h3>Best Password Manager 2026 — Reviewed & Compared</h3>
-        <p>1Password, Bitwarden, Dashlane, Keeper and more — ranked on security, usability, and price.</p>
-        <span class="coming-soon-text">Launching soon — stay tuned</span>
-      </div>
-
-      <div class="content-card">
-        <div class="content-card-label">Marketing · <span class="coming-badge">Coming Soon</span></div>
-        <h3>Best Email Marketing Software 2026 — Compared</h3>
-        <p>Mailchimp, ActiveCampaign, Klaviyo, ConvertKit and more — ranked on automation, deliverability, and price.</p>
-        <span class="coming-soon-text">Launching soon — stay tuned</span>
-      </div>
-
-      <div class="content-card">
-        <div class="content-card-label">AI Tools · <span class="coming-badge">Coming Soon</span></div>
-        <h3>Best AI Meeting Assistants 2026 — Compared</h3>
-        <p>Fathom, Fireflies.ai, Otter.ai, tl;dv and more — ranked on transcription accuracy, integrations, and price.</p>
-        <span class="coming-soon-text">Launching soon — stay tuned</span>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<div class="section-divider"></div>
-
-
-<!-- ═══════════ PROPERTIES ═══════════ -->
-<section id="properties">
-  <div class="wrap">
-    <div class="section-label">Network</div>
-    <div class="section-title">Properties</div>
-
-    <div class="props-grid">
-
-      <a href="https://www.qutaifan.com" class="prop-card" rel="nofollow sponsored noopener">
-        <div>
-          <h3>www.qutaifan.com</h3>
-          <p>Headquarters — you are here</p>
+      <a href="/best-free-ai-tools-2026" style="display:contents;">
+        <div class="cat-card live">
+          <div class="cat-icon">🤖</div>
+          <div class="cat-name">Free AI Tools</div>
+          <div class="cat-count">100+ tools reviewed</div>
+          <div class="cat-live-badge"><span class="led led-green"></span> Live</div>
         </div>
-        <span class="prop-arrow">●</span>
       </a>
 
-      <a href="https://lumina.qutaifan.com" class="prop-card" rel="nofollow sponsored noopener">
-        <div>
-          <h3>lumina.qutaifan.com</h3>
-          <p>Lumina — active project</p>
+      <a href="/best-vpn-2026" style="display:contents;">
+        <div class="cat-card live">
+          <div class="cat-icon">🔒</div>
+          <div class="cat-name">VPN & Privacy</div>
+          <div class="cat-count">8 VPNs compared</div>
+          <div class="cat-live-badge"><span class="led led-green"></span> Live</div>
         </div>
-        <span class="prop-arrow">→</span>
       </a>
+
+      <div class="cat-card">
+        <div class="cat-icon">🔑</div>
+        <div class="cat-name">Password Managers</div>
+        <div class="cat-count">Guide coming soon</div>
+        <div class="cat-live-badge"><span class="led led-amber"></span> Coming soon</div>
+      </div>
+
+      <div class="cat-card">
+        <div class="cat-icon">✍️</div>
+        <div class="cat-name">AI Writing Tools</div>
+        <div class="cat-count">Guide coming soon</div>
+        <div class="cat-live-badge"><span class="led led-amber"></span> Coming soon</div>
+      </div>
+
+      <div class="cat-card">
+        <div class="cat-icon">🌐</div>
+        <div class="cat-name">Web Hosting</div>
+        <div class="cat-count">Guide coming soon</div>
+        <div class="cat-live-badge"><span class="led led-amber"></span> Coming soon</div>
+      </div>
+
+      <div class="cat-card">
+        <div class="cat-icon">📧</div>
+        <div class="cat-name">Email Marketing</div>
+        <div class="cat-count">Guide coming soon</div>
+        <div class="cat-live-badge"><span class="led led-amber"></span> Coming soon</div>
+      </div>
 
     </div>
   </div>
 </section>
 
+<!-- AdSense rectangle -->
+<div class="ad-leaderboard wrap">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9640734919758311" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
 
-<!-- ═══════════ FOOTER ═══════════ -->
+<div class="section-divider"></div>
+
+<!-- ── Why trust us ── -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-label">Our Approach</div>
+    <div class="section-title">Why Trust Our Reviews?</div>
+    <p class="section-sub">Every guide follows the same standards. No paid placements, no undisclosed commissions.</p>
+
+    <div class="trust-grid">
+      <div class="trust-card">
+        <div class="trust-icon">🧪</div>
+        <h4>Hands-on Testing</h4>
+        <p>We sign up, test, and use every product ourselves before writing a single word.</p>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">📊</div>
+        <h4>Data-Driven Rankings</h4>
+        <p>Rankings are based on measurable criteria — speed, price, features, support — not opinions.</p>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">🔄</div>
+        <h4>Kept Up to Date</h4>
+        <p>Guides are reviewed and updated regularly. Prices and features change — our content follows.</p>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">💬</div>
+        <h4>Transparent Disclosure</h4>
+        <p>We earn commissions on some links. This never affects our rankings. <a href="/affiliate-disclosure" style="color:var(--accent)">Read our policy.</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ── Newsletter ── -->
+<section class="section">
+  <div class="wrap">
+    <div class="newsletter-box">
+      <h3>Get New Guides First</h3>
+      <p>We publish a new software comparison every week. No spam — just one useful email when a new guide drops.</p>
+      <form class="newsletter-form" onsubmit="handleNL(event)">
+        <input type="email" placeholder="your@email.com" required />
+        <button type="submit">Subscribe</button>
+      </form>
+      <div id="nl-thanks">✓ You're in — we'll email you when the next guide is live.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ── -->
 <footer>
-  <div class="wrap">
-    <strong>QUTAIFAN</strong> — Digital Operations HQ &nbsp;·&nbsp; All systems autonomous &nbsp;·&nbsp; 2026
-    <br><br>
-    <a href="/privacy-policy" style="color:#6b6b76;text-decoration:none;">Privacy Policy</a> &nbsp;·&nbsp;
-    <a href="/affiliate-disclosure" style="color:#6b6b76;text-decoration:none;">Affiliate Disclosure</a> &nbsp;·&nbsp;
-    <a href="/terms-of-service" style="color:#6b6b76;text-decoration:none;">Terms of Service</a>
+  <div class="wrap footer-inner">
+    <div class="footer-brand">Qutaifan</div>
+    <div class="footer-links">
+      <a href="/best-free-ai-tools-2026">Free AI Tools</a>
+      <a href="/best-vpn-2026">VPN Reviews</a>
+      <a href="/privacy-policy">Privacy</a>
+      <a href="/affiliate-disclosure">Disclosure</a>
+      <a href="/terms-of-service">Terms</a>
+    </div>
+    <div class="footer-copy">© 2026 Qutaifan</div>
   </div>
 </footer>
 
-<!-- Cookie Consent Banner -->
-<style>
-  #cookie-banner{position:fixed;bottom:0;left:0;right:0;background:rgba(9,9,11,.95);-webkit-backdrop-filter: blur(12px);
-      backdrop-filter: blur(12px);border-top:1px solid rgba(255,255,255,.07);padding:16px 24px;z-index:1000;display:flex;align-items:center;justify-content:center;gap:16px;font-size:14px;color:#a0a0ab;font-family:system-ui,sans-serif}
-  #cookie-banner p{margin:0}
-  #cookie-banner a{color:#7c5cf6;text-decoration:none}
-  #cookie-banner button{background:#7c5cf6;color:#fff;border:none;padding:8px 20px;border-radius:8px;font-weight:600;cursor:pointer}
-  #cookie-banner button:hover{background:#6c4ce6}
-</style>
-<div id="cookie-banner" role="dialog" aria-label="Cookie consent">
-  <p>We use cookies and similar technologies to analyze traffic, serve ads, and improve your experience. <a href="/privacy-policy">Learn more</a>.</p>
-  <button onclick="document.getElementById('cookie-banner').style.display='none'">Accept</button>
+<div class="affiliate-note">
+  Qutaifan participates in affiliate programs and may earn commissions on purchases made through our links — at no extra cost to you. <a href="/affiliate-disclosure">Full disclosure.</a>
 </div>
 
-<!-- Affiliate Disclosure Footer -->
-<div class="affiliate-footer" style="text-align:center;padding:16px 24px;font-size:13px;color:#a0a0ab;border-top:1px solid rgba(255,255,255,.07);background:#09090b;">
-  <p>Qutaifan participates in affiliate programs. We may earn commissions when you click links on this page. <a href="/affiliate-disclosure" style="color:#7c5cf6;text-decoration:none;">Read our affiliate disclosure</a>.</p>
+<!-- Cookie banner -->
+<div id="cookie-banner" role="dialog" aria-label="Cookie consent">
+  <p>We use cookies to analyze traffic and serve ads. <a href="/privacy-policy">Learn more</a>.</p>
+  <button onclick="document.getElementById('cookie-banner').style.display='none';localStorage.setItem('ck','1')">Accept</button>
 </div>
+
+<script>
+  if (localStorage.getItem('ck')) document.getElementById('cookie-banner').style.display = 'none';
+
+  function handleNL(e) {
+    e.preventDefault();
+    e.target.style.display = 'none';
+    document.getElementById('nl-thanks').style.display = 'block';
+  }
+</script>
 
 </body>
 </html>
