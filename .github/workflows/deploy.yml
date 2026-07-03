@@ -15,3 +15,17 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy . --project-name=qutaifan-website --commit-dirty=true
+
+      - name: Notify IndexNow (Bing / Yandex)
+        if: success()
+        run: |
+          KEY=f04b2b2b0e4ad248b406267e36386c55
+          HOST=www.qutaifan.com
+          # Build a JSON urlList from every <loc> in the deployed sitemap.
+          URLS=$(grep -oP '(?<=<loc>)[^<]+' sitemap.xml | sed 's/.*/"&"/' | paste -sd, -)
+          BODY=$(printf '{"host":"%s","key":"%s","keyLocation":"https://%s/%s.txt","urlList":[%s]}' "$HOST" "$KEY" "$HOST" "$KEY" "$URLS")
+          echo "IndexNow payload: $BODY"
+          # Non-fatal: a failed ping must never fail the deploy.
+          curl -sS -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d "$BODY" -w "\nIndexNow HTTP %{http_code}\n" || true
