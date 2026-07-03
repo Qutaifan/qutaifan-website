@@ -1,5 +1,5 @@
-# ads.txt — Authorized Digital Sellers for qutaifan.com
+# ads.txt - Authorized Digital Sellers for qutaifan.com
 # IAB Tech Lab ads.txt spec v1.1 (https://iabtechlab.com/ads.txt/)
-# Publisher: Qutaifan Software Reviews  |  Monetization: Google AdSense only
+# Publisher Qutaifan Software Reviews. Monetization Google AdSense only.
 OWNERDOMAIN=qutaifan.com
 google.com, pub-9640734919758311, DIRECT, f08c47fec0942fa0
