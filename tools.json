@@ -238,7 +238,7 @@
  {
   "name": "ComfyUI",
   "slug": "comfyui",
-  "by": "",
+  "by": "Community",
   "blurb": "The most powerful local image generation interface.",
   "category": "image",
   "tags": [],
@@ -318,7 +318,7 @@
  {
   "name": "Automatic1111",
   "slug": "automatic1111",
-  "by": "",
+  "by": "Community",
   "blurb": "The classic local Stable Diffusion web UI.",
   "category": "image",
   "tags": [],
@@ -1016,7 +1016,7 @@
  {
   "name": "Bitwarden",
   "slug": "bitwarden",
-  "by": "",
+  "by": "Open Source",
   "blurb": "Unlimited passwords and devices on the free plan, zero-knowledge encryption.",
   "category": "security",
   "tags": [
@@ -1034,7 +1034,7 @@
  {
   "name": "KeePassXC",
   "slug": "keepassxc",
-  "by": "",
+  "by": "Open Source",
   "blurb": "Fully local, encrypted vault file — no account, no cloud, no subscription.",
   "category": "security",
   "tags": [
@@ -1052,7 +1052,7 @@
  {
   "name": "Proton Pass",
   "slug": "proton-pass",
-  "by": "",
+  "by": "Proton",
   "blurb": "Privacy-focused free tier with unlimited logins and hide-my-email aliases.",
   "category": "security",
   "tags": [],
@@ -1067,7 +1067,7 @@
  {
   "name": "Google Password Manager",
   "slug": "google-password-manager",
-  "by": "",
+  "by": "Google",
   "blurb": "Built into Chrome and Android — free, zero setup, passkey support.",
   "category": "security",
   "tags": [],
@@ -1083,7 +1083,7 @@
  {
   "name": "Apple Passwords",
   "slug": "apple-passwords",
-  "by": "",
+  "by": "Apple",
   "blurb": "Built into iPhone, iPad, and Mac — free, iCloud sync, passkey support.",
   "category": "security",
   "tags": [
@@ -1101,7 +1101,7 @@
  {
   "name": "DeepL Write",
   "slug": "deepl-write",
-  "by": "",
+  "by": "DeepL",
   "blurb": "Free tone and grammar polishing, especially strong for non-native speakers.",
   "category": "writing",
   "tags": [],
@@ -1117,7 +1117,7 @@
  {
   "name": "Dota 2",
   "slug": "dota-2",
-  "by": "",
+  "by": "Valve",
   "blurb": "A full competitive MOBA where every hero is available without paying.",
   "category": "gaming",
   "tags": [
@@ -1135,7 +1135,7 @@
  {
   "name": "Path of Exile",
   "slug": "path-of-exile",
-  "by": "",
+  "by": "Grinding Gear Games",
   "blurb": "A massive ARPG with deep builds and no paid power.",
   "category": "gaming",
   "tags": [],
@@ -1151,7 +1151,7 @@
  {
   "name": "Warframe",
   "slug": "warframe",
-  "by": "",
+  "by": "Digital Extremes",
   "blurb": "Fast co-op space-ninja action with years of free content.",
   "category": "gaming",
   "tags": [],
@@ -1167,7 +1167,7 @@
  {
   "name": "Marvel Rivals",
   "slug": "marvel-rivals",
-  "by": "",
+  "by": "NetEase / Marvel",
   "blurb": "A polished superhero team shooter with instant pick-up appeal.",
   "category": "gaming",
   "tags": [],
@@ -1183,7 +1183,7 @@
  {
   "name": "The Finals",
   "slug": "the-finals",
-  "by": "",
+  "by": "Embark Studios",
   "blurb": "Destructible-arena shooter with chaotic team objectives.",
   "category": "gaming",
   "tags": [],
@@ -1199,7 +1199,7 @@
  {
   "name": "Brawlhalla",
   "slug": "brawlhalla",
-  "by": "",
+  "by": "Blue Mammoth / Ubisoft",
   "blurb": "Platform fighting that runs on almost anything.",
   "category": "gaming",
   "tags": [],
@@ -1215,7 +1215,7 @@
  {
   "name": "Rocket League",
   "slug": "rocket-league",
-  "by": "",
+  "by": "Psyonix / Epic",
   "blurb": "Soccer with rocket cars; still one of the cleanest skill games.",
   "category": "gaming",
   "tags": [
@@ -1233,7 +1233,7 @@
  {
   "name": "Counter-Strike 2",
   "slug": "counter-strike-2",
-  "by": "",
+  "by": "Valve",
   "blurb": "The classic tactical shooter, free for casual and competitive play.",
   "category": "gaming",
   "tags": [
@@ -1251,7 +1251,7 @@
  {
   "name": "Fortnite",
   "slug": "fortnite",
-  "by": "",
+  "by": "Epic Games",
   "blurb": "Battle royale, creative maps, Lego modes, racing, concerts and more.",
   "category": "gaming",
   "tags": [
@@ -1269,7 +1269,7 @@
  {
   "name": "Team Fortress 2",
   "slug": "team-fortress-2",
-  "by": "",
+  "by": "Valve",
   "blurb": "A classic class shooter with personality, chaos, and a long community tail.",
   "category": "gaming",
   "tags": [],
@@ -1285,7 +1285,7 @@
  {
   "name": "0 A.D.",
   "slug": "0-a-d",
-  "by": "",
+  "by": "Wildfire Games",
   "blurb": "A free, open-source RTS of ancient warfare.",
   "category": "gaming",
   "tags": [],
@@ -1301,7 +1301,7 @@
  {
   "name": "The Battle for Wesnoth",
   "slug": "the-battle-for-wesnoth",
-  "by": "",
+  "by": "Community",
   "blurb": "A turn-based fantasy strategy classic with campaigns and multiplayer.",
   "category": "gaming",
   "tags": [],
@@ -1317,7 +1317,7 @@
  {
   "name": "OpenTTD",
   "slug": "openttd",
-  "by": "",
+  "by": "OpenTTD Team",
   "blurb": "Build transport networks and accidentally lose entire evenings.",
   "category": "gaming",
   "tags": [],
@@ -1333,7 +1333,7 @@
  {
   "name": "SuperTuxKart",
   "slug": "supertuxkart",
-  "by": "",
+  "by": "Community",
   "blurb": "A free kart racer with local multiplayer and community charm.",
   "category": "gaming",
   "tags": [],
@@ -1349,7 +1349,7 @@
  {
   "name": "Luanti / Minetest",
   "slug": "luanti-minetest",
-  "by": "",
+  "by": "Community",
   "blurb": "A free voxel sandbox engine for Minecraft-like worlds.",
   "category": "gaming",
   "tags": [],
@@ -1365,7 +1365,7 @@
  {
   "name": "Veloren",
   "slug": "veloren",
-  "by": "",
+  "by": "Community",
   "blurb": "Open-source voxel RPG with exploration and co-op promise.",
   "category": "gaming",
   "tags": [],
@@ -1381,7 +1381,7 @@
  {
   "name": "Freeciv",
   "slug": "freeciv",
-  "by": "",
+  "by": "Community",
   "blurb": "Civilization-style empire building, free and open source.",
   "category": "gaming",
   "tags": [],
@@ -1397,7 +1397,7 @@
  {
   "name": "Endless Sky",
   "slug": "endless-sky",
-  "by": "",
+  "by": "Community",
   "blurb": "A free space trading and combat game inspired by Escape Velocity.",
   "category": "gaming",
   "tags": [],
@@ -1413,7 +1413,7 @@
  {
   "name": "Cave Story",
   "slug": "cave-story",
-  "by": "",
+  "by": "Studio Pixel",
   "blurb": "The freeware action-platformer that helped define indie games.",
   "category": "gaming",
   "tags": [],
@@ -1429,7 +1429,7 @@
  {
   "name": "Doki Doki Literature Club!",
   "slug": "doki-doki-literature-club",
-  "by": "",
+  "by": "Team Salvato",
   "blurb": "A famous free visual novel best played without spoilers.",
   "category": "gaming",
   "tags": [],
@@ -1445,7 +1445,7 @@
  {
   "name": "Deltarune Chapters 1 & 2",
   "slug": "deltarune-chapters-1-2",
-  "by": "",
+  "by": "Toby Fox",
   "blurb": "A free start to Toby Fox’s follow-up universe.",
   "category": "gaming",
   "tags": [],
@@ -1461,7 +1461,7 @@
  {
   "name": "Friday Night Funkin’",
   "slug": "friday-night-funkin",
-  "by": "",
+  "by": "The Funkin Crew",
   "blurb": "A free rhythm-game phenomenon with a huge mod scene.",
   "category": "gaming",
   "tags": [],
@@ -1477,7 +1477,7 @@
  {
   "name": "N Step Steve",
   "slug": "n-step-steve",
-  "by": "",
+  "by": "EPG800",
   "blurb": "A brilliant browser puzzle game about counting steps.",
   "category": "gaming",
   "tags": [],
@@ -1493,7 +1493,7 @@
  {
   "name": "Cookie Clicker Classic",
   "slug": "cookie-clicker-classic",
-  "by": "",
+  "by": "Orteil",
   "blurb": "The incremental-game classic: click cookies, automate, ascend, repeat.",
   "category": "gaming",
   "tags": [],
@@ -1509,7 +1509,7 @@
  {
   "name": "A Dark Room",
   "slug": "a-dark-room",
-  "by": "",
+  "by": "Doublespeak Games",
   "blurb": "Minimal text survival that expands into something stranger.",
   "category": "gaming",
   "tags": [],
@@ -1525,7 +1525,7 @@
  {
   "name": "Townscaper Demo / Web Toy",
   "slug": "townscaper-demo-web-toy",
-  "by": "",
+  "by": "Oskar Stålberg",
   "blurb": "A tiny creative city-building toy in the browser.",
   "category": "gaming",
   "tags": [],
@@ -1541,7 +1541,7 @@
  {
   "name": "Krunker",
   "slug": "krunker",
-  "by": "",
+  "by": "FRVR",
   "blurb": "Fast browser FPS that runs almost instantly.",
   "category": "gaming",
   "tags": [],
@@ -1557,7 +1557,7 @@
  {
   "name": "GeoFS",
   "slug": "geofs",
-  "by": "",
+  "by": "GeoFS",
   "blurb": "A free browser flight simulator with global scenery.",
   "category": "gaming",
   "tags": [],
@@ -1573,7 +1573,7 @@
  {
   "name": "LibreOffice",
   "slug": "libreoffice",
-  "by": "",
+  "by": "The Document Foundation",
   "blurb": "Full desktop office suite for documents, spreadsheets, presentations and databases.",
   "category": "opensource",
   "tags": [
@@ -1591,7 +1591,7 @@
  {
   "name": "ONLYOFFICE Docs",
   "slug": "onlyoffice-docs",
-  "by": "",
+  "by": "Ascensio System SIA",
   "blurb": "Collaborative editors with strong Microsoft Office file compatibility and self-hosting options.",
   "category": "opensource",
   "tags": [],
@@ -1607,7 +1607,7 @@
  {
   "name": "GIMP",
   "slug": "gimp",
-  "by": "",
+  "by": "GIMP Team",
   "blurb": "Powerful free image editor with layers, masks, plugins and scripting.",
   "category": "opensource",
   "tags": [
@@ -1625,7 +1625,7 @@
  {
   "name": "Kdenlive",
   "slug": "kdenlive",
-  "by": "",
+  "by": "KDE Community",
   "blurb": "Non-linear video editor for serious free video workflows.",
   "category": "opensource",
   "tags": [
@@ -1643,7 +1643,7 @@
  {
   "name": "Shotcut",
   "slug": "shotcut",
-  "by": "",
+  "by": "Meltytech",
   "blurb": "Cross-platform open-source video editor with broad format support.",
   "category": "opensource",
   "tags": [],
@@ -1659,7 +1659,7 @@
  {
   "name": "WordPress",
   "slug": "wordpress",
-  "by": "",
+  "by": "WordPress Foundation",
   "blurb": "Open-source CMS powering blogs, business sites, shops and publications.",
   "category": "opensource",
   "tags": [
@@ -1677,7 +1677,7 @@
  {
   "name": "OpenProject",
   "slug": "openproject",
-  "by": "",
+  "by": "OpenProject GmbH",
   "blurb": "Open-source project management with tasks, Gantt, roadmaps and wiki features.",
   "category": "opensource",
   "tags": [],
@@ -1693,7 +1693,7 @@
  {
   "name": "Mattermost",
   "slug": "mattermost",
-  "by": "",
+  "by": "Mattermost",
   "blurb": "Self-hostable team chat and collaboration platform for technical teams.",
   "category": "opensource",
   "tags": [],
@@ -1709,7 +1709,7 @@
  {
   "name": "Jitsi Meet",
   "slug": "jitsi-meet",
-  "by": "",
+  "by": "8x8 / Community",
   "blurb": "Open-source video meetings that can run in the browser or on your own server.",
   "category": "opensource",
   "tags": [],
@@ -1725,7 +1725,7 @@
  {
   "name": "Nextcloud",
   "slug": "nextcloud",
-  "by": "",
+  "by": "Nextcloud GmbH",
   "blurb": "Self-hosted file sync, sharing, calendar, contacts and collaboration suite.",
   "category": "opensource",
   "tags": [
@@ -1743,7 +1743,7 @@
  {
   "name": "EspoCRM",
   "slug": "espocrm",
-  "by": "",
+  "by": "EspoCRM",
   "blurb": "Lightweight open-source CRM for contacts, sales pipelines and business records.",
   "category": "opensource",
   "tags": [],
@@ -1759,7 +1759,7 @@
  {
   "name": "SuiteCRM",
   "slug": "suitecrm",
-  "by": "",
+  "by": "SalesAgility",
   "blurb": "Feature-rich open-source CRM for sales, marketing and service teams.",
   "category": "opensource",
   "tags": [],
@@ -1775,7 +1775,7 @@
  {
   "name": "Joplin",
   "slug": "joplin",
-  "by": "",
+  "by": "Joplin Project",
   "blurb": "Open-source note app with markdown, sync options and end-to-end encryption.",
   "category": "opensource",
   "tags": [],
@@ -1791,7 +1791,7 @@
  {
   "name": "Logseq",
   "slug": "logseq",
-  "by": "",
+  "by": "Logseq",
   "blurb": "Local-first outliner and knowledge graph for linked markdown notes.",
   "category": "opensource",
   "tags": [],
@@ -1807,7 +1807,7 @@
  {
   "name": "Bitwarden",
   "slug": "bitwarden",
-  "by": "",
+  "by": "Bitwarden",
   "blurb": "Open-source password manager with a strong free cloud-synced plan.",
   "category": "opensource",
   "tags": [],
@@ -1823,7 +1823,7 @@
  {
   "name": "KeePassXC",
   "slug": "keepassxc",
-  "by": "",
+  "by": "KeePassXC Team",
   "blurb": "Local encrypted password vault with no account and no subscription.",
   "category": "opensource",
   "tags": [],
@@ -1839,7 +1839,7 @@
  {
   "name": "Linux Mint",
   "slug": "linux-mint",
-  "by": "",
+  "by": "Linux Mint Team",
   "blurb": "Most Windows switchers who want a calm, familiar desktop.",
   "category": "linux",
   "tags": [
@@ -1857,7 +1857,7 @@
  {
   "name": "Ubuntu",
   "slug": "ubuntu",
-  "by": "",
+  "by": "Canonical",
   "blurb": "Beginners who want the most tutorials, vendor support and predictable releases.",
   "category": "linux",
   "tags": [
@@ -1875,7 +1875,7 @@
  {
   "name": "Fedora Workstation",
   "slug": "fedora-workstation",
-  "by": "",
+  "by": "Fedora Project",
   "blurb": "Curious beginners who want a clean, current Linux desktop with strong upstream defaults.",
   "category": "linux",
   "tags": [],
@@ -1891,7 +1891,7 @@
  {
   "name": "Zorin OS",
   "slug": "zorin-os",
-  "by": "",
+  "by": "Zorin Group",
   "blurb": "Windows refugees who care about polish and a low-anxiety first boot.",
   "category": "linux",
   "tags": [],
@@ -1907,7 +1907,7 @@
  {
   "name": "Pop!_OS",
   "slug": "pop-os",
-  "by": "",
+  "by": "System76",
   "blurb": "Laptop users, developers, creators and NVIDIA GPU owners.",
   "category": "linux",
   "tags": [],
@@ -1923,7 +1923,7 @@
  {
   "name": "elementary OS",
   "slug": "elementary-os",
-  "by": "",
+  "by": "elementary, Inc.",
   "blurb": "Mac switchers who value visual consistency and simplicity.",
   "category": "linux",
   "tags": [],
@@ -1939,7 +1939,7 @@
  {
   "name": "KDE neon",
   "slug": "kde-neon",
-  "by": "",
+  "by": "KDE Community",
   "blurb": "Beginners who want a Windows-like layout with more customization power.",
   "category": "linux",
   "tags": [],
@@ -1955,7 +1955,7 @@
  {
   "name": "MX Linux",
   "slug": "mx-linux",
-  "by": "",
+  "by": "MX Linux Community",
   "blurb": "Older laptops, low-resource desktops and people who value stability.",
   "category": "linux",
   "tags": [],
@@ -1971,7 +1971,7 @@
  {
   "name": "Linux Lite",
   "slug": "linux-lite",
-  "by": "",
+  "by": "Linux Lite Team",
   "blurb": "Windows users reviving an older laptop with minimum drama.",
   "category": "linux",
   "tags": [],
@@ -1987,7 +1987,7 @@
  {
   "name": "Nobara",
   "slug": "nobara",
-  "by": "",
+  "by": "Nobara Project",
   "blurb": "Gamers who want Linux gaming tweaks without assembling everything manually.",
   "category": "linux",
   "tags": [],
@@ -2003,7 +2003,7 @@
  {
   "name": "itch.io Free Games",
   "slug": "itch-io-free-games",
-  "by": "",
+  "by": "Indie creators",
   "blurb": "A living shelf of experimental free indie games.",
   "category": "gaming",
   "tags": [],
@@ -2019,7 +2019,7 @@
  {
   "name": "Krita",
   "slug": "krita",
-  "by": "",
+  "by": "Official project",
   "blurb": "Illustration, comics, and digital painting.",
   "category": "image",
   "tags": [
@@ -2037,7 +2037,7 @@
  {
   "name": "Inkscape",
   "slug": "inkscape",
-  "by": "",
+  "by": "Official project",
   "blurb": "Logos, icons, diagrams, and scalable illustration.",
   "category": "image",
   "tags": [],
@@ -2053,7 +2053,7 @@
  {
   "name": "Photopea",
   "slug": "photopea",
-  "by": "",
+  "by": "Official project",
   "blurb": "PSD editing in a browser with nothing to install.",
   "category": "image",
   "tags": [],
@@ -2069,7 +2069,7 @@
  {
   "name": "Canva Free",
   "slug": "canva-free",
-  "by": "",
+  "by": "Official project",
   "blurb": "Fast social graphics, presentations, and marketing designs.",
   "category": "image",
   "tags": [
@@ -2087,7 +2087,7 @@
  {
   "name": "Penpot",
   "slug": "penpot",
-  "by": "",
+  "by": "Official project",
   "blurb": "Open-standard interface design and prototyping.",
   "category": "image",
   "tags": [],
@@ -2103,7 +2103,7 @@
  {
   "name": "darktable",
   "slug": "darktable",
-  "by": "",
+  "by": "Official project",
   "blurb": "Non-destructive RAW development and photo management.",
   "category": "image",
   "tags": [],
@@ -2119,7 +2119,7 @@
  {
   "name": "Scribus",
   "slug": "scribus",
-  "by": "",
+  "by": "Official project",
   "blurb": "Print-ready brochures, magazines, and PDFs.",
   "category": "image",
   "tags": [],
@@ -2135,7 +2135,7 @@
  {
   "name": "Paint.NET",
   "slug": "paint-net",
-  "by": "",
+  "by": "Official project",
   "blurb": "Simple, fast photo editing and retouching for Windows.",
   "category": "image",
   "tags": [
@@ -2153,7 +2153,7 @@
  {
   "name": "Pixlr",
   "slug": "pixlr",
-  "by": "",
+  "by": "Official project",
   "blurb": "Browser photo editor with AI cutout and retouch tools.",
   "category": "image",
   "tags": [
@@ -2171,7 +2171,7 @@
  {
   "name": "Photoscape X",
   "slug": "photoscape-x",
-  "by": "",
+  "by": "Official project",
   "blurb": "Batch photo editing, collages, and quick fixes.",
   "category": "image",
   "tags": [
@@ -2189,7 +2189,7 @@
  {
   "name": "DaVinci Resolve",
   "slug": "davinci-resolve",
-  "by": "",
+  "by": "Official project",
   "blurb": "Editing, color, audio, and VFX in one application.",
   "category": "video",
   "tags": [
@@ -2207,7 +2207,7 @@
  {
   "name": "OpenShot",
   "slug": "openshot",
-  "by": "",
+  "by": "Official project",
   "blurb": "Simple cuts, titles, and home-video projects.",
   "category": "video",
   "tags": [],
@@ -2223,7 +2223,7 @@
  {
   "name": "Blender Video Sequence Editor",
   "slug": "blender-video-sequence-editor",
-  "by": "",
+  "by": "Official project",
   "blurb": "Video editing, animation, compositing, and 3D.",
   "category": "video",
   "tags": [],
@@ -2239,7 +2239,7 @@
  {
   "name": "Flowblade",
   "slug": "flowblade",
-  "by": "",
+  "by": "Official project",
   "blurb": "Focused multi-track video editing on Linux.",
   "category": "video",
   "tags": [],
@@ -2255,7 +2255,7 @@
  {
   "name": "Olive",
   "slug": "olive",
-  "by": "",
+  "by": "Official project",
   "blurb": "Modern experimental open-source video editing.",
   "category": "video",
   "tags": [],
@@ -2271,7 +2271,7 @@
  {
   "name": "LosslessCut",
   "slug": "losslesscut",
-  "by": "",
+  "by": "Official project",
   "blurb": "Fast cuts, splits, and joins without re-encoding.",
   "category": "video",
   "tags": [],
