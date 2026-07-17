@@ -74,15 +74,7 @@
     html { scroll-behavior: smooth; }
     body { font-family: var(--font); font-size: 15px; line-height: 1.6; color: var(--text); background: var(--bg); -webkit-font-smoothing: antialiased; }
     a { color: inherit; text-decoration: none; }
-    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
-
-    body::before {
-      content: '';
-      position: fixed; inset: 0;
-      background-image: linear-gradient(rgba(255,255,255,.015) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.015) 1px, transparent 1px);
-      background-size: 40px 40px;
-      pointer-events: none; z-index: 0;
-    }
+    .wrap { max-width: 1320px; margin: 0 auto; padding: 0 24px; }
 
     /* ── Nav ── */
     nav {
@@ -100,9 +92,7 @@
     .nav-brand .dot {
       width: 7px; height: 7px; border-radius: 99px;
       background: var(--green); box-shadow: 0 0 8px var(--green);
-      animation: pulse 2s ease-in-out infinite;
     }
-    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .4; } }
     .nav-links { display: flex; align-items: center; gap: 24px; list-style: none; }
     .nav-links a { font-size: .78rem; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--text-3); transition: color .15s; }
     .nav-links a:hover { color: var(--text); }
@@ -116,20 +106,7 @@
 
     /* ── Hero ── */
     .hero {
-      position: relative; padding: 96px 0 72px; text-align: center; overflow: hidden; z-index: 1;
-    }
-    .hero::after {
-      content: ''; position: absolute; top: -80px; left: 50%; transform: translateX(-50%);
-      width: 700px; height: 450px;
-      background: radial-gradient(ellipse at center, rgba(124,92,246,.16) 0%, transparent 70%);
-      pointer-events: none;
-    }
-    .hero-badge {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 5px 14px; background: var(--accent-lt);
-      border: 1px solid rgba(124,92,246,.3); border-radius: 99px;
-      font-size: .7rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
-      color: var(--accent); margin-bottom: 28px;
+      padding: 80px 0 56px; text-align: center;
     }
     .hero h1 {
       font-size: clamp(2.4rem, 6vw, 4.5rem); font-weight: 900; letter-spacing: -.03em; line-height: 1.05;
@@ -154,11 +131,6 @@
       transition: border-color .15s, color .15s;
     }
     .btn-secondary:hover { border-color: var(--accent); color: var(--text); }
-    .hero-stats { display: flex; align-items: center; justify-content: center; gap: 40px; margin-top: 56px; flex-wrap: wrap; }
-    .stat { text-align: center; }
-    .stat-num { font-size: 1.8rem; font-weight: 900; color: var(--text); letter-spacing: -.02em; }
-    .stat-label { font-size: .75rem; color: var(--text-3); text-transform: uppercase; letter-spacing: .08em; margin-top: 2px; }
-    .stat-divider { width: 1px; height: 40px; background: var(--border-2); }
 
     /* ── AdSense ── */
     .ad-leaderboard { text-align: center; padding: 24px 0; position: relative; z-index: 1; }
@@ -183,12 +155,7 @@
     .cat-icon { font-size: 1.8rem; line-height: 1; }
     .cat-name { font-weight: 700; font-size: .95rem; }
     .cat-count { font-size: .78rem; color: var(--text-3); }
-    .cat-card.live { border-color: rgba(124,92,246,.25); }
-    .cat-live-badge {
-      display: inline-flex; align-items: center; gap: 5px;
-      font-size: .65rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
-      color: var(--green); margin-top: auto;
-    }
+    .cat-live-badge { display: none; }
     .led { display: inline-block; width: 6px; height: 6px; border-radius: 99px; }
     .led-green { background: var(--green); box-shadow: 0 0 6px var(--green); }
     .led-amber { background: var(--amber); }
@@ -218,23 +185,12 @@
       border-radius: var(--radius-lg); transition: border-color .15s, transform .15s;
     }
     .dir-card:hover { border-color: var(--accent); transform: translateY(-2px); }
-    .dir-card { position: relative; padding-right: 34px; }
-    .dir-card::after { content: '›'; position: absolute; top: 18px; right: 16px; font-size: 1.1rem; color: var(--text-3); transition: transform .15s; }
-    .dir-card.expanded::after { transform: rotate(90deg); }
     .dir-card-top { display: flex; flex-direction: column; gap: 2px; }
     .dir-name { font-weight: 700; font-size: .95rem; }
     .dir-by { font-size: .72rem; color: var(--text-3); }
-    .dir-desc, .dir-badges { display: none; }
-    .dir-card.expanded .dir-desc { display: block; font-size: .82rem; color: var(--text-2); line-height: 1.5; margin-top: 8px; }
-    .dir-card.expanded .dir-badges { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
+    .dir-desc { font-size: .82rem; color: var(--text-2); line-height: 1.5; }
+    .dir-badges { display: flex; flex-wrap: wrap; gap: 5px; }
     .dir-badge { font-size: .68rem; padding: 2px 9px; background: var(--bg-3); border: 1px solid var(--border); border-radius: 99px; color: var(--text-3); }
-    .dir-guide { display: none; }
-    .dir-card.expanded .dir-guide {
-      display: inline-flex; align-items: center; gap: 4px; margin-top: 10px; width: fit-content;
-      font-size: .74rem; font-weight: 700; color: var(--accent); cursor: pointer;
-      padding: 4px 11px; background: var(--accent-lt); border: 1px solid rgba(124,92,246,.3); border-radius: 99px;
-    }
-    .dir-card.expanded .dir-guide:hover { background: var(--accent); color: #fff; }
     .dir-empty { text-align: center; padding: 60px 0; color: var(--text-3); display: none; }
     .dir-count { color: var(--text-2); font-size: .85rem; margin-bottom: 4px; }
 
@@ -242,17 +198,8 @@
     .trust-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
     .trust-card { padding: 24px; background: var(--bg-2); border: 1px solid var(--border); border-radius: var(--radius-lg); }
     .trust-icon { font-size: 1.6rem; margin-bottom: 12px; }
-    .trust-card h4 { font-weight: 700; margin-bottom: 6px; }
+    .trust-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 6px; }
     .trust-card p { font-size: .85rem; color: var(--text-2); }
-
-    /* ── Newsletter ── */
-    .newsletter-box {
-      background: linear-gradient(135deg, rgba(124,92,246,.1), rgba(124,92,246,.04));
-      border: 1px solid rgba(124,92,246,.25); border-radius: var(--radius-lg);
-      padding: 48px; text-align: center;
-    }
-    .newsletter-box h3 { font-size: 1.5rem; font-weight: 800; margin-bottom: 10px; }
-    .newsletter-box p { color: var(--text-2); margin-bottom: 28px; }
 
     /* ── Footer ── */
     footer { padding: 40px 0; border-top: 1px solid var(--border); position: relative; z-index: 1; }
@@ -289,8 +236,6 @@
       .nav-links { display: none; }
       .hamburger { display: flex; }
       .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 56px; left: 0; right: 0; background: var(--bg-2); border-bottom: 1px solid var(--border); padding: 16px 24px; gap: 16px; z-index: 99; }
-      .hero-stats { gap: 24px; }
-      .stat-divider { display: none; }
     }
   </style>
   <link rel="alternate" type="application/rss+xml" href="https://www.qutaifan.com/feed.xml" />
@@ -322,33 +267,10 @@
 <!-- ── Hero ── -->
 <section class="hero">
   <div class="wrap">
-    <div class="hero-badge">
-      <span class="led led-green"></span>
-      Independent reviews — no paid placements
-    </div>
     <h1>Stop Paying for Software<br>You Can Get Free</h1>
-    <p class="hero-sub">
-      Free AI tools, software, games, and open-source alternatives — genuinely free, hands-on tested, no credit card, no trials disguised as "free."
-    </p>
+    <p class="hero-sub">136 genuinely free tools, hands-on tested. No credit card, no trials disguised as "free."</p>
     <div class="hero-actions">
-      <a href="/best-free-ai-tools-2026" class="btn-primary">Browse Free AI Tools →</a>
-      <a href="/best-free-password-managers-2026" class="btn-secondary">Free Password Managers</a>
-    </div>
-    <div class="hero-stats">
-      <div class="stat">
-        <div class="stat-num">136</div>
-        <div class="stat-label">Free Tools Tested</div>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat">
-        <div class="stat-num">8</div>
-        <div class="stat-label">In-Depth Guides</div>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat">
-        <div class="stat-num">Jul 2026</div>
-        <div class="stat-label">Last Updated</div>
-      </div>
+      <a href="#directory" class="btn-primary">Browse the Directory ↓</a>
     </div>
   </div>
 </section>
@@ -356,21 +278,22 @@
 <div class="section-divider"></div>
 
 <!-- ── Unified Directory ── -->
-<section class="section" style="padding-bottom:24px;">
+<section class="section" id="directory" style="padding-bottom:24px;">
   <div class="wrap">
-    <div class="section-label">The Directory</div>
-    <div class="section-title">Every Free Tool, In One Place</div>
-    <p class="section-sub">Search or filter by category. Every tool below is genuinely free, open-source, or has a real usable free tier — no paid trials disguised as "free."</p>
+    <h2 class="section-title">Every Free Tool, In One Place</h2>
+    <p class="section-sub">Search or filter by category.</p>
   </div>
 </section>
 
 <div class="dir-search-wrap">
   <div class="wrap">
-    <input type="text" class="dir-search" id="dir-search" placeholder="Search 136 free tools... (e.g. image generator, password manager, coding)" />
+    <input type="text" class="dir-search" id="dir-search" placeholder="Search 140 free tools... (e.g. image generator, password manager, coding)" />
     <div class="filter-tabs" id="filter-tabs">
-      <button class="filter-tab active" data-filter="all">All (136)</button>
+      <button class="filter-tab active" data-filter="all">All (140)</button>
+      <button class="filter-tab" data-filter="popular">🔥 Popular</button>
+      <button class="filter-tab" data-filter="new">🆕 New</button>
       <button class="filter-tab" data-filter="chatbots">💬 Chatbots (12)</button>
-      <button class="filter-tab" data-filter="image">🎨 Image (16)</button>
+      <button class="filter-tab" data-filter="image">🎨 Image (19)</button>
       <button class="filter-tab" data-filter="video">🎬 Video (12)</button>
       <button class="filter-tab" data-filter="audio">🎵 Audio (6)</button>
       <button class="filter-tab" data-filter="code">💻 Code (6)</button>
@@ -378,7 +301,7 @@
       <button class="filter-tab" data-filter="models">🧠 Local Models (8)</button>
       <button class="filter-tab" data-filter="research">🔬 Research (4)</button>
       <button class="filter-tab" data-filter="dev">🛠️ Dev Tools (6)</button>
-      <button class="filter-tab" data-filter="security">🔑 Security (4)</button>
+      <button class="filter-tab" data-filter="security">🔑 Security (5)</button>
       <button class="filter-tab" data-filter="gaming">🎮 Gaming (29)</button>
       <button class="filter-tab" data-filter="opensource">🌐 Open Source (16)</button>
       <button class="filter-tab" data-filter="linux">🐧 Linux (10)</button>
@@ -388,9 +311,9 @@
 
 <section class="section" style="padding-top:24px;">
   <div class="wrap">
-    <div class="dir-count" id="dir-count">Showing 136 tools</div>
+    <div class="dir-count" id="dir-count">Showing 140 tools</div>
     <div class="dir-grid" id="dir-grid">
-      <a href="https://chat.openai.com" class="dir-card" data-cat="chatbots" target="_blank" rel="nofollow noopener">
+      <a href="https://chat.openai.com" class="dir-card" data-cat="chatbots" data-tag="popular" target="_blank" rel="nofollow noopener">
         <div class="dir-card-top">
           <div class="dir-name">ChatGPT</div>
           <div class="dir-by">by OpenAI</div>
@@ -398,7 +321,7 @@
         <p class="dir-desc">A widely used AI assistant.</p>
         <div class="dir-badges"><span class="dir-badge">Free Tier</span><span class="dir-badge">GPT-4o</span></div>
       </a>
-      <a href="https://claude.ai" class="dir-card" data-cat="chatbots" target="_blank" rel="nofollow noopener">
+      <a href="https://claude.ai" class="dir-card" data-cat="chatbots" data-tag="popular" target="_blank" rel="nofollow noopener">
         <div class="dir-card-top">
           <div class="dir-name">Claude</div>
           <div class="dir-by">by Anthropic</div>
@@ -406,7 +329,7 @@
         <p class="dir-desc">Exceptional at long documents, coding, and nuanced reasoning.</p>
         <div class="dir-badges"><span class="dir-badge">Free Tier</span><span class="dir-badge">Claude Sonnet 4</span></div>
       </a>
-      <a href="https://gemini.google.com" class="dir-card" data-cat="chatbots" target="_blank" rel="nofollow noopener">
+      <a href="https://gemini.google.com" class="dir-card" data-cat="chatbots" data-tag="popular" target="_blank" rel="nofollow noopener">
         <div class="dir-card-top">
           <div class="dir-name">Gemini</div>
           <div class="dir-by">by Google</div>
@@ -414,7 +337,7 @@
         <p class="dir-desc">Google&#x27;s flagship AI — free with a Google account.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Google Login</span></div>
       </a>
-      <a href="https://perplexity.ai" class="dir-card" data-cat="chatbots" target="_blank" rel="nofollow noopener">
+      <a href="https://perplexity.ai" class="dir-card" data-cat="chatbots" data-tag="popular" target="_blank" rel="nofollow noopener">
         <div class="dir-card-top">
           <div class="dir-name">Perplexity AI</div>
           <div class="dir-by">by Perplexity</div>
@@ -446,7 +369,7 @@
         <p class="dir-desc">Open-source ChatGPT alternative running the best open models.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Open Source</span></div>
       </a>
-      <a href="https://ollama.ai" class="dir-card" data-cat="chatbots" target="_blank" rel="nofollow noopener">
+      <a href="https://ollama.ai" class="dir-card" data-cat="chatbots" data-tag="popular" target="_blank" rel="nofollow noopener">
         <div class="dir-card-top">
           <div class="dir-name">Ollama</div>
           <div class="dir-by">by Ollama</div>
@@ -486,7 +409,7 @@
         <p class="dir-desc">AI search engine with free access to multiple models.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">No Signup</span></div>
       </a>
-      <a href="https://stability.ai/stable-diffusion" class="dir-card" data-cat="image" target="_blank" rel="nofollow noopener">
+      <a href="https://stability.ai/stable-diffusion" class="dir-card" data-cat="image" data-tag="popular" target="_blank" rel="nofollow noopener">
         <div class="dir-card-top">
           <div class="dir-name">Stable Diffusion</div>
           <div class="dir-by">by Stability AI</div>
@@ -606,7 +529,7 @@
         <p class="dir-desc">Simple text-to-video with a clean interface.</p>
         <div class="dir-badges"><span class="dir-badge">Free Credits</span></div>
       </a>
-      <a href="https://suno.com" class="dir-card" data-cat="audio" target="_blank" rel="nofollow noopener">
+      <a href="https://suno.com" class="dir-card" data-cat="audio" data-tag="popular" target="_blank" rel="nofollow noopener">
         <div class="dir-card-top">
           <div class="dir-name">Suno</div>
           <div class="dir-by">by Suno AI</div>
@@ -654,7 +577,7 @@
         <p class="dir-desc">The most realistic AI voice synthesis available.</p>
         <div class="dir-badges"><span class="dir-badge">Free Tier</span><span class="dir-badge">Most Realistic</span></div>
       </a>
-      <a href="https://github.com/features/copilot" class="dir-card" data-cat="code" target="_blank" rel="nofollow noopener">
+      <a href="https://github.com/features/copilot" class="dir-card" data-cat="code" data-tag="popular" target="_blank" rel="nofollow noopener">
         <div class="dir-card-top">
           <div class="dir-name">GitHub Copilot</div>
           <div class="dir-by">by GitHub / Microsoft</div>
@@ -894,7 +817,7 @@
         <p class="dir-desc">Free API access to 50+ open-source models including Llama 3, Mixtral, DBRX.</p>
         <div class="dir-badges"><span class="dir-badge">$1 Free Credit</span><span class="dir-badge">API</span></div>
       </a>
-      <a href="https://bitwarden.com" class="dir-card" data-cat="security" target="_blank" rel="nofollow noopener">
+      <a href="https://bitwarden.com" class="dir-card" data-cat="security" data-tag="popular" target="_blank" rel="nofollow noopener">
         <div class="dir-card-top">
           <div class="dir-name">Bitwarden</div>
           <div class="dir-by">Open Source</div>
@@ -902,7 +825,7 @@
         <p class="dir-desc">Unlimited passwords and devices on the free plan, zero-knowledge encryption.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Open Source</span></div>
       </a>
-      <a href="https://keepassxc.org" class="dir-card" data-cat="security" target="_blank" rel="nofollow noopener">
+      <a href="https://keepassxc.org" class="dir-card" data-cat="security" data-tag="popular" target="_blank" rel="nofollow noopener">
         <div class="dir-card-top">
           <div class="dir-name">KeePassXC</div>
           <div class="dir-by">Open Source</div>
@@ -926,6 +849,14 @@
         <p class="dir-desc">Built into Chrome and Android — free, zero setup, passkey support.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">No Signup</span></div>
       </a>
+      <a href="https://www.apple.com/" class="dir-card" data-cat="security" data-tag="new" target="_blank" rel="nofollow noopener">
+        <div class="dir-card-top">
+          <div class="dir-name">Apple Passwords</div>
+          <div class="dir-by">Apple</div>
+        </div>
+        <p class="dir-desc">Built into iPhone, iPad, and Mac — free, iCloud sync, passkey support.</p>
+        <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">No Signup</span></div>
+      </a>
       <a href="https://www.deepl.com/write" class="dir-card" data-cat="writing" target="_blank" rel="nofollow noopener">
         <div class="dir-card-top">
           <div class="dir-name">DeepL Write</div>
@@ -934,7 +865,7 @@
         <p class="dir-desc">Free tone and grammar polishing, especially strong for non-native speakers.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">No Signup</span></div>
       </a>
-      <a href="https://store.steampowered.com/app/570/Dota_2/" class="dir-card" data-cat="gaming" target="_blank" rel="nofollow noopener">
+      <a href="https://store.steampowered.com/app/570/Dota_2/" class="dir-card" data-cat="gaming" data-tag="popular" target="_blank" rel="nofollow noopener">
         <div class="dir-card-top"><div class="dir-name">Dota 2</div><div class="dir-by">Valve</div></div>
         <p class="dir-desc">A full competitive MOBA where every hero is available without paying.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Fair F2P</span></div>
@@ -964,17 +895,17 @@
         <p class="dir-desc">Platform fighting that runs on almost anything.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Fighting</span></div>
       </a>
-      <a href="https://www.rocketleague.com/" class="dir-card" data-cat="gaming" target="_blank" rel="nofollow noopener">
+      <a href="https://www.rocketleague.com/" class="dir-card" data-cat="gaming" data-tag="popular" target="_blank" rel="nofollow noopener">
         <div class="dir-card-top"><div class="dir-name">Rocket League</div><div class="dir-by">Psyonix / Epic</div></div>
         <p class="dir-desc">Soccer with rocket cars; still one of the cleanest skill games.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Sports</span></div>
       </a>
-      <a href="https://store.steampowered.com/app/730/CounterStrike_2/" class="dir-card" data-cat="gaming" target="_blank" rel="nofollow noopener">
+      <a href="https://store.steampowered.com/app/730/CounterStrike_2/" class="dir-card" data-cat="gaming" data-tag="popular" target="_blank" rel="nofollow noopener">
         <div class="dir-card-top"><div class="dir-name">Counter-Strike 2</div><div class="dir-by">Valve</div></div>
         <p class="dir-desc">The classic tactical shooter, free for casual and competitive play.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Tactical</span></div>
       </a>
-      <a href="https://www.fortnite.com/" class="dir-card" data-cat="gaming" target="_blank" rel="nofollow noopener">
+      <a href="https://www.fortnite.com/" class="dir-card" data-cat="gaming" data-tag="popular" target="_blank" rel="nofollow noopener">
         <div class="dir-card-top"><div class="dir-name">Fortnite</div><div class="dir-by">Epic Games</div></div>
         <p class="dir-desc">Battle royale, creative maps, Lego modes, racing, concerts and more.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Battle Royale</span></div>
@@ -1074,7 +1005,7 @@
         <p class="dir-desc">A free browser flight simulator with global scenery.</p>
         <div class="dir-badges"><span class="dir-badge">Browser</span><span class="dir-badge">Flight Sim</span></div>
       </a>
-      <a href="https://www.libreoffice.org/" class="dir-card" data-cat="opensource" target="_blank" rel="nofollow noopener">
+      <a href="https://www.libreoffice.org/" class="dir-card" data-cat="opensource" data-tag="popular" target="_blank" rel="nofollow noopener">
         <div class="dir-card-top"><div class="dir-name">LibreOffice</div><div class="dir-by">The Document Foundation</div></div>
         <p class="dir-desc">Full desktop office suite for documents, spreadsheets, presentations and databases.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Office</span></div>
@@ -1084,12 +1015,12 @@
         <p class="dir-desc">Collaborative editors with strong Microsoft Office file compatibility and self-hosting options.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Office</span></div>
       </a>
-      <a href="https://www.gimp.org/" class="dir-card" data-cat="opensource" target="_blank" rel="nofollow noopener">
+      <a href="https://www.gimp.org/" class="dir-card" data-cat="opensource" data-tag="popular" target="_blank" rel="nofollow noopener">
         <div class="dir-card-top"><div class="dir-name">GIMP</div><div class="dir-by">GIMP Team</div></div>
         <p class="dir-desc">Powerful free image editor with layers, masks, plugins and scripting.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Design</span></div>
       </a>
-      <a href="https://kdenlive.org/" class="dir-card" data-cat="opensource" target="_blank" rel="nofollow noopener">
+      <a href="https://kdenlive.org/" class="dir-card" data-cat="opensource" data-tag="popular" target="_blank" rel="nofollow noopener">
         <div class="dir-card-top"><div class="dir-name">Kdenlive</div><div class="dir-by">KDE Community</div></div>
         <p class="dir-desc">Non-linear video editor for serious free video workflows.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Video</span></div>
@@ -1099,7 +1030,7 @@
         <p class="dir-desc">Cross-platform open-source video editor with broad format support.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Video</span></div>
       </a>
-      <a href="https://wordpress.org/" class="dir-card" data-cat="opensource" target="_blank" rel="nofollow noopener">
+      <a href="https://wordpress.org/" class="dir-card" data-cat="opensource" data-tag="popular" target="_blank" rel="nofollow noopener">
         <div class="dir-card-top"><div class="dir-name">WordPress</div><div class="dir-by">WordPress Foundation</div></div>
         <p class="dir-desc">Open-source CMS powering blogs, business sites, shops and publications.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">CMS</span></div>
@@ -1119,7 +1050,7 @@
         <p class="dir-desc">Open-source video meetings that can run in the browser or on your own server.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Meetings</span></div>
       </a>
-      <a href="https://nextcloud.com/" class="dir-card" data-cat="opensource" target="_blank" rel="nofollow noopener">
+      <a href="https://nextcloud.com/" class="dir-card" data-cat="opensource" data-tag="popular" target="_blank" rel="nofollow noopener">
         <div class="dir-card-top"><div class="dir-name">Nextcloud</div><div class="dir-by">Nextcloud GmbH</div></div>
         <p class="dir-desc">Self-hosted file sync, sharing, calendar, contacts and collaboration suite.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Cloud</span></div>
@@ -1154,12 +1085,12 @@
         <p class="dir-desc">Local encrypted password vault with no account and no subscription.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Security</span></div>
       </a>
-      <a href="https://linuxmint.com/" class="dir-card" data-cat="linux" target="_blank" rel="nofollow noopener">
+      <a href="https://linuxmint.com/" class="dir-card" data-cat="linux" data-tag="popular" target="_blank" rel="nofollow noopener">
         <div class="dir-card-top"><div class="dir-name">Linux Mint</div><div class="dir-by">Linux Mint Team</div></div>
         <p class="dir-desc">Most Windows switchers who want a calm, familiar desktop.</p>
         <div class="dir-badges"><span class="dir-badge">Best Overall</span><span class="dir-badge">Windows-like</span></div>
       </a>
-      <a href="https://ubuntu.com/desktop" class="dir-card" data-cat="linux" target="_blank" rel="nofollow noopener">
+      <a href="https://ubuntu.com/desktop" class="dir-card" data-cat="linux" data-tag="popular" target="_blank" rel="nofollow noopener">
         <div class="dir-card-top"><div class="dir-name">Ubuntu</div><div class="dir-by">Canonical</div></div>
         <p class="dir-desc">Beginners who want the most tutorials, vendor support and predictable releases.</p>
         <div class="dir-badges"><span class="dir-badge">Largest Ecosystem</span><span class="dir-badge">LTS</span></div>
@@ -1209,14 +1140,17 @@
         <p class="dir-desc">A living shelf of experimental free indie games.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Indie</span></div>
       </a>
-      <a href="https://krita.org/" class="dir-card" data-cat="image" target="_blank" rel="nofollow noopener"><div class="dir-card-top"><div class="dir-name">Krita</div><div class="dir-by">Official project</div></div><p class="dir-desc">Illustration, comics, and digital painting.</p><div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Brush engines</span></div></a>
+      <a href="https://krita.org/" class="dir-card" data-cat="image" data-tag="popular" target="_blank" rel="nofollow noopener"><div class="dir-card-top"><div class="dir-name">Krita</div><div class="dir-by">Official project</div></div><p class="dir-desc">Illustration, comics, and digital painting.</p><div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Brush engines</span></div></a>
       <a href="https://inkscape.org/" class="dir-card" data-cat="image" target="_blank" rel="nofollow noopener"><div class="dir-card-top"><div class="dir-name">Inkscape</div><div class="dir-by">Official project</div></div><p class="dir-desc">Logos, icons, diagrams, and scalable illustration.</p><div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">SVG</span></div></a>
       <a href="https://www.photopea.com/" class="dir-card" data-cat="image" target="_blank" rel="nofollow noopener"><div class="dir-card-top"><div class="dir-name">Photopea</div><div class="dir-by">Official project</div></div><p class="dir-desc">PSD editing in a browser with nothing to install.</p><div class="dir-badges"><span class="dir-badge">Free Tier</span><span class="dir-badge">PSD</span></div></a>
-      <a href="https://www.canva.com/pricing/" class="dir-card" data-cat="image" target="_blank" rel="nofollow noopener"><div class="dir-card-top"><div class="dir-name">Canva Free</div><div class="dir-by">Official project</div></div><p class="dir-desc">Fast social graphics, presentations, and marketing designs.</p><div class="dir-badges"><span class="dir-badge">Free Tier</span><span class="dir-badge">Templates</span></div></a>
+      <a href="https://www.canva.com/pricing/" class="dir-card" data-cat="image" data-tag="popular" target="_blank" rel="nofollow noopener"><div class="dir-card-top"><div class="dir-name">Canva Free</div><div class="dir-by">Official project</div></div><p class="dir-desc">Fast social graphics, presentations, and marketing designs.</p><div class="dir-badges"><span class="dir-badge">Free Tier</span><span class="dir-badge">Templates</span></div></a>
       <a href="https://penpot.app/" class="dir-card" data-cat="image" target="_blank" rel="nofollow noopener"><div class="dir-card-top"><div class="dir-name">Penpot</div><div class="dir-by">Official project</div></div><p class="dir-desc">Open-standard interface design and prototyping.</p><div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">UI Design</span></div></a>
       <a href="https://www.darktable.org/" class="dir-card" data-cat="image" target="_blank" rel="nofollow noopener"><div class="dir-card-top"><div class="dir-name">darktable</div><div class="dir-by">Official project</div></div><p class="dir-desc">Non-destructive RAW development and photo management.</p><div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">RAW</span></div></a>
       <a href="https://www.scribus.net/" class="dir-card" data-cat="image" target="_blank" rel="nofollow noopener"><div class="dir-card-top"><div class="dir-name">Scribus</div><div class="dir-by">Official project</div></div><p class="dir-desc">Print-ready brochures, magazines, and PDFs.</p><div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Publishing</span></div></a>
-      <a href="https://www.blackmagicdesign.com/products/davinciresolve" class="dir-card" data-cat="video" target="_blank" rel="nofollow noopener"><div class="dir-card-top"><div class="dir-name">DaVinci Resolve</div><div class="dir-by">Official project</div></div><p class="dir-desc">Editing, color, audio, and VFX in one application.</p><div class="dir-badges"><span class="dir-badge">Free Tier</span><span class="dir-badge">Pro Editing</span></div></a>
+      <a href="https://www.getpaint.net/" class="dir-card" data-cat="image" data-tag="new" target="_blank" rel="nofollow noopener"><div class="dir-card-top"><div class="dir-name">Paint.NET</div><div class="dir-by">Official project</div></div><p class="dir-desc">Simple, fast photo editing and retouching for Windows.</p><div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Windows</span></div></a>
+      <a href="https://pixlr.com/" class="dir-card" data-cat="image" data-tag="new" target="_blank" rel="nofollow noopener"><div class="dir-card-top"><div class="dir-name">Pixlr</div><div class="dir-by">Official project</div></div><p class="dir-desc">Browser photo editor with AI cutout and retouch tools.</p><div class="dir-badges"><span class="dir-badge">Free Tier</span><span class="dir-badge">Browser</span></div></a>
+      <a href="https://x.photoscape.org/" class="dir-card" data-cat="image" data-tag="new" target="_blank" rel="nofollow noopener"><div class="dir-card-top"><div class="dir-name">Photoscape X</div><div class="dir-by">Official project</div></div><p class="dir-desc">Batch photo editing, collages, and quick fixes.</p><div class="dir-badges"><span class="dir-badge">Free Tier</span><span class="dir-badge">Batch Editing</span></div></a>
+      <a href="https://www.blackmagicdesign.com/products/davinciresolve" class="dir-card" data-cat="video" data-tag="popular" target="_blank" rel="nofollow noopener"><div class="dir-card-top"><div class="dir-name">DaVinci Resolve</div><div class="dir-by">Official project</div></div><p class="dir-desc">Editing, color, audio, and VFX in one application.</p><div class="dir-badges"><span class="dir-badge">Free Tier</span><span class="dir-badge">Pro Editing</span></div></a>
       <a href="https://www.openshot.org/" class="dir-card" data-cat="video" target="_blank" rel="nofollow noopener"><div class="dir-card-top"><div class="dir-name">OpenShot</div><div class="dir-by">Official project</div></div><p class="dir-desc">Simple cuts, titles, and home-video projects.</p><div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Beginner</span></div></a>
       <a href="https://www.blender.org/" class="dir-card" data-cat="video" target="_blank" rel="nofollow noopener"><div class="dir-card-top"><div class="dir-name">Blender Video Sequence Editor</div><div class="dir-by">Official project</div></div><p class="dir-desc">Video editing, animation, compositing, and 3D.</p><div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">3D + Video</span></div></a>
       <a href="https://jliljebl.github.io/flowblade/" class="dir-card" data-cat="video" target="_blank" rel="nofollow noopener"><div class="dir-card-top"><div class="dir-name">Flowblade</div><div class="dir-by">Official project</div></div><p class="dir-desc">Focused multi-track video editing on Linux.</p><div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Linux</span></div></a>
@@ -1232,9 +1166,8 @@
 <!-- ── Full Guides ── -->
 <section class="section">
   <div class="wrap">
-    <div class="section-label">In-Depth Guides</div>
-    <div class="section-title">Want the Full Comparison?</div>
-    <p class="section-sub">Detailed reviews, comparison tables, and honest free-tier limits — beyond a one-line description.</p>
+    <h2 class="section-title">Want the Full Comparison?</h2>
+    <p class="section-sub">Detailed reviews and free-tier limits, beyond a one-line description.</p>
     <div class="cat-grid">
       <a href="/best-free-ai-tools-2026" style="display:contents;">
         <div class="cat-card live">
@@ -1299,46 +1232,28 @@
 <!-- ── Why trust us ── -->
 <section class="section">
   <div class="wrap">
-    <div class="section-label">Our Approach</div>
-    <div class="section-title">Why Trust Our Reviews?</div>
-    <p class="section-sub">Every guide follows the same standards. No paid placements, no undisclosed commissions.</p>
+    <h2 class="section-title">Why Trust These Reviews?</h2>
 
     <div class="trust-grid">
       <div class="trust-card">
         <div class="trust-icon">🧪</div>
-        <h4>Hands-on Testing</h4>
-        <p>We sign up, test, and use every product ourselves before writing a single word.</p>
+        <h3>Hands-on Tested</h3>
+        <p>We use every tool ourselves before writing about it.</p>
       </div>
       <div class="trust-card">
         <div class="trust-icon">📊</div>
-        <h4>Data-Driven Rankings</h4>
-        <p>Rankings are based on measurable criteria — real free-tier limits, privacy, usability, export options — not hype.</p>
+        <h3>Real Criteria</h3>
+        <p>Ranked on free-tier limits and usability, not hype.</p>
       </div>
       <div class="trust-card">
         <div class="trust-icon">🔄</div>
-        <h4>Kept Up to Date</h4>
-        <p>Guides are reviewed and updated regularly. Free tiers shrink and tools shut down — our content follows.</p>
+        <h3>Kept Current</h3>
+        <p>Updated as free tiers change or tools shut down.</p>
       </div>
       <div class="trust-card">
         <div class="trust-icon">💬</div>
-        <h4>No Paid Rankings</h4>
-        <p>We don't accept payment to rank products higher. Every recommendation is based on real testing.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="section-divider"></div>
-
-<!-- ── Newsletter ── -->
-<section class="section">
-  <div class="wrap">
-    <div class="newsletter-box">
-      <h3>New Guides Drop Every Week</h3>
-      <p>No account, no email, no spam — the directory grows weekly. Bookmark this page (<strong>Ctrl+D</strong> / <strong>⌘+D</strong>) or follow the feed so you never pay for something we found free.</p>
-      <div class="hero-actions" style="justify-content:center;">
-        <a href="/feed.xml" class="btn-secondary">📡 Follow via RSS</a>
-        <a href="/best-linux-distros-beginners-2026" class="btn-primary">Read the Newest Guide →</a>
+        <h3>No Paid Rankings</h3>
+        <p>No payment ever changes a ranking.</p>
       </div>
     </div>
   </div>
@@ -1384,7 +1299,7 @@
       var query = searchInput.value.trim().toLowerCase();
       var visible = 0;
       cards.forEach(function(card) {
-        var matchesCat = activeFilter === 'all' || card.dataset.cat === activeFilter;
+        var matchesCat = activeFilter === 'all' || card.dataset.cat === activeFilter || card.dataset.tag === activeFilter;
         var matchesQuery = !query || card.textContent.toLowerCase().indexOf(query) !== -1;
         var show = matchesCat && matchesQuery;
         card.style.display = show ? '' : 'none';
@@ -1404,43 +1319,7 @@
     });
 
     searchInput.addEventListener('input', applyFilters);
-
-    // Map each directory category to our own in-depth guide page
-    var guideFor = {
-      chatbots: '/best-free-ai-tools-2026', image: '/best-free-graphic-design-tools-2026',
-      video: '/best-free-video-editing-software-2026', audio: '/best-free-ai-tools-2026',
-      code: '/best-free-ai-tools-2026', models: '/best-free-ai-tools-2026',
-      research: '/best-free-ai-tools-2026', dev: '/best-free-ai-tools-2026',
-      writing: '/best-free-ai-writing-tools-2026',
-      security: '/best-free-password-managers-2026',
-      gaming: '/best-free-games-2026',
-      opensource: '/best-open-source-software-alternatives-2026',
-      linux: '/best-linux-distros-beginners-2026'
-    };
-
-    // First click expands to show description + badges + guide link, second click follows the link
-    cards.forEach(function(card) {
-      var guide = guideFor[card.dataset.cat];
-      if (guide) {
-        var chip = document.createElement('span');
-        chip.className = 'dir-guide';
-        chip.textContent = '📖 Read the full guide →';
-        chip.addEventListener('click', function(e) {
-          e.preventDefault();
-          e.stopPropagation();
-          window.location.href = guide;
-        });
-        card.appendChild(chip);
-      }
-      card.addEventListener('click', function(e) {
-        if (!card.classList.contains('expanded')) {
-          e.preventDefault();
-          card.classList.add('expanded');
-        }
-      });
-    });
   })();
 </script>
-
 </body>
 </html>

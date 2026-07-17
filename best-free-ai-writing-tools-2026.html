@@ -45,9 +45,8 @@
     }
     html { scroll-behavior: smooth; }
     body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.68; font-size: 16px; -webkit-font-smoothing: antialiased; }
-    body::before { content: ''; position: fixed; inset: 0; background-image: linear-gradient(rgba(255,255,255,.014) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.014) 1px,transparent 1px); background-size: 42px 42px; pointer-events: none; z-index: 0; }
     a { color: inherit; text-decoration: none; }
-    .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+    .wrap { max-width: 1320px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
     nav { position: sticky; top: 0; z-index: 20; background: rgba(9,9,11,.91); -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); }
     .nav-inner { height: 58px; display: flex; align-items: center; justify-content: space-between; }
     .nav-brand { font-weight: 900; letter-spacing: .1em; font-size: .92rem; display: flex; gap: 10px; align-items: center; text-transform: uppercase; }
@@ -58,9 +57,7 @@
     .notice { background: var(--bg-2); color: var(--text-2); border-bottom: 1px solid var(--border); text-align: center; padding: 10px 18px; font-size: .82rem; }
     .breadcrumb { color: var(--text-3); font-size: .86rem; margin-top: 18px; }
     .breadcrumb a:hover { color: var(--cyan); text-decoration: underline; }
-    .hero { padding: 78px 0 46px; text-align: center; overflow: hidden; position: relative; }
-    .hero::before { content: ''; position: absolute; left: 50%; top: 70px; transform: translateX(-50%); width: 820px; height: 420px; background: radial-gradient(ellipse at center, rgba(124,92,246,.24), rgba(6,182,212,.08) 45%, transparent 72%); pointer-events: none; z-index: -1; }
-    .badge { display: inline-flex; align-items: center; gap: 8px; padding: 6px 16px; border-radius: 999px; color: var(--cyan); background: rgba(6,182,212,.12); border: 1px solid rgba(6,182,212,.32); font-size: .72rem; text-transform: uppercase; font-weight: 900; letter-spacing: .1em; margin-bottom: 24px; }
+    .hero { padding: 64px 0 40px; text-align: center; }
     h1 { font-size: clamp(2.25rem,6vw,4.55rem); line-height: 1.03; letter-spacing: -.045em; font-weight: 950; max-width: 930px; margin: 0 auto 20px; }
     h1 span { background: linear-gradient(135deg,#fff 0%, var(--purple) 45%, var(--cyan) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
     .hero-sub { color: var(--text-2); font-size: 1.08rem; max-width: 760px; margin: 0 auto 30px; }
@@ -69,9 +66,6 @@
     .btn-primary { background: linear-gradient(135deg,var(--purple),var(--cyan)); color: #fff; }
     .btn-secondary { background: var(--bg-3); border: 1px solid var(--border-2); color: var(--text-2); }
     .btn:hover { transform: translateY(-1px); }
-    .stats { display: flex; justify-content: center; gap: 28px; flex-wrap: wrap; }
-    .stat strong { display: block; font-size: 1.7rem; background: linear-gradient(135deg,var(--purple),var(--cyan)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-    .stat span { color: var(--text-3); font-size: .72rem; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
     .section { padding: 50px 0; }
     .section h2 { font-size: clamp(1.5rem,3vw,2.25rem); line-height: 1.15; margin-bottom: 14px; letter-spacing: -.025em; }
     .section h3 { font-size: 1.25rem; margin: 28px 0 8px; font-weight: 800; }
@@ -143,7 +137,7 @@
     <ul class="nav-links">
       <li><a href="#comparison">Compare</a></li>
       <li><a href="#reviews">Reviews</a></li>
-      <li><a href="#limits">Limits</a></li>
+      <li><a href="#choose">Choosing</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
   </div>
@@ -154,18 +148,11 @@
 
 <section class="hero">
   <div class="wrap">
-    <div class="badge">✍️ Updated July 2026 · Genuinely Free Focus</div>
     <h1>Best Free AI Writing Tools 2026<br><span>Draft, Edit & Paraphrase for Free</span></h1>
-    <p class="hero-sub">A practical comparison of the best genuinely free AI writing tools. We rank ChatGPT and Claude for drafting, QuillBot for paraphrasing, Grammarly and Hemingway for editing, and DeepL Write for grammar correction.</p>
+    <p class="hero-sub">ChatGPT and Claude for drafting, QuillBot for paraphrasing, Grammarly and Hemingway for editing, DeepL Write for tone — six genuinely free picks, tested.</p>
     <div class="hero-ctas">
       <a class="btn btn-primary" href="#comparison">Compare Free Plans</a>
-      <a class="btn btn-secondary" href="#limits">Limits Explained</a>
-    </div>
-    <div class="stats">
-      <div class="stat"><strong>6</strong><span>Picks tested</span></div>
-      <div class="stat"><strong>0</strong><span>Credit cards needed</span></div>
-      <div class="stat"><strong>100%</strong><span>Free tiers</span></div>
-      <div class="stat"><strong>3k+</strong><span>Words reviewed</span></div>
+      <a class="btn btn-secondary" href="#reviews">Read Reviews</a>
     </div>
   </div>
 </section>
@@ -173,12 +160,11 @@
 <section class="section">
   <div class="wrap">
     <h2>Quick verdict: the best free AI writing stack</h2>
-    <p>If you want a complete, zero-cost workflow for drafting and polishing content, combine **Claude (Free Tier)** for drafting with **QuillBot** for rewriting and **Hemingway Editor** for checking readability. This combination covers all phases of writing — planning, drafting, restructuring, and editing — without spending a single dollar or getting trapped in paid trials.</p>
-    <p>For general writing, **ChatGPT Free** (GPT-4o-mini) and **Claude Free** (Claude 3.5 Sonnet) are the most powerful models for generating structured drafts, outlines, and copy. **Grammarly** and **DeepL Write** are excellent for fixing grammar mistakes and tone adjustments, while the web version of **Hemingway** highlights hard-to-read sentences to keep your copy punchy.</p>
+    <p>For a complete, zero-cost workflow, combine <strong>Claude</strong> for drafting, <strong>QuillBot</strong> for rewriting awkward sentences, and <strong>Hemingway Editor</strong> for a final readability pass — no paid trial required at any step.</p>
     <div class="toc">
       <a href="#comparison">Comparison table</a>
       <a href="#reviews">Detailed reviews</a>
-      <a href="#limits">Free-tier limits</a>
+      <a href="#choose">How to choose</a>
       <a href="#faq">FAQ</a>
     </div>
   </div>
@@ -256,8 +242,7 @@
       <div class="card">
         <div class="label">Best for speed and brainstorming</div>
         <h3>1. <a href="https://chatgpt.com" target="_blank" rel="nofollow noopener">ChatGPT Free</a></h3>
-        <p>OpenAI's ChatGPT (running on GPT-4o-mini by default on the free tier) is the best zero-cost starting point for high-volume drafting. It does not require a credit card, and message limits are generous enough for daily writing work — brainstorming headlines, structuring outlines, drafting emails, or generating bulk ad copy variations in seconds.</p>
-        <p>Where it shines is speed and versatility: ask it to write in a specific tone, restructure a paragraph, or turn bullet points into flowing prose, and it responds almost instantly. It's also the most forgiving tool here for vague prompts — you can iterate conversationally ("make that shorter," "more casual") rather than rewriting your request from scratch. The trade-off is that GPT-4o-mini's prose can read as slightly generic and repeats stock phrasing ("in today's fast-paced world...") unless you give it a strong style reference or example to imitate.</p>
+        <p>OpenAI's ChatGPT (GPT-4o-mini on the free tier) is the best zero-cost starting point for high-volume drafting — no credit card, generous daily limits, and near-instant responses to tone or structure changes. Prose can read generic and lean on stock phrasing unless you give it a style reference to imitate.</p>
         <p><strong>Best for:</strong> first drafts, outlines, brainstorming, rewriting in a specified tone, and anyone who wants a single flexible tool rather than five specialized ones.</p>
         <div class="pros-cons">
           <div class="pro">✔ Fast, flexible, generous free message limits</div>
@@ -268,8 +253,7 @@
       <div class="card">
         <div class="label">Best for natural copy and flow</div>
         <h3>2. <a href="https://claude.ai" target="_blank" rel="nofollow noopener">Claude Free</a></h3>
-        <p>Anthropic's Claude (Sonnet on the free tier) is widely considered the most natural-sounding free writing model available. Where ChatGPT can lean toward formulaic structure, Claude tends to vary sentence length, avoid AI-cliché phrasing, and hold a consistent voice across a long piece — useful if you're drafting something that needs to sound like it came from a specific person, not a template.</p>
-        <p>It's also strong at long-context work: paste in an existing article, a style guide, or several paragraphs of your own past writing, and ask Claude to continue in that voice. The free tier's rate limit is dynamic — it tightens during peak US hours and loosens off-peak — so heavy users sometimes hit a wall mid-session. Keeping ChatGPT open as a backup for when that happens is a common workaround.</p>
+        <p>Anthropic's Claude (Sonnet, free tier) is the most natural-sounding free writing model available — it varies sentence length and holds a consistent voice across long pieces instead of leaning formulaic. Strong at long-context work: paste in a style guide and ask it to continue in that voice. The free rate limit tightens unpredictably during peak US hours.</p>
         <p><strong>Best for:</strong> long-form drafts, matching an existing voice/style, editorial or narrative writing where "sounding human" matters more than speed.</p>
         <div class="pros-cons">
           <div class="pro">✔ Most natural-sounding free output, strong style-matching</div>
@@ -280,8 +264,7 @@
       <div class="card">
         <div class="label">Best for paraphrasing</div>
         <h3>3. <a href="https://quillbot.com" target="_blank" rel="nofollow noopener">QuillBot Free</a></h3>
-        <p>QuillBot is a dedicated paraphrasing tool, not a general chatbot — paste a sentence or short paragraph and it instantly reworks the wording while preserving meaning. The free web tier needs no signup and processes up to 125 words per pass, which is enough for a sentence or two but means longer pieces have to be fed in chunks.</p>
-        <p>It's most useful as a second pass after drafting with ChatGPT or Claude: run an awkward paragraph through QuillBot's "Standard" or "Fluency" modes to smooth out clunky phrasing, or use it to generate synonym variations when you're repeating the same word too often. It's not a drafting tool — it has nothing to say about structure or argument, only wording — so treat it as a polish step, not a starting point.</p>
+        <p>A dedicated paraphrasing tool, not a chatbot — paste a sentence and it reworks the wording instantly, no signup needed. Best as a second pass after drafting with ChatGPT or Claude, to smooth clunky phrasing. The 125-word limit means longer pieces need feeding in chunks.</p>
         <p><strong>Best for:</strong> rewording awkward sentences, avoiding repetition, lightly rephrasing research notes without changing meaning.</p>
         <div class="pros-cons">
           <div class="pro">✔ No signup, instant results, genuinely free forever</div>
@@ -292,8 +275,7 @@
       <div class="card">
         <div class="label">Best for basic corrections</div>
         <h3>4. <a href="https://www.grammarly.com" target="_blank" rel="nofollow noopener">Grammarly Free</a></h3>
-        <p>Grammarly is the most widely used grammar checker for a reason: the free plan catches spelling, punctuation, and basic grammar errors in real time, everywhere you type — Google Docs, Gmail, LinkedIn, Notion, and most CMS editors — via a browser extension and desktop app. You don't have to copy-paste into a separate tab; corrections appear inline as you write.</p>
-        <p>The free tier is genuinely useful on its own, not just a trial for the paid version. It reliably catches typos, subject-verb agreement issues, and misused punctuation. What's locked behind Premium is the "clarity and engagement" layer — full-sentence rewrites, tone detection, vocabulary suggestions, and a plagiarism checker. For someone who just needs clean, error-free writing rather than stylistic polish, the free tier alone is sufficient.</p>
+        <p>The most widely used grammar checker — catches spelling, punctuation, and basic errors in real time, everywhere you type, via a browser extension and desktop app. Genuinely useful on its own, not just a trial: full-sentence rewrites, tone detection, and the plagiarism checker are what's locked behind Premium.</p>
         <p><strong>Best for:</strong> catching typos and grammar mistakes as you type, across email, docs, and social media — not a drafting or rewriting tool.</p>
         <div class="pros-cons">
           <div class="pro">✔ Works everywhere via browser extension, catches real errors</div>
@@ -304,8 +286,7 @@
       <div class="card">
         <div class="label">Best for editing readability</div>
         <h3>5. <a href="https://hemingwayapp.com" target="_blank" rel="nofollow noopener">Hemingway Editor</a></h3>
-        <p>Hemingway doesn't generate a single word — it's a diagnostic tool. Paste your draft into the free web app and it color-codes problems: yellow for hard-to-read sentences, red for very hard-to-read ones, purple for words with simpler alternatives, blue for adverbs, and green for passive voice. It also gives your text a readability grade level, which is a genuinely useful proxy for "will a tired reader actually finish this."</p>
-        <p>Because it has no AI generation involved, there's no rate limit, no account, and no data leaving your control beyond what you paste — the web app processes everything client-side in your browser. Run any draft (AI-generated or your own) through it as a final pass before publishing; it's the fastest way to catch the over-long, adverb-stuffed sentences that both humans and AI models tend to write. Note the desktop app is a one-time paid purchase — only the web version is free.</p>
+        <p>Not a generator — a diagnostic tool. Paste a draft and it color-codes hard-to-read sentences, adverbs, and passive voice, with a readability grade for the whole piece. No AI generation means no rate limit and no account — everything runs client-side in your browser. The desktop app is a one-time paid purchase; only the web version is free.</p>
         <p><strong>Best for:</strong> a final readability pass on any draft, checking passive voice and sentence complexity before you hit publish.</p>
         <div class="pros-cons">
           <div class="pro">✔ 100% free web app, no signup, no rate limits</div>
@@ -316,8 +297,7 @@
       <div class="card">
         <div class="label">Best for tone and non-native fluency</div>
         <h3>6. <a href="https://www.deepl.com/write" target="_blank" rel="nofollow noopener">DeepL Write</a></h3>
-        <p>DeepL Write comes from the team behind DeepL Translator and applies the same neural-network quality to rewriting rather than translating. Paste up to 2,000 characters and it suggests phrasing improvements, fixes awkward grammar, and offers tone presets (formal, casual, confident, friendly) you can toggle between with one click to see the same sentence rewritten multiple ways.</p>
-        <p>It's particularly strong for non-native English (and German) speakers — it tends to catch the subtle phrasing that sounds "translated" rather than natively written, in a way that generic grammar checkers miss. It's less useful for long-form drafting since the character limit forces you to work paragraph by paragraph, but as a polish pass for emails, LinkedIn posts, or cover letters, it's one of the most precise free tools available.</p>
+        <p>From the team behind DeepL Translator, applying the same quality to rewriting instead of translating. Paste up to 2,000 characters for phrasing fixes and one-click tone presets (formal, casual, confident, friendly). Particularly strong for non-native English speakers — it catches "translated-sounding" phrasing that generic grammar checkers miss.</p>
         <p><strong>Best for:</strong> non-native speakers polishing tone and phrasing, short-form writing like emails and posts, choosing between formal/casual register.</p>
         <div class="pros-cons">
           <div class="pro">✔ Excellent tone control, strong for non-native speakers</div>
@@ -331,72 +311,19 @@
 
 <section class="section" id="choose">
   <div class="wrap">
-    <h2>How to choose the right free AI writing tool</h2>
-    <p>None of these six tools do everything — that's actually the point of using them together instead of paying for one "all-in-one" subscription. Which one you reach for first depends on what stage of writing you're at and what you're writing.</p>
-    <p><strong>Starting from a blank page (drafting):</strong> use ChatGPT Free if you want speed and iteration, or Claude Free if the piece needs to sound distinctly human and hold a consistent voice over several paragraphs. For quick, low-stakes drafts (a Slack message, a short email), ChatGPT's speed usually wins. For anything going out under your name — a blog post, a cover letter, a client email — Claude's more natural phrasing is worth the occasional rate-limit wait.</p>
-    <p><strong>You already have a draft but it reads awkwardly:</strong> run it through QuillBot sentence-by-sentence to fix clunky phrasing, then Hemingway Editor for a readability pass to catch overly complex sentences and passive voice. This two-step combo catches most of what makes AI-assisted writing feel stilted.</p>
-    <p><strong>You're writing in your second language:</strong> DeepL Write is the strongest free option specifically because it's tuned to catch "translated-sounding" phrasing rather than just grammar errors — Grammarly will tell you a sentence is grammatically correct even when it doesn't sound like something a native speaker would say; DeepL Write is more likely to flag that gap.</p>
-    <p><strong>You just need to avoid embarrassing typos:</strong> Grammarly's browser extension is the lowest-effort option since it works passively across every app you already use, with no copy-pasting required.</p>
-    <p><strong>Academic or research writing:</strong> QuillBot's paraphrasing plus Hemingway's readability check is a common combination for restructuring notes into original phrasing — but always verify your institution's AI-use policy first, since standards vary widely and some editing tools are treated differently than generative ones.</p>
-  </div>
-</section>
-
-<section class="section" id="upgrade">
-  <div class="wrap">
-    <h2>Free vs. paid: when it's actually worth upgrading</h2>
-    <p>Every tool on this list has a paid tier, and the honest answer is that most casual users never need to pay for any of them. Here's when the free tier genuinely stops being enough:</p>
-    <ul>
-      <li><strong>ChatGPT Plus</strong> is worth it if you need the full GPT-5-class reasoning model for complex, multi-step writing tasks, or you're hitting message caps daily during heavy work. Occasional users rarely need it.</li>
-      <li><strong>Claude Pro</strong> makes sense if the dynamic free-tier rate limit is genuinely blocking your workflow — for example, drafting multiple long documents back-to-back in one sitting.</li>
-      <li><strong>QuillBot Premium</strong> removes the 125-word cap and unlocks more paraphrasing modes — worth it only if you're processing full documents regularly, not occasional sentences.</li>
-      <li><strong>Grammarly Premium</strong> is the one most people actually benefit from upgrading, since the free tier genuinely omits tone and clarity rewrites that professional writers rely on daily.</li>
-      <li><strong>Hemingway</strong> and <strong>DeepL Write</strong> rarely justify upgrading for individual users — the free web versions cover nearly everything most people need.</li>
-    </ul>
-    <div class="callout">
-      <p><strong>Pro tip:</strong> Before paying for any of these, try combining two or three free tools first. A ChatGPT draft, run through QuillBot for rewording and Hemingway for readability, covers 90% of what a single paid "all-in-one" writing subscription promises — for $0.</p>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="limits">
-  <div class="wrap">
-    <h2>Free-tier limits you should know</h2>
-    <p>AI writing assistants rely on expensive server computations, which is why free tiers always have constraints. Understanding these limits prevents disruptions to your workflow:</p>
-    <ul>
-      <li><strong>Character/Word Caps</strong>: Paraphrasing tools like QuillBot (125 words) and DeepL Write (2,000 characters) restrict how much text you can process at once. Break your articles into paragraphs to fit these limits.</li>
-      <li><strong>Rate Limits</strong>: General chatbots (specifically Claude) restrict how many questions you can ask in a given timeframe. Having Claude and ChatGPT open side-by-side lets you switch to ChatGPT if Claude hits a rate limit.</li>
-      <li><strong>Locked Features</strong>: Editors like Grammarly restrict clarity and vocabulary improvements on their free plans. Hemingway web app is free, but its offline desktop app is a paid purchase. Use the web app for free editing.</li>
-    </ul>
-    <div class="callout">
-      <p><strong>Pro-Tip:</strong> Never put a credit card down for simple draft writing. Use ChatGPT and Claude free tiers first. Keep your prompts detailed and specific to get the best structure, and use Hemingway's web app to edit for readability.</p>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="mistakes">
-  <div class="wrap">
-    <h2>Common mistakes people make with free AI writing tools</h2>
-    <p>Most disappointment with free AI writing tools comes down to a handful of avoidable mistakes, not the tools themselves being weak.</p>
-    <p><strong>Using one tool for every job.</strong> ChatGPT can technically paraphrase, and QuillBot can technically draft — but both do their specialty far better than their secondary functions. Treating a paraphraser as a drafting tool (or vice versa) is the single biggest source of "this AI writing tool isn't very good" complaints. Match the tool to the task using the decision guide above rather than defaulting to whichever tab is already open.</p>
-    <p><strong>Vague prompts.</strong> "Write me a paragraph about X" produces the generic, template-sounding output free AI tools are criticized for. Giving a model a specific audience, tone, length, and example to match ("write this like a LinkedIn post for a technical audience, under 150 words, confident but not salesy") consistently produces noticeably better first drafts — with the exact same free model.</p>
-    <p><strong>Skipping the readability pass.</strong> AI-generated drafts tend to run long-winded and adverb-heavy by default. Running any AI draft through Hemingway's free web app before publishing catches most of what makes AI writing feel identifiably "AI" — overly complex sentence structure and passive voice are the two biggest tells.</p>
-    <p><strong>Pasting sensitive information into free web tools.</strong> Free tiers of cloud-based tools may use your input to improve their models unless you explicitly opt out. Client contracts, unpublished research, proprietary code, or personal identifying information shouldn't go into any free web interface without checking that provider's data-training settings first.</p>
-    <p><strong>Ignoring institutional policy for academic or professional use.</strong> Paraphrasing tools sit in a gray area for many schools and some workplaces. A tool being "free" doesn't mean its use is automatically permitted — check your institution's or employer's AI-use policy before relying on QuillBot or similar tools for graded or client-facing work.</p>
+    <h2>How to choose (and when to upgrade)</h2>
+    <p>Starting a draft: ChatGPT for speed, Claude for a more natural, consistent voice on longer pieces. Already have a rough draft: run it through QuillBot for wording, then Hemingway for a readability pass. Writing in a second language: DeepL Write catches "translated-sounding" phrasing that Grammarly misses. Just want to avoid typos: Grammarly's browser extension works passively everywhere.</p>
+    <p>Be specific in prompts — audience, tone, length — rather than accepting the first generic draft, and run a readability pass before publishing; it catches most of what makes AI writing feel identifiably AI. Always verify your institution's AI-use policy before using paraphrasing tools for graded or client-facing work.</p>
+    <p>Most people never need to pay. Upgrade only if: Claude's rate limit genuinely blocks back-to-back long drafts (Claude Pro), you need GPT-5-class reasoning for complex tasks (ChatGPT Plus), you're processing full documents past QuillBot's 125-word cap (Premium), or you rely daily on tone/clarity rewrites Grammarly Free omits (Premium). Hemingway and DeepL Write rarely justify upgrading.</p>
   </div>
 </section>
 
 <section class="section" id="privacy">
   <div class="wrap">
-    <h2>Privacy and data handling, tool by tool</h2>
-    <p>Every "free" AI service pays its server costs somehow, and for cloud-based writing tools that usually means your input data has some value to the company beyond your subscription fee. Here's what each tool actually does with what you type, as of mid-2026 — always check the current privacy settings yourself, since these policies change.</p>
-    <p><strong>ChatGPT Free:</strong> conversations may be used to improve OpenAI's models unless you disable "Improve the model for everyone" in Data Controls settings. Chat history is retained by default; you can turn off history, which also disables training use for those conversations.</p>
-    <p><strong>Claude Free:</strong> Anthropic states it does not train on your conversations by default for consumer accounts, though this can change — verify current terms before pasting sensitive material. Conversations are retained for a limited period for safety/abuse monitoring even when not used for training.</p>
-    <p><strong>QuillBot Free:</strong> processes text for the paraphrase request itself; the company's privacy policy covers standard analytics and account data but paraphrased text is not the primary product being monetized here, unlike a chatbot's conversation history.</p>
-    <p><strong>Grammarly Free:</strong> since it runs as a browser extension reading everything you type across other sites, it has the broadest technical access of any tool here. Grammarly's policy states free-tier content may be used to improve their AI, with an opt-out available in account settings — worth checking if you use the extension on sites with sensitive client or personal data.</p>
-    <p><strong>Hemingway Editor (web):</strong> the strongest privacy position on this list — the free web app processes text client-side in your browser rather than sending it to a server for AI generation, since there's no generation happening at all, only rule-based analysis.</p>
-    <p><strong>DeepL Write:</strong> as a European company, DeepL operates under GDPR and states it does not use Free tier text to train models without consent, though data is transmitted to their servers for processing (it's a cloud tool, not client-side like Hemingway).</p>
+    <h2>Privacy, tool by tool</h2>
+    <p><strong>ChatGPT Free</strong> may train on conversations unless disabled in Data Controls. <strong>Claude Free</strong> doesn't train on consumer conversations by default — verify current terms. <strong>QuillBot Free</strong> processes only the text you paste for that request. <strong>Grammarly Free</strong> has the broadest access of any tool here as a browser extension reading everything you type; opt out of AI training in settings. <strong>Hemingway Editor</strong> is the only client-side tool here — nothing you paste leaves your browser. <strong>DeepL Write</strong> is GDPR-governed and doesn't train on free-tier text, though data is sent to its servers.</p>
     <div class="callout">
-      <p><strong>General rule:</strong> if a document contains client data, unpublished research, personal identifying information, or anything under an NDA, treat every cloud-based free tool here as a "might be seen by the provider" system, and use Hemingway (client-side, no generation) for anything genuinely sensitive.</p>
+      <p><strong>General rule:</strong> if a document has client data or anything under an NDA, treat every cloud tool here as visible to its provider, and use Hemingway for anything genuinely sensitive.</p>
     </div>
   </div>
 </section>
@@ -476,7 +403,19 @@
     <p><strong>QUTAIFAN</strong> · Independent free software guides · <a href="/about">About</a> · <a href="/privacy-policy">Privacy Policy</a> · <a href="/terms-of-service">Terms</a></p>
     <p>Free-tier details checked July 2026. Always verify current limits before storing critical documents.</p>
   </div>
-<section class="section"><div class="wrap"><h2>You might also like</h2><div class="related-grid"><a class="related-card" href="/best-free-games-2026"><strong>Best Free Games 2026</strong><span>Fair free-to-play games, open-source strategy classics, indie gems and browser games worth playing.</span></a></div></div></section>
 </footer>
+<!-- Cookie Consent Banner -->
+<style>
+  #cookie-banner{position:fixed;bottom:0;left:0;right:0;background:rgba(9,9,11,.95);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-top:1px solid rgba(255,255,255,.07);padding:16px 24px;z-index:1000;display:flex;align-items:center;justify-content:center;gap:16px;font-size:14px;color:#a0a0ab;font-family:system-ui,sans-serif}
+  #cookie-banner p{margin:0}
+  #cookie-banner a{color:#7c5cf6;text-decoration:none}
+  #cookie-banner button{background:#7c5cf6;color:#fff;border:none;padding:8px 20px;border-radius:8px;font-weight:600;cursor:pointer}
+  #cookie-banner button:hover{background:#6c4ce6}
+</style>
+<div id="cookie-banner" role="dialog" aria-label="Cookie consent">
+  <p>We use cookies and similar technologies to analyze traffic, serve ads, and improve your experience. <a href="/privacy-policy">Learn more</a>.</p>
+  <button onclick="document.getElementById('cookie-banner').style.display='none'">Accept</button>
+</div>
+<script src="/search.js"></script>
 </body>
 </html>
