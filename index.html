@@ -185,19 +185,19 @@
       border-radius: var(--radius-lg); transition: border-color .15s, transform .15s;
     }
     .dir-card:hover { border-color: var(--accent); transform: translateY(-2px); }
-    .dir-card-top { display: flex; flex-direction: column; gap: 2px; }
+    .dir-card { cursor: default; }
+    .dir-card-top { display: flex; align-items: center; gap: 10px; }
+    .dir-card-id { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
     .dir-name { font-weight: 700; font-size: .95rem; }
     .dir-by { font-size: .72rem; color: var(--text-3); }
     .dir-desc { font-size: .82rem; color: var(--text-2); line-height: 1.5; }
     .dir-badges { display: flex; flex-wrap: wrap; gap: 5px; }
     .dir-badge { font-size: .68rem; padding: 2px 9px; background: var(--bg-3); border: 1px solid var(--border); border-radius: 99px; color: var(--text-3); }
-    .dir-card { cursor: default; }
     .dir-avatar { display: inline-flex; align-items: center; justify-content: center;
-      width: 30px; height: 30px; border-radius: 8px; margin-right: 10px; flex-shrink: 0;
+      width: 30px; height: 30px; border-radius: 8px; flex-shrink: 0;
       font-size: .85rem; font-weight: 800;
       color: hsl(var(--h) 70% 72%); background: hsl(var(--h) 60% 50% / .16);
       border: 1px solid hsl(var(--h) 60% 55% / .35); }
-    .dir-card-top { display: flex; align-items: center; }
     .dir-actions { display: flex; align-items: center; gap: 12px; margin-top: 12px; }
     .dir-review { font-size: .78rem; font-weight: 700; color: var(--accent); }
     .dir-review:hover { text-decoration: underline; }
@@ -327,841 +327,841 @@
     <div class="dir-grid" id="dir-grid">
     <!-- DIR:START -->
       <div class="dir-card" data-cat="chatbots" data-tag="popular" data-pricing="free-tier" data-added="2026-06-30" data-name="chatgpt">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:189">C</span><div class="dir-name">ChatGPT</div><div class="dir-by">by OpenAI</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:189">C</span><div class="dir-card-id"><div class="dir-name">ChatGPT</div><div class="dir-by">by OpenAI</div></div></div>
         <p class="dir-desc">A widely used AI assistant.</p>
         <div class="dir-badges"><span class="dir-badge">Free Tier</span><span class="dir-badge">GPT-4o</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#chatgpt">Read our review →</a><a class="dir-ext" href="https://chat.openai.com" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="chatbots" data-tag="popular" data-pricing="free-tier" data-added="2026-06-30" data-name="claude">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:74">C</span><div class="dir-name">Claude</div><div class="dir-by">by Anthropic</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:74">C</span><div class="dir-card-id"><div class="dir-name">Claude</div><div class="dir-by">by Anthropic</div></div></div>
         <p class="dir-desc">Exceptional at long documents, coding, and nuanced reasoning.</p>
         <div class="dir-badges"><span class="dir-badge">Free Tier</span><span class="dir-badge">Claude Sonnet 4</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#claude">Read our review →</a><a class="dir-ext" href="https://claude.ai" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="chatbots" data-tag="popular" data-pricing="free" data-added="2026-06-30" data-name="gemini">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:231">G</span><div class="dir-name">Gemini</div><div class="dir-by">by Google</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:231">G</span><div class="dir-card-id"><div class="dir-name">Gemini</div><div class="dir-by">by Google</div></div></div>
         <p class="dir-desc">Google&#x27;s flagship AI — free with a Google account.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Google Login</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#gemini">Read our review →</a><a class="dir-ext" href="https://gemini.google.com" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="chatbots" data-tag="popular" data-pricing="free" data-added="2026-06-30" data-name="perplexity-ai">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:59">P</span><div class="dir-name">Perplexity AI</div><div class="dir-by">by Perplexity</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:59">P</span><div class="dir-card-id"><div class="dir-name">Perplexity AI</div><div class="dir-by">by Perplexity</div></div></div>
         <p class="dir-desc">AI-powered search engine that gives cited, sourced answers.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">No Signup</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#perplexity-ai">Read our review →</a><a class="dir-ext" href="https://perplexity.ai" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="chatbots" data-tag="" data-pricing="free" data-added="2026-06-30" data-name="mistral-le-chat">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:33">M</span><div class="dir-name">Mistral Le Chat</div><div class="dir-by">by Mistral AI</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:33">M</span><div class="dir-card-id"><div class="dir-name">Mistral Le Chat</div><div class="dir-by">by Mistral AI</div></div></div>
         <p class="dir-desc">Europe&#x27;s leading open AI lab.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Open Weights</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#mistral-le-chat">Read our review →</a><a class="dir-ext" href="https://chat.mistral.ai" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="chatbots" data-tag="" data-pricing="free" data-added="2026-06-30" data-name="groq">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:207">G</span><div class="dir-name">Groq</div><div class="dir-by">by Groq</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:207">G</span><div class="dir-card-id"><div class="dir-name">Groq</div><div class="dir-by">by Groq</div></div></div>
         <p class="dir-desc">Insanely fast inference on open-source models.</p>
         <div class="dir-badges"><span class="dir-badge">Free API</span><span class="dir-badge">API</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#groq">Read our review →</a><a class="dir-ext" href="https://groq.com" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="chatbots" data-tag="" data-pricing="open-source" data-added="2026-06-30" data-name="huggingchat">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:207">H</span><div class="dir-name">HuggingChat</div><div class="dir-by">by Hugging Face</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:207">H</span><div class="dir-card-id"><div class="dir-name">HuggingChat</div><div class="dir-by">by Hugging Face</div></div></div>
         <p class="dir-desc">Open-source ChatGPT alternative running the best open models.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Open Source</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#huggingchat">Read our review →</a><a class="dir-ext" href="https://huggingface.co/chat" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="chatbots" data-tag="popular" data-pricing="open-source" data-added="2026-06-30" data-name="ollama">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:90">O</span><div class="dir-name">Ollama</div><div class="dir-by">by Ollama</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:90">O</span><div class="dir-card-id"><div class="dir-name">Ollama</div><div class="dir-by">by Ollama</div></div></div>
         <p class="dir-desc">Run any open-source model locally.</p>
         <div class="dir-badges"><span class="dir-badge">100% Free</span><span class="dir-badge">Open Source</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#ollama">Read our review →</a><a class="dir-ext" href="https://ollama.ai" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="chatbots" data-tag="" data-pricing="free" data-added="2026-06-30" data-name="lm-studio">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:322">L</span><div class="dir-name">LM Studio</div><div class="dir-by">by LM Studio</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:322">L</span><div class="dir-card-id"><div class="dir-name">LM Studio</div><div class="dir-by">by LM Studio</div></div></div>
         <p class="dir-desc">Beautiful desktop app to discover, download, and run open-source LLMs locally.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Local</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#lm-studio">Read our review →</a><a class="dir-ext" href="https://lmstudio.ai" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="chatbots" data-tag="" data-pricing="open-source" data-added="2026-06-30" data-name="jan-ai">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:40">J</span><div class="dir-name">Jan.ai</div><div class="dir-by">by Jan</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:40">J</span><div class="dir-card-id"><div class="dir-name">Jan.ai</div><div class="dir-by">by Jan</div></div></div>
         <p class="dir-desc">Open-source, local-first AI assistant.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Open Source</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#jan-ai">Read our review →</a><a class="dir-ext" href="https://jan.ai" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="chatbots" data-tag="" data-pricing="open-source" data-added="2026-06-30" data-name="deepseek-chat">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:213">D</span><div class="dir-name">DeepSeek Chat</div><div class="dir-by">by DeepSeek</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:213">D</span><div class="dir-card-id"><div class="dir-name">DeepSeek Chat</div><div class="dir-by">by DeepSeek</div></div></div>
         <p class="dir-desc">China&#x27;s most powerful open-source AI.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Open Source</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#deepseek-chat">Read our review →</a><a class="dir-ext" href="https://chat.deepseek.com" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="chatbots" data-tag="" data-pricing="free" data-added="2026-06-30" data-name="you-com">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:31">Y</span><div class="dir-name">You.com</div><div class="dir-by">by You.com</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:31">Y</span><div class="dir-card-id"><div class="dir-name">You.com</div><div class="dir-by">by You.com</div></div></div>
         <p class="dir-desc">AI search engine with free access to multiple models.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">No Signup</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#you-com">Read our review →</a><a class="dir-ext" href="https://you.com" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="image" data-tag="popular" data-pricing="open-source" data-added="2026-06-30" data-name="stable-diffusion">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:9">S</span><div class="dir-name">Stable Diffusion</div><div class="dir-by">by Stability AI</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:9">S</span><div class="dir-card-id"><div class="dir-name">Stable Diffusion</div><div class="dir-by">by Stability AI</div></div></div>
         <p class="dir-desc">The original open-source image generation model.</p>
         <div class="dir-badges"><span class="dir-badge">100% Free</span><span class="dir-badge">Open Source</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#stable-diffusion">Read our review →</a><a class="dir-ext" href="https://stability.ai/stable-diffusion" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="image" data-tag="" data-pricing="open-source" data-added="2026-06-30" data-name="flux-1">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:227">F</span><div class="dir-name">Flux.1</div><div class="dir-by">by Black Forest Labs</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:227">F</span><div class="dir-card-id"><div class="dir-name">Flux.1</div><div class="dir-by">by Black Forest Labs</div></div></div>
         <p class="dir-desc">The new state-of-the-art open-source image model.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Open Source</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#flux-1">Read our review →</a><a class="dir-ext" href="https://blackforestlabs.ai" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="image" data-tag="" data-pricing="open-source" data-added="2026-06-30" data-name="comfyui">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:268">C</span><div class="dir-name">ComfyUI</div><div class="dir-by">by Community</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:268">C</span><div class="dir-card-id"><div class="dir-name">ComfyUI</div><div class="dir-by">by Community</div></div></div>
         <p class="dir-desc">The most powerful local image generation interface.</p>
         <div class="dir-badges"><span class="dir-badge">100% Free</span><span class="dir-badge">Open Source</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#comfyui">Read our review →</a><a class="dir-ext" href="https://github.com/comfyanonymous/ComfyUI" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="image" data-tag="" data-pricing="free" data-added="2026-06-30" data-name="bing-image-creator">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:171">B</span><div class="dir-name">Bing Image Creator</div><div class="dir-by">by Microsoft</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:171">B</span><div class="dir-card-id"><div class="dir-name">Bing Image Creator</div><div class="dir-by">by Microsoft</div></div></div>
         <p class="dir-desc">Free DALL-E 3 powered image generation from Microsoft.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">MS Login</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#bing-image-creator">Read our review →</a><a class="dir-ext" href="https://www.bing.com/images/create" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="image" data-tag="" data-pricing="free-tier" data-added="2026-06-30" data-name="adobe-firefly">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:135">A</span><div class="dir-name">Adobe Firefly</div><div class="dir-by">by Adobe</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:135">A</span><div class="dir-card-id"><div class="dir-name">Adobe Firefly</div><div class="dir-by">by Adobe</div></div></div>
         <p class="dir-desc">Adobe&#x27;s AI image generator trained on licensed content — safe for commercial use.</p>
         <div class="dir-badges"><span class="dir-badge">Free Tier</span><span class="dir-badge">Commercial Safe</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#adobe-firefly">Read our review →</a><a class="dir-ext" href="https://firefly.adobe.com" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="image" data-tag="" data-pricing="free-tier" data-added="2026-06-30" data-name="ideogram">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:240">I</span><div class="dir-name">Ideogram</div><div class="dir-by">by Ideogram AI</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:240">I</span><div class="dir-card-id"><div class="dir-name">Ideogram</div><div class="dir-by">by Ideogram AI</div></div></div>
         <p class="dir-desc">Best-in-class at rendering readable text in images.</p>
         <div class="dir-badges"><span class="dir-badge">Free Tier</span><span class="dir-badge">Best Text AI</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#ideogram">Read our review →</a><a class="dir-ext" href="https://ideogram.ai" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="image" data-tag="" data-pricing="free" data-added="2026-06-30" data-name="playground-ai">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:340">P</span><div class="dir-name">Playground AI</div><div class="dir-by">by Playground</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:340">P</span><div class="dir-card-id"><div class="dir-name">Playground AI</div><div class="dir-by">by Playground</div></div></div>
         <p class="dir-desc">100 free images per day with no watermarks.</p>
         <div class="dir-badges"><span class="dir-badge">100/day Free</span><span class="dir-badge">Easy Start</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#playground-ai">Read our review →</a><a class="dir-ext" href="https://playground.com" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="image" data-tag="" data-pricing="open-source" data-added="2026-06-30" data-name="automatic1111">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:301">A</span><div class="dir-name">Automatic1111</div><div class="dir-by">by Community</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:301">A</span><div class="dir-card-id"><div class="dir-name">Automatic1111</div><div class="dir-by">by Community</div></div></div>
         <p class="dir-desc">The classic local Stable Diffusion web UI.</p>
         <div class="dir-badges"><span class="dir-badge">100% Free</span><span class="dir-badge">Open Source</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#automatic1111">Read our review →</a><a class="dir-ext" href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="image" data-tag="" data-pricing="free" data-added="2026-06-30" data-name="craiyon">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:299">C</span><div class="dir-name">Craiyon</div><div class="dir-by">by Craiyon</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:299">C</span><div class="dir-card-id"><div class="dir-name">Craiyon</div><div class="dir-by">by Craiyon</div></div></div>
         <p class="dir-desc">Formerly DALL-E Mini.</p>
         <div class="dir-badges"><span class="dir-badge">Unlimited Free</span><span class="dir-badge">No Signup</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#craiyon">Read our review →</a><a class="dir-ext" href="https://www.craiyon.com" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="video" data-tag="" data-pricing="free-tier" data-added="2026-06-30" data-name="kling-ai">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:300">K</span><div class="dir-name">Kling AI</div><div class="dir-by">by Kuaishou</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:300">K</span><div class="dir-card-id"><div class="dir-name">Kling AI</div><div class="dir-by">by Kuaishou</div></div></div>
         <p class="dir-desc">One of the best free text-to-video generators in 2026.</p>
         <div class="dir-badges"><span class="dir-badge">Free Tier</span><span class="dir-badge">Top Rated</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#kling-ai">Read our review →</a><a class="dir-ext" href="https://klingai.com" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="video" data-tag="" data-pricing="free-tier" data-added="2026-06-30" data-name="luma-dream-machine">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:249">L</span><div class="dir-name">Luma Dream Machine</div><div class="dir-by">by Luma AI</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:249">L</span><div class="dir-card-id"><div class="dir-name">Luma Dream Machine</div><div class="dir-by">by Luma AI</div></div></div>
         <p class="dir-desc">Stunning video generation from text or image.</p>
         <div class="dir-badges"><span class="dir-badge">Free Tier</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#luma-dream-machine">Read our review →</a><a class="dir-ext" href="https://lumalabs.ai/dream-machine" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="video" data-tag="" data-pricing="free" data-added="2026-06-30" data-name="hailuo-ai">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:23">H</span><div class="dir-name">Hailuo AI</div><div class="dir-by">by MiniMax</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:23">H</span><div class="dir-card-id"><div class="dir-name">Hailuo AI</div><div class="dir-by">by MiniMax</div></div></div>
         <p class="dir-desc">Free video generation from text and images.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">2025</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#hailuo-ai">Read our review →</a><a class="dir-ext" href="https://hailuoai.com" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="video" data-tag="" data-pricing="free-tier" data-added="2026-06-30" data-name="pixverse">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:242">P</span><div class="dir-name">PixVerse</div><div class="dir-by">by PixVerse</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:242">P</span><div class="dir-card-id"><div class="dir-name">PixVerse</div><div class="dir-by">by PixVerse</div></div></div>
         <p class="dir-desc">Text-to-video and image-to-video with a generous free plan.</p>
         <div class="dir-badges"><span class="dir-badge">Free Tier</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#pixverse">Read our review →</a><a class="dir-ext" href="https://pixverse.ai" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="video" data-tag="" data-pricing="free-tier" data-added="2026-06-30" data-name="runway">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:186">R</span><div class="dir-name">Runway</div><div class="dir-by">by Runway</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:186">R</span><div class="dir-card-id"><div class="dir-name">Runway</div><div class="dir-by">by Runway</div></div></div>
         <p class="dir-desc">Runway is a widely known creative video platform.</p>
         <div class="dir-badges"><span class="dir-badge">Free Tier</span><span class="dir-badge">Gen-3</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#runway">Read our review →</a><a class="dir-ext" href="https://runwayml.com" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="video" data-tag="" data-pricing="free" data-added="2026-06-30" data-name="pika">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:347">P</span><div class="dir-name">Pika</div><div class="dir-by">by Pika Labs</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:347">P</span><div class="dir-card-id"><div class="dir-name">Pika</div><div class="dir-by">by Pika Labs</div></div></div>
         <p class="dir-desc">Simple text-to-video with a clean interface.</p>
         <div class="dir-badges"><span class="dir-badge">Free Credits</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#pika">Read our review →</a><a class="dir-ext" href="https://pika.art" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="audio" data-tag="popular" data-pricing="free" data-added="2026-06-30" data-name="suno">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:51">S</span><div class="dir-name">Suno</div><div class="dir-by">by Suno AI</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:51">S</span><div class="dir-card-id"><div class="dir-name">Suno</div><div class="dir-by">by Suno AI</div></div></div>
         <p class="dir-desc">Generate full songs — vocals, instruments, lyrics — from a text prompt.</p>
         <div class="dir-badges"><span class="dir-badge">50 songs/day</span><span class="dir-badge">Best Music AI</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#suno">Read our review →</a><a class="dir-ext" href="https://suno.com" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="audio" data-tag="" data-pricing="free-tier" data-added="2026-06-30" data-name="udio">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:191">U</span><div class="dir-name">Udio</div><div class="dir-by">by Udio</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:191">U</span><div class="dir-card-id"><div class="dir-name">Udio</div><div class="dir-by">by Udio</div></div></div>
         <p class="dir-desc">Suno&#x27;s main rival.</p>
         <div class="dir-badges"><span class="dir-badge">Free Tier</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#udio">Read our review →</a><a class="dir-ext" href="https://udio.com" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="audio" data-tag="" data-pricing="open-source" data-added="2026-06-30" data-name="whisper">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:190">W</span><div class="dir-name">Whisper</div><div class="dir-by">by OpenAI</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:190">W</span><div class="dir-card-id"><div class="dir-name">Whisper</div><div class="dir-by">by OpenAI</div></div></div>
         <p class="dir-desc">Open-source speech recognition that runs locally.</p>
         <div class="dir-badges"><span class="dir-badge">100% Free</span><span class="dir-badge">Open Source</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#whisper">Read our review →</a><a class="dir-ext" href="https://github.com/openai/whisper" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="audio" data-tag="" data-pricing="open-source" data-added="2026-06-30" data-name="audiocraft">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:46">A</span><div class="dir-name">AudioCraft</div><div class="dir-by">by Meta</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:46">A</span><div class="dir-card-id"><div class="dir-name">AudioCraft</div><div class="dir-by">by Meta</div></div></div>
         <p class="dir-desc">Meta&#x27;s open-source audio AI suite.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Open Source</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#audiocraft">Read our review →</a><a class="dir-ext" href="https://github.com/facebookresearch/audiocraft" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="audio" data-tag="" data-pricing="open-source" data-added="2026-06-30" data-name="coqui-tts">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:119">C</span><div class="dir-name">Coqui TTS</div><div class="dir-by">by Coqui</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:119">C</span><div class="dir-card-id"><div class="dir-name">Coqui TTS</div><div class="dir-by">by Coqui</div></div></div>
         <p class="dir-desc">Open-source text-to-speech with voice cloning.</p>
         <div class="dir-badges"><span class="dir-badge">100% Free</span><span class="dir-badge">Open Source</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#coqui-tts">Read our review →</a><a class="dir-ext" href="https://github.com/coqui-ai/TTS" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="audio" data-tag="" data-pricing="free-tier" data-added="2026-06-30" data-name="elevenlabs">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:359">E</span><div class="dir-name">ElevenLabs</div><div class="dir-by">by ElevenLabs</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:359">E</span><div class="dir-card-id"><div class="dir-name">ElevenLabs</div><div class="dir-by">by ElevenLabs</div></div></div>
         <p class="dir-desc">The most realistic AI voice synthesis available.</p>
         <div class="dir-badges"><span class="dir-badge">Free Tier</span><span class="dir-badge">Most Realistic</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#elevenlabs">Read our review →</a><a class="dir-ext" href="https://elevenlabs.io" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="code" data-tag="popular" data-pricing="free-tier" data-added="2026-06-30" data-name="github-copilot">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:110">G</span><div class="dir-name">GitHub Copilot</div><div class="dir-by">by GitHub / Microsoft</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:110">G</span><div class="dir-card-id"><div class="dir-name">GitHub Copilot</div><div class="dir-by">by GitHub / Microsoft</div></div></div>
         <p class="dir-desc">A mainstream AI coding assistant with a useful free tier: 2,000 completions/month and 50 chat messages.</p>
         <div class="dir-badges"><span class="dir-badge">Free Tier</span><span class="dir-badge">2024</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#github-copilot">Read our review →</a><a class="dir-ext" href="https://github.com/features/copilot" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="code" data-tag="" data-pricing="free-tier" data-added="2026-06-30" data-name="cursor">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:170">C</span><div class="dir-name">Cursor</div><div class="dir-by">by Cursor</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:170">C</span><div class="dir-card-id"><div class="dir-name">Cursor</div><div class="dir-by">by Cursor</div></div></div>
         <p class="dir-desc">AI-first code editor built on VS Code.</p>
         <div class="dir-badges"><span class="dir-badge">Free Tier</span><span class="dir-badge">Best AI Editor</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#cursor">Read our review →</a><a class="dir-ext" href="https://cursor.sh" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="code" data-tag="" data-pricing="free" data-added="2026-06-30" data-name="codeium">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:314">C</span><div class="dir-name">Codeium</div><div class="dir-by">by Codeium</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:314">C</span><div class="dir-card-id"><div class="dir-name">Codeium</div><div class="dir-by">by Codeium</div></div></div>
         <p class="dir-desc">Truly unlimited free AI code completions.</p>
         <div class="dir-badges"><span class="dir-badge">Unlimited Free</span><span class="dir-badge">No Limits</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#codeium">Read our review →</a><a class="dir-ext" href="https://codeium.com" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="code" data-tag="" data-pricing="open-source" data-added="2026-06-30" data-name="continue-dev">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:351">C</span><div class="dir-name">Continue.dev</div><div class="dir-by">by Continue</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:351">C</span><div class="dir-card-id"><div class="dir-name">Continue.dev</div><div class="dir-by">by Continue</div></div></div>
         <p class="dir-desc">Open-source AI coding assistant for VS Code and JetBrains.</p>
         <div class="dir-badges"><span class="dir-badge">100% Free</span><span class="dir-badge">Open Source</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#continue-dev">Read our review →</a><a class="dir-ext" href="https://continue.dev" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="code" data-tag="" data-pricing="open-source" data-added="2026-06-30" data-name="aider">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:179">A</span><div class="dir-name">Aider</div><div class="dir-by">by Paul Gauthier</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:179">A</span><div class="dir-card-id"><div class="dir-name">Aider</div><div class="dir-by">by Paul Gauthier</div></div></div>
         <p class="dir-desc">AI pair programmer in your terminal.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Open Source</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#aider">Read our review →</a><a class="dir-ext" href="https://aider.chat" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="code" data-tag="" data-pricing="free-tier" data-added="2026-06-30" data-name="tabnine">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:79">T</span><div class="dir-name">Tabnine</div><div class="dir-by">by Tabnine</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:79">T</span><div class="dir-card-id"><div class="dir-name">Tabnine</div><div class="dir-by">by Tabnine</div></div></div>
         <p class="dir-desc">Privacy-first AI coding assistant.</p>
         <div class="dir-badges"><span class="dir-badge">Free Tier</span><span class="dir-badge">Local Option</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#tabnine">Read our review →</a><a class="dir-ext" href="https://tabnine.com" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="writing" data-tag="" data-pricing="free-tier" data-added="2026-06-30" data-name="quillbot">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:132">Q</span><div class="dir-name">QuillBot</div><div class="dir-by">by QuillBot</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:132">Q</span><div class="dir-card-id"><div class="dir-name">QuillBot</div><div class="dir-by">by QuillBot</div></div></div>
         <p class="dir-desc">The best free paraphrasing and grammar tool.</p>
         <div class="dir-badges"><span class="dir-badge">Free Tier</span><span class="dir-badge">Quick Start</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#quillbot">Read our review →</a><a class="dir-ext" href="https://quillbot.com" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="writing" data-tag="" data-pricing="free" data-added="2026-06-30" data-name="hemingway-editor">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:307">H</span><div class="dir-name">Hemingway Editor</div><div class="dir-by">by Hemingway App</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:307">H</span><div class="dir-card-id"><div class="dir-name">Hemingway Editor</div><div class="dir-by">by Hemingway App</div></div></div>
         <p class="dir-desc">Paste your text and it shows you exactly what to cut.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">No Signup</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#hemingway-editor">Read our review →</a><a class="dir-ext" href="https://hemingwayapp.com" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="writing" data-tag="" data-pricing="free-tier" data-added="2026-06-30" data-name="grammarly">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:324">G</span><div class="dir-name">Grammarly</div><div class="dir-by">by Grammarly</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:324">G</span><div class="dir-card-id"><div class="dir-name">Grammarly</div><div class="dir-by">by Grammarly</div></div></div>
         <p class="dir-desc">Real-time grammar, spelling, and style suggestions across every website and app you use.</p>
         <div class="dir-badges"><span class="dir-badge">Free Tier</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#grammarly">Read our review →</a><a class="dir-ext" href="https://grammarly.com" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="writing" data-tag="" data-pricing="free" data-added="2026-06-30" data-name="rytr">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:255">R</span><div class="dir-name">Rytr</div><div class="dir-by">by Rytr</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:255">R</span><div class="dir-card-id"><div class="dir-name">Rytr</div><div class="dir-by">by Rytr</div></div></div>
         <p class="dir-desc">AI writing assistant with a free tier of 10,000 characters/month.</p>
         <div class="dir-badges"><span class="dir-badge">10K chars free</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#rytr">Read our review →</a><a class="dir-ext" href="https://rytr.me" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="writing" data-tag="" data-pricing="free-tier" data-added="2026-06-30" data-name="copy-ai">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:30">C</span><div class="dir-name">Copy.ai</div><div class="dir-by">by Copy.ai</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:30">C</span><div class="dir-card-id"><div class="dir-name">Copy.ai</div><div class="dir-by">by Copy.ai</div></div></div>
         <p class="dir-desc">AI copywriting with 2,000 words free per month.</p>
         <div class="dir-badges"><span class="dir-badge">Free Tier</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#copy-ai">Read our review →</a><a class="dir-ext" href="https://copy.ai" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="writing" data-tag="" data-pricing="free-tier" data-added="2026-06-30" data-name="wordtune">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:336">W</span><div class="dir-name">Wordtune</div><div class="dir-by">by AI21 Labs</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:336">W</span><div class="dir-card-id"><div class="dir-name">Wordtune</div><div class="dir-by">by AI21 Labs</div></div></div>
         <p class="dir-desc">Rephrase, shorten, or expand any sentence in one click.</p>
         <div class="dir-badges"><span class="dir-badge">Free Tier</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#wordtune">Read our review →</a><a class="dir-ext" href="https://wordtune.com" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="models" data-tag="" data-pricing="open-source" data-added="2026-06-30" data-name="llama-3-3-70b">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:339">L</span><div class="dir-name">Llama 3.3 70B</div><div class="dir-by">by Meta</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:339">L</span><div class="dir-card-id"><div class="dir-name">Llama 3.3 70B</div><div class="dir-by">by Meta</div></div></div>
         <p class="dir-desc">Meta&#x27;s flagship open-source model.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Open Source</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#llama-3-3-70b">Read our review →</a><a class="dir-ext" href="https://ollama.ai/library/llama3.3" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="models" data-tag="" data-pricing="free" data-added="2026-06-30" data-name="mistral-7b-mixtral">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:312">M</span><div class="dir-name">Mistral 7B / Mixtral</div><div class="dir-by">by Mistral AI</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:312">M</span><div class="dir-card-id"><div class="dir-name">Mistral 7B / Mixtral</div><div class="dir-by">by Mistral AI</div></div></div>
         <p class="dir-desc">Europe&#x27;s answer to GPT.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Apache 2.0</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#mistral-7b-mixtral">Read our review →</a><a class="dir-ext" href="https://ollama.ai/library/mistral" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="models" data-tag="" data-pricing="free" data-added="2026-06-30" data-name="phi-4">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:206">P</span><div class="dir-name">Phi-4</div><div class="dir-by">by Microsoft</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:206">P</span><div class="dir-card-id"><div class="dir-name">Phi-4</div><div class="dir-by">by Microsoft</div></div></div>
         <p class="dir-desc">Microsoft&#x27;s small but mighty model.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">MIT License</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#phi-4">Read our review →</a><a class="dir-ext" href="https://ollama.ai/library/phi4" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="models" data-tag="" data-pricing="open-source" data-added="2026-06-30" data-name="gemma-2">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:58">G</span><div class="dir-name">Gemma 2</div><div class="dir-by">by Google DeepMind</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:58">G</span><div class="dir-card-id"><div class="dir-name">Gemma 2</div><div class="dir-by">by Google DeepMind</div></div></div>
         <p class="dir-desc">Google&#x27;s open-source model family.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Open Source</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#gemma-2">Read our review →</a><a class="dir-ext" href="https://ollama.ai/library/gemma2" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="models" data-tag="" data-pricing="open-source" data-added="2026-06-30" data-name="deepseek-r1">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:202">D</span><div class="dir-name">DeepSeek R1</div><div class="dir-by">by DeepSeek</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:202">D</span><div class="dir-card-id"><div class="dir-name">DeepSeek R1</div><div class="dir-by">by DeepSeek</div></div></div>
         <p class="dir-desc">The reasoning model that shocked the AI world.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Open Source</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#deepseek-r1">Read our review →</a><a class="dir-ext" href="https://ollama.ai/library/deepseek-r1" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="models" data-tag="" data-pricing="free" data-added="2026-06-30" data-name="qwen2-5">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:57">Q</span><div class="dir-name">Qwen2.5</div><div class="dir-by">by Alibaba</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:57">Q</span><div class="dir-card-id"><div class="dir-name">Qwen2.5</div><div class="dir-by">by Alibaba</div></div></div>
         <p class="dir-desc">Alibaba&#x27;s top open-source model.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Apache 2.0</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#qwen2-5">Read our review →</a><a class="dir-ext" href="https://ollama.ai/library/qwen2.5" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="models" data-tag="" data-pricing="open-source" data-added="2026-06-30" data-name="falcon-180b">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:181">F</span><div class="dir-name">Falcon 180B</div><div class="dir-by">by TII (UAE)</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:181">F</span><div class="dir-card-id"><div class="dir-name">Falcon 180B</div><div class="dir-by">by TII (UAE)</div></div></div>
         <p class="dir-desc">One of the largest fully open-source models available.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Open Source</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#falcon-180b">Read our review →</a><a class="dir-ext" href="https://huggingface.co/tiiuae" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="models" data-tag="" data-pricing="free" data-added="2026-06-30" data-name="command-r">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:258">C</span><div class="dir-name">Command R+</div><div class="dir-by">by Cohere</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:258">C</span><div class="dir-card-id"><div class="dir-name">Command R+</div><div class="dir-by">by Cohere</div></div></div>
         <p class="dir-desc">Cohere&#x27;s best open-weight model.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Open Weights</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#command-r">Read our review →</a><a class="dir-ext" href="https://ollama.ai/library/command-r-plus" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="research" data-tag="" data-pricing="free" data-added="2026-06-30" data-name="notebooklm">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:94">N</span><div class="dir-name">NotebookLM</div><div class="dir-by">by Google</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:94">N</span><div class="dir-card-id"><div class="dir-name">NotebookLM</div><div class="dir-by">by Google</div></div></div>
         <p class="dir-desc">Upload documents and ask grounded questions against the source material.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Best for Docs</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#notebooklm">Read our review →</a><a class="dir-ext" href="https://notebooklm.google.com" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="research" data-tag="" data-pricing="free-tier" data-added="2026-06-30" data-name="elicit">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:278">E</span><div class="dir-name">Elicit</div><div class="dir-by">by Elicit</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:278">E</span><div class="dir-card-id"><div class="dir-name">Elicit</div><div class="dir-by">by Elicit</div></div></div>
         <p class="dir-desc">AI research assistant that searches and summarizes academic papers.</p>
         <div class="dir-badges"><span class="dir-badge">Free Tier</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#elicit">Read our review →</a><a class="dir-ext" href="https://elicit.com" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="research" data-tag="" data-pricing="free-tier" data-added="2026-06-30" data-name="consensus">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:231">C</span><div class="dir-name">Consensus</div><div class="dir-by">by Consensus</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:231">C</span><div class="dir-card-id"><div class="dir-name">Consensus</div><div class="dir-by">by Consensus</div></div></div>
         <p class="dir-desc">Search engine that answers questions using scientific evidence.</p>
         <div class="dir-badges"><span class="dir-badge">Free Tier</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#consensus">Read our review →</a><a class="dir-ext" href="https://consensus.app" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="research" data-tag="" data-pricing="free" data-added="2026-06-30" data-name="semantic-scholar">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:275">S</span><div class="dir-name">Semantic Scholar</div><div class="dir-by">by Allen AI</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:275">S</span><div class="dir-card-id"><div class="dir-name">Semantic Scholar</div><div class="dir-by">by Allen AI</div></div></div>
         <p class="dir-desc">Free AI-powered academic search engine with 220M+ papers.</p>
         <div class="dir-badges"><span class="dir-badge">Unlimited Free</span><span class="dir-badge">No Signup</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#semantic-scholar">Read our review →</a><a class="dir-ext" href="https://semanticscholar.org" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="dev" data-tag="" data-pricing="free-tier" data-added="2026-06-30" data-name="hugging-face">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:83">H</span><div class="dir-name">Hugging Face</div><div class="dir-by">by Hugging Face</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:83">H</span><div class="dir-card-id"><div class="dir-name">Hugging Face</div><div class="dir-by">by Hugging Face</div></div></div>
         <p class="dir-desc">The GitHub of AI.</p>
         <div class="dir-badges"><span class="dir-badge">Free Tier</span><span class="dir-badge">Open Source Hub</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#hugging-face">Read our review →</a><a class="dir-ext" href="https://huggingface.co" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="dev" data-tag="" data-pricing="open-source" data-added="2026-06-30" data-name="langchain">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:291">L</span><div class="dir-name">LangChain</div><div class="dir-by">by LangChain</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:291">L</span><div class="dir-card-id"><div class="dir-name">LangChain</div><div class="dir-by">by LangChain</div></div></div>
         <p class="dir-desc">The most popular open-source framework for building AI agents and LLM apps.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Open Source</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#langchain">Read our review →</a><a class="dir-ext" href="https://langchain.com" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="dev" data-tag="" data-pricing="open-source" data-added="2026-06-30" data-name="gradio">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:90">G</span><div class="dir-name">Gradio</div><div class="dir-by">by Hugging Face</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:90">G</span><div class="dir-card-id"><div class="dir-name">Gradio</div><div class="dir-by">by Hugging Face</div></div></div>
         <p class="dir-desc">Build and share AI demo apps in 3 lines of Python.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Open Source</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#gradio">Read our review →</a><a class="dir-ext" href="https://gradio.app" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="dev" data-tag="" data-pricing="open-source" data-added="2026-06-30" data-name="llamaindex">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:265">L</span><div class="dir-name">LlamaIndex</div><div class="dir-by">by LlamaIndex</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:265">L</span><div class="dir-card-id"><div class="dir-name">LlamaIndex</div><div class="dir-by">by LlamaIndex</div></div></div>
         <p class="dir-desc">Open-source framework for building RAG systems.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Open Source</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#llamaindex">Read our review →</a><a class="dir-ext" href="https://llamaindex.ai" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="dev" data-tag="" data-pricing="open-source" data-added="2026-06-30" data-name="streamlit">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:27">S</span><div class="dir-name">Streamlit</div><div class="dir-by">by Snowflake</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:27">S</span><div class="dir-card-id"><div class="dir-name">Streamlit</div><div class="dir-by">by Snowflake</div></div></div>
         <p class="dir-desc">Turn Python scripts into shareable web apps with no frontend knowledge.</p>
         <div class="dir-badges"><span class="dir-badge">Free Hosting</span><span class="dir-badge">Open Source</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#streamlit">Read our review →</a><a class="dir-ext" href="https://streamlit.io" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="dev" data-tag="" data-pricing="free" data-added="2026-06-30" data-name="together-ai">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:111">T</span><div class="dir-name">Together AI</div><div class="dir-by">by Together</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:111">T</span><div class="dir-card-id"><div class="dir-name">Together AI</div><div class="dir-by">by Together</div></div></div>
         <p class="dir-desc">Free API access to 50+ open-source models including Llama 3, Mixtral, DBRX.</p>
         <div class="dir-badges"><span class="dir-badge">$1 Free Credit</span><span class="dir-badge">API</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#together-ai">Read our review →</a><a class="dir-ext" href="https://together.ai" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="security" data-tag="popular" data-pricing="open-source" data-added="2026-07-01" data-name="bitwarden">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:120">B</span><div class="dir-name">Bitwarden</div><div class="dir-by">by Open Source</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:120">B</span><div class="dir-card-id"><div class="dir-name">Bitwarden</div><div class="dir-by">by Open Source</div></div></div>
         <p class="dir-desc">Unlimited passwords and devices on the free plan, zero-knowledge encryption.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Open Source</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-open-source-software-alternatives-2026#bitwarden">Read our review →</a><a class="dir-ext" href="https://bitwarden.com" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="security" data-tag="popular" data-pricing="open-source" data-added="2026-07-01" data-name="keepassxc">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:89">K</span><div class="dir-name">KeePassXC</div><div class="dir-by">by Open Source</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:89">K</span><div class="dir-card-id"><div class="dir-name">KeePassXC</div><div class="dir-by">by Open Source</div></div></div>
         <p class="dir-desc">Fully local, encrypted vault file — no account, no cloud, no subscription.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Open Source</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-open-source-software-alternatives-2026#keepassxc">Read our review →</a><a class="dir-ext" href="https://keepassxc.org" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="security" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="proton-pass">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:66">P</span><div class="dir-name">Proton Pass</div><div class="dir-by">by Proton</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:66">P</span><div class="dir-card-id"><div class="dir-name">Proton Pass</div><div class="dir-by">by Proton</div></div></div>
         <p class="dir-desc">Privacy-focused free tier with unlimited logins and hide-my-email aliases.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-password-managers-2026#proton-pass">Read our review →</a><a class="dir-ext" href="https://proton.me/pass" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="security" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="google-password-manager">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:227">G</span><div class="dir-name">Google Password Manager</div><div class="dir-by">by Google</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:227">G</span><div class="dir-card-id"><div class="dir-name">Google Password Manager</div><div class="dir-by">by Google</div></div></div>
         <p class="dir-desc">Built into Chrome and Android — free, zero setup, passkey support.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">No Signup</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-password-managers-2026#google-password-manager">Read our review →</a><a class="dir-ext" href="https://passwords.google.com" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="security" data-tag="new" data-pricing="free" data-added="2026-07-01" data-name="apple-passwords">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:131">A</span><div class="dir-name">Apple Passwords</div><div class="dir-by">by Apple</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:131">A</span><div class="dir-card-id"><div class="dir-name">Apple Passwords</div><div class="dir-by">by Apple</div></div></div>
         <p class="dir-desc">Built into iPhone, iPad, and Mac — free, iCloud sync, passkey support.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">No Signup</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-password-managers-2026#apple-passwords-keychain">Read our review →</a><a class="dir-ext" href="https://www.apple.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="writing" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="deepl-write">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:174">D</span><div class="dir-name">DeepL Write</div><div class="dir-by">by DeepL</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:174">D</span><div class="dir-card-id"><div class="dir-name">DeepL Write</div><div class="dir-by">by DeepL</div></div></div>
         <p class="dir-desc">Free tone and grammar polishing, especially strong for non-native speakers.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">No Signup</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-writing-tools-2026#deepl-write">Read our review →</a><a class="dir-ext" href="https://www.deepl.com/write" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="gaming" data-tag="popular" data-pricing="free" data-added="2026-07-01" data-name="dota-2">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:273">D</span><div class="dir-name">Dota 2</div><div class="dir-by">by Valve</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:273">D</span><div class="dir-card-id"><div class="dir-name">Dota 2</div><div class="dir-by">by Valve</div></div></div>
         <p class="dir-desc">A full competitive MOBA where every hero is available without paying.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Fair F2P</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#dota-2">Read our review →</a><a class="dir-ext" href="https://store.steampowered.com/app/570/Dota_2/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="path-of-exile">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:149">P</span><div class="dir-name">Path of Exile</div><div class="dir-by">by Grinding Gear Games</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:149">P</span><div class="dir-card-id"><div class="dir-name">Path of Exile</div><div class="dir-by">by Grinding Gear Games</div></div></div>
         <p class="dir-desc">A massive ARPG with deep builds and no paid power.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Fair F2P</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#path-of-exile">Read our review →</a><a class="dir-ext" href="https://www.pathofexile.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="warframe">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:131">W</span><div class="dir-name">Warframe</div><div class="dir-by">by Digital Extremes</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:131">W</span><div class="dir-card-id"><div class="dir-name">Warframe</div><div class="dir-by">by Digital Extremes</div></div></div>
         <p class="dir-desc">Fast co-op space-ninja action with years of free content.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Co-op</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#warframe">Read our review →</a><a class="dir-ext" href="https://www.warframe.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="marvel-rivals">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:43">M</span><div class="dir-name">Marvel Rivals</div><div class="dir-by">by NetEase / Marvel</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:43">M</span><div class="dir-card-id"><div class="dir-name">Marvel Rivals</div><div class="dir-by">by NetEase / Marvel</div></div></div>
         <p class="dir-desc">A polished superhero team shooter with instant pick-up appeal.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Hero Shooter</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#marvel-rivals">Read our review →</a><a class="dir-ext" href="https://www.marvelrivals.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="the-finals">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:341">T</span><div class="dir-name">The Finals</div><div class="dir-by">by Embark Studios</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:341">T</span><div class="dir-card-id"><div class="dir-name">The Finals</div><div class="dir-by">by Embark Studios</div></div></div>
         <p class="dir-desc">Destructible-arena shooter with chaotic team objectives.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Shooter</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#the-finals">Read our review →</a><a class="dir-ext" href="https://www.reachthefinals.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="brawlhalla">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:30">B</span><div class="dir-name">Brawlhalla</div><div class="dir-by">by Blue Mammoth / Ubisoft</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:30">B</span><div class="dir-card-id"><div class="dir-name">Brawlhalla</div><div class="dir-by">by Blue Mammoth / Ubisoft</div></div></div>
         <p class="dir-desc">Platform fighting that runs on almost anything.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Fighting</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#brawlhalla">Read our review →</a><a class="dir-ext" href="https://www.brawlhalla.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="gaming" data-tag="popular" data-pricing="free" data-added="2026-07-01" data-name="rocket-league">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:120">R</span><div class="dir-name">Rocket League</div><div class="dir-by">by Psyonix / Epic</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:120">R</span><div class="dir-card-id"><div class="dir-name">Rocket League</div><div class="dir-by">by Psyonix / Epic</div></div></div>
         <p class="dir-desc">Soccer with rocket cars; still one of the cleanest skill games.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Sports</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#rocket-league">Read our review →</a><a class="dir-ext" href="https://www.rocketleague.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="gaming" data-tag="popular" data-pricing="free" data-added="2026-07-01" data-name="counter-strike-2">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:162">C</span><div class="dir-name">Counter-Strike 2</div><div class="dir-by">by Valve</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:162">C</span><div class="dir-card-id"><div class="dir-name">Counter-Strike 2</div><div class="dir-by">by Valve</div></div></div>
         <p class="dir-desc">The classic tactical shooter, free for casual and competitive play.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Tactical</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#counter-strike-2">Read our review →</a><a class="dir-ext" href="https://store.steampowered.com/app/730/CounterStrike_2/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="gaming" data-tag="popular" data-pricing="free" data-added="2026-07-01" data-name="fortnite">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:85">F</span><div class="dir-name">Fortnite</div><div class="dir-by">by Epic Games</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:85">F</span><div class="dir-card-id"><div class="dir-name">Fortnite</div><div class="dir-by">by Epic Games</div></div></div>
         <p class="dir-desc">Battle royale, creative maps, Lego modes, racing, concerts and more.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Battle Royale</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#fortnite">Read our review →</a><a class="dir-ext" href="https://www.fortnite.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="team-fortress-2">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:157">T</span><div class="dir-name">Team Fortress 2</div><div class="dir-by">by Valve</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:157">T</span><div class="dir-card-id"><div class="dir-name">Team Fortress 2</div><div class="dir-by">by Valve</div></div></div>
         <p class="dir-desc">A classic class shooter with personality, chaos, and a long community tail.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Classic</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#team-fortress-2">Read our review →</a><a class="dir-ext" href="https://store.steampowered.com/app/440/Team_Fortress_2/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="open-source" data-added="2026-07-01" data-name="0-a-d">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:265">0</span><div class="dir-name">0 A.D.</div><div class="dir-by">by Wildfire Games</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:265">0</span><div class="dir-card-id"><div class="dir-name">0 A.D.</div><div class="dir-by">by Wildfire Games</div></div></div>
         <p class="dir-desc">A free, open-source RTS of ancient warfare.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Free</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#0-a-d">Read our review →</a><a class="dir-ext" href="https://play0ad.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="open-source" data-added="2026-07-01" data-name="the-battle-for-wesnoth">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:205">T</span><div class="dir-name">The Battle for Wesnoth</div><div class="dir-by">by Community</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:205">T</span><div class="dir-card-id"><div class="dir-name">The Battle for Wesnoth</div><div class="dir-by">by Community</div></div></div>
         <p class="dir-desc">A turn-based fantasy strategy classic with campaigns and multiplayer.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Strategy</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#the-battle-for-wesnoth">Read our review →</a><a class="dir-ext" href="https://www.wesnoth.org/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="open-source" data-added="2026-07-01" data-name="openttd">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:2">O</span><div class="dir-name">OpenTTD</div><div class="dir-by">by OpenTTD Team</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:2">O</span><div class="dir-card-id"><div class="dir-name">OpenTTD</div><div class="dir-by">by OpenTTD Team</div></div></div>
         <p class="dir-desc">Build transport networks and accidentally lose entire evenings.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Sim</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#openttd">Read our review →</a><a class="dir-ext" href="https://www.openttd.org/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="open-source" data-added="2026-07-01" data-name="supertuxkart">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:262">S</span><div class="dir-name">SuperTuxKart</div><div class="dir-by">by Community</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:262">S</span><div class="dir-card-id"><div class="dir-name">SuperTuxKart</div><div class="dir-by">by Community</div></div></div>
         <p class="dir-desc">A free kart racer with local multiplayer and community charm.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Racing</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#supertuxkart">Read our review →</a><a class="dir-ext" href="https://supertuxkart.net/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="open-source" data-added="2026-07-01" data-name="luanti-minetest">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:37">L</span><div class="dir-name">Luanti / Minetest</div><div class="dir-by">by Community</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:37">L</span><div class="dir-card-id"><div class="dir-name">Luanti / Minetest</div><div class="dir-by">by Community</div></div></div>
         <p class="dir-desc">A free voxel sandbox engine for Minecraft-like worlds.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Sandbox</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#luanti-minetest">Read our review →</a><a class="dir-ext" href="https://www.luanti.org/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="open-source" data-added="2026-07-01" data-name="veloren">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:221">V</span><div class="dir-name">Veloren</div><div class="dir-by">by Community</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:221">V</span><div class="dir-card-id"><div class="dir-name">Veloren</div><div class="dir-by">by Community</div></div></div>
         <p class="dir-desc">Open-source voxel RPG with exploration and co-op promise.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">RPG</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#veloren">Read our review →</a><a class="dir-ext" href="https://veloren.net/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="open-source" data-added="2026-07-01" data-name="freeciv">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:220">F</span><div class="dir-name">Freeciv</div><div class="dir-by">by Community</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:220">F</span><div class="dir-card-id"><div class="dir-name">Freeciv</div><div class="dir-by">by Community</div></div></div>
         <p class="dir-desc">Civilization-style empire building, free and open source.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Strategy</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#freeciv">Read our review →</a><a class="dir-ext" href="https://www.freeciv.org/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="open-source" data-added="2026-07-01" data-name="endless-sky">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:206">E</span><div class="dir-name">Endless Sky</div><div class="dir-by">by Community</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:206">E</span><div class="dir-card-id"><div class="dir-name">Endless Sky</div><div class="dir-by">by Community</div></div></div>
         <p class="dir-desc">A free space trading and combat game inspired by Escape Velocity.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Space</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#endless-sky">Read our review →</a><a class="dir-ext" href="https://endless-sky.github.io/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="cave-story">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:139">C</span><div class="dir-name">Cave Story</div><div class="dir-by">by Studio Pixel</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:139">C</span><div class="dir-card-id"><div class="dir-name">Cave Story</div><div class="dir-by">by Studio Pixel</div></div></div>
         <p class="dir-desc">The freeware action-platformer that helped define indie games.</p>
         <div class="dir-badges"><span class="dir-badge">Freeware</span><span class="dir-badge">Classic</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#cave-story">Read our review →</a><a class="dir-ext" href="https://www.cavestory.org/download/cave-story.php" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="doki-doki-literature-club">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:124">D</span><div class="dir-name">Doki Doki Literature Club!</div><div class="dir-by">by Team Salvato</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:124">D</span><div class="dir-card-id"><div class="dir-name">Doki Doki Literature Club!</div><div class="dir-by">by Team Salvato</div></div></div>
         <p class="dir-desc">A famous free visual novel best played without spoilers.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Narrative</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#doki-doki-literature-club">Read our review →</a><a class="dir-ext" href="https://ddlc.moe/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="deltarune-chapters-1-2">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:152">D</span><div class="dir-name">Deltarune Chapters 1 &amp; 2</div><div class="dir-by">by Toby Fox</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:152">D</span><div class="dir-card-id"><div class="dir-name">Deltarune Chapters 1 &amp; 2</div><div class="dir-by">by Toby Fox</div></div></div>
         <p class="dir-desc">A free start to Toby Fox’s follow-up universe.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">RPG</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#deltarune-chapters-1-2">Read our review →</a><a class="dir-ext" href="https://deltarune.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="friday-night-funkin">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:146">F</span><div class="dir-name">Friday Night Funkin’</div><div class="dir-by">by The Funkin Crew</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:146">F</span><div class="dir-card-id"><div class="dir-name">Friday Night Funkin’</div><div class="dir-by">by The Funkin Crew</div></div></div>
         <p class="dir-desc">A free rhythm-game phenomenon with a huge mod scene.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Rhythm</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#friday-night-funkin">Read our review →</a><a class="dir-ext" href="https://ninja-muffin24.itch.io/funkin" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="n-step-steve">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:5">N</span><div class="dir-name">N Step Steve</div><div class="dir-by">by EPG800</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:5">N</span><div class="dir-card-id"><div class="dir-name">N Step Steve</div><div class="dir-by">by EPG800</div></div></div>
         <p class="dir-desc">A brilliant browser puzzle game about counting steps.</p>
         <div class="dir-badges"><span class="dir-badge">Browser</span><span class="dir-badge">Puzzle</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#n-step-steve">Read our review →</a><a class="dir-ext" href="https://www.qutaifan.com/best-free-games-2026#n-step-steve" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="cookie-clicker-classic">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:205">C</span><div class="dir-name">Cookie Clicker Classic</div><div class="dir-by">by Orteil</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:205">C</span><div class="dir-card-id"><div class="dir-name">Cookie Clicker Classic</div><div class="dir-by">by Orteil</div></div></div>
         <p class="dir-desc">The incremental-game classic: click cookies, automate, ascend, repeat.</p>
         <div class="dir-badges"><span class="dir-badge">Browser</span><span class="dir-badge">Incremental</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#cookie-clicker-classic">Read our review →</a><a class="dir-ext" href="https://orteil.dashnet.org/cookieclicker/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="a-dark-room">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:30">A</span><div class="dir-name">A Dark Room</div><div class="dir-by">by Doublespeak Games</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:30">A</span><div class="dir-card-id"><div class="dir-name">A Dark Room</div><div class="dir-by">by Doublespeak Games</div></div></div>
         <p class="dir-desc">Minimal text survival that expands into something stranger.</p>
         <div class="dir-badges"><span class="dir-badge">Browser</span><span class="dir-badge">Narrative</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#a-dark-room">Read our review →</a><a class="dir-ext" href="https://adarkroom.doublespeakgames.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="townscaper-demo-web-toy">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:132">T</span><div class="dir-name">Townscaper Demo / Web Toy</div><div class="dir-by">by Oskar Stålberg</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:132">T</span><div class="dir-card-id"><div class="dir-name">Townscaper Demo / Web Toy</div><div class="dir-by">by Oskar Stålberg</div></div></div>
         <p class="dir-desc">A tiny creative city-building toy in the browser.</p>
         <div class="dir-badges"><span class="dir-badge">Browser</span><span class="dir-badge">Creative</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#townscaper-demo-web-toy">Read our review →</a><a class="dir-ext" href="https://oskarstalberg.com/Townscaper/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="krunker">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:190">K</span><div class="dir-name">Krunker</div><div class="dir-by">by FRVR</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:190">K</span><div class="dir-card-id"><div class="dir-name">Krunker</div><div class="dir-by">by FRVR</div></div></div>
         <p class="dir-desc">Fast browser FPS that runs almost instantly.</p>
         <div class="dir-badges"><span class="dir-badge">Browser</span><span class="dir-badge">FPS</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#krunker">Read our review →</a><a class="dir-ext" href="https://krunker.io/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="geofs">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:164">G</span><div class="dir-name">GeoFS</div><div class="dir-by">by GeoFS</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:164">G</span><div class="dir-card-id"><div class="dir-name">GeoFS</div><div class="dir-by">by GeoFS</div></div></div>
         <p class="dir-desc">A free browser flight simulator with global scenery.</p>
         <div class="dir-badges"><span class="dir-badge">Browser</span><span class="dir-badge">Flight Sim</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#geofs">Read our review →</a><a class="dir-ext" href="https://www.geo-fs.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="opensource" data-tag="popular" data-pricing="open-source" data-added="2026-07-01" data-name="libreoffice">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:222">L</span><div class="dir-name">LibreOffice</div><div class="dir-by">by The Document Foundation</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:222">L</span><div class="dir-card-id"><div class="dir-name">LibreOffice</div><div class="dir-by">by The Document Foundation</div></div></div>
         <p class="dir-desc">Full desktop office suite for documents, spreadsheets, presentations and databases.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Office</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-open-source-software-alternatives-2026#libreoffice">Read our review →</a><a class="dir-ext" href="https://www.libreoffice.org/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="opensource" data-tag="" data-pricing="open-source" data-added="2026-07-01" data-name="onlyoffice-docs">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:20">O</span><div class="dir-name">ONLYOFFICE Docs</div><div class="dir-by">by Ascensio System SIA</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:20">O</span><div class="dir-card-id"><div class="dir-name">ONLYOFFICE Docs</div><div class="dir-by">by Ascensio System SIA</div></div></div>
         <p class="dir-desc">Collaborative editors with strong Microsoft Office file compatibility and self-hosting options.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Office</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-open-source-software-alternatives-2026#onlyoffice-docs">Read our review →</a><a class="dir-ext" href="https://www.onlyoffice.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="opensource" data-tag="popular" data-pricing="open-source" data-added="2026-07-01" data-name="gimp">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:3">G</span><div class="dir-name">GIMP</div><div class="dir-by">by GIMP Team</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:3">G</span><div class="dir-card-id"><div class="dir-name">GIMP</div><div class="dir-by">by GIMP Team</div></div></div>
         <p class="dir-desc">Powerful free image editor with layers, masks, plugins and scripting.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Design</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-open-source-software-alternatives-2026#gimp">Read our review →</a><a class="dir-ext" href="https://www.gimp.org/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="opensource" data-tag="popular" data-pricing="open-source" data-added="2026-07-01" data-name="kdenlive">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:350">K</span><div class="dir-name">Kdenlive</div><div class="dir-by">by KDE Community</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:350">K</span><div class="dir-card-id"><div class="dir-name">Kdenlive</div><div class="dir-by">by KDE Community</div></div></div>
         <p class="dir-desc">Non-linear video editor for serious free video workflows.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Video</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-open-source-software-alternatives-2026#kdenlive">Read our review →</a><a class="dir-ext" href="https://kdenlive.org/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="opensource" data-tag="" data-pricing="open-source" data-added="2026-07-01" data-name="shotcut">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:206">S</span><div class="dir-name">Shotcut</div><div class="dir-by">by Meltytech</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:206">S</span><div class="dir-card-id"><div class="dir-name">Shotcut</div><div class="dir-by">by Meltytech</div></div></div>
         <p class="dir-desc">Cross-platform open-source video editor with broad format support.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Video</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-open-source-software-alternatives-2026#shotcut">Read our review →</a><a class="dir-ext" href="https://shotcut.org/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="opensource" data-tag="popular" data-pricing="open-source" data-added="2026-07-01" data-name="wordpress">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:247">W</span><div class="dir-name">WordPress</div><div class="dir-by">by WordPress Foundation</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:247">W</span><div class="dir-card-id"><div class="dir-name">WordPress</div><div class="dir-by">by WordPress Foundation</div></div></div>
         <p class="dir-desc">Open-source CMS powering blogs, business sites, shops and publications.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">CMS</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-open-source-software-alternatives-2026#wordpress">Read our review →</a><a class="dir-ext" href="https://wordpress.org/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="opensource" data-tag="" data-pricing="open-source" data-added="2026-07-01" data-name="openproject">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:271">O</span><div class="dir-name">OpenProject</div><div class="dir-by">by OpenProject GmbH</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:271">O</span><div class="dir-card-id"><div class="dir-name">OpenProject</div><div class="dir-by">by OpenProject GmbH</div></div></div>
         <p class="dir-desc">Open-source project management with tasks, Gantt, roadmaps and wiki features.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">PM</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-open-source-software-alternatives-2026#openproject">Read our review →</a><a class="dir-ext" href="https://www.openproject.org/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="opensource" data-tag="" data-pricing="open-source" data-added="2026-07-01" data-name="mattermost">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:48">M</span><div class="dir-name">Mattermost</div><div class="dir-by">by Mattermost</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:48">M</span><div class="dir-card-id"><div class="dir-name">Mattermost</div><div class="dir-by">by Mattermost</div></div></div>
         <p class="dir-desc">Self-hostable team chat and collaboration platform for technical teams.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Chat</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-open-source-software-alternatives-2026#mattermost">Read our review →</a><a class="dir-ext" href="https://mattermost.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="opensource" data-tag="" data-pricing="open-source" data-added="2026-07-01" data-name="jitsi-meet">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:13">J</span><div class="dir-name">Jitsi Meet</div><div class="dir-by">by 8x8 / Community</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:13">J</span><div class="dir-card-id"><div class="dir-name">Jitsi Meet</div><div class="dir-by">by 8x8 / Community</div></div></div>
         <p class="dir-desc">Open-source video meetings that can run in the browser or on your own server.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Meetings</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-open-source-software-alternatives-2026#jitsi-meet">Read our review →</a><a class="dir-ext" href="https://jitsi.org/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="opensource" data-tag="popular" data-pricing="open-source" data-added="2026-07-01" data-name="nextcloud">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:74">N</span><div class="dir-name">Nextcloud</div><div class="dir-by">by Nextcloud GmbH</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:74">N</span><div class="dir-card-id"><div class="dir-name">Nextcloud</div><div class="dir-by">by Nextcloud GmbH</div></div></div>
         <p class="dir-desc">Self-hosted file sync, sharing, calendar, contacts and collaboration suite.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Cloud</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-open-source-software-alternatives-2026#nextcloud">Read our review →</a><a class="dir-ext" href="https://nextcloud.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="opensource" data-tag="" data-pricing="open-source" data-added="2026-07-01" data-name="espocrm">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:127">E</span><div class="dir-name">EspoCRM</div><div class="dir-by">by EspoCRM</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:127">E</span><div class="dir-card-id"><div class="dir-name">EspoCRM</div><div class="dir-by">by EspoCRM</div></div></div>
         <p class="dir-desc">Lightweight open-source CRM for contacts, sales pipelines and business records.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">CRM</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-open-source-software-alternatives-2026#espocrm">Read our review →</a><a class="dir-ext" href="https://www.espocrm.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="opensource" data-tag="" data-pricing="open-source" data-added="2026-07-01" data-name="suitecrm">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:132">S</span><div class="dir-name">SuiteCRM</div><div class="dir-by">by SalesAgility</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:132">S</span><div class="dir-card-id"><div class="dir-name">SuiteCRM</div><div class="dir-by">by SalesAgility</div></div></div>
         <p class="dir-desc">Feature-rich open-source CRM for sales, marketing and service teams.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">CRM</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-open-source-software-alternatives-2026#suitecrm">Read our review →</a><a class="dir-ext" href="https://suitecrm.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="opensource" data-tag="" data-pricing="open-source" data-added="2026-07-01" data-name="joplin">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:44">J</span><div class="dir-name">Joplin</div><div class="dir-by">by Joplin Project</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:44">J</span><div class="dir-card-id"><div class="dir-name">Joplin</div><div class="dir-by">by Joplin Project</div></div></div>
         <p class="dir-desc">Open-source note app with markdown, sync options and end-to-end encryption.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Notes</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-open-source-software-alternatives-2026#joplin">Read our review →</a><a class="dir-ext" href="https://joplinapp.org/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="opensource" data-tag="" data-pricing="open-source" data-added="2026-07-01" data-name="logseq">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:357">L</span><div class="dir-name">Logseq</div><div class="dir-by">by Logseq</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:357">L</span><div class="dir-card-id"><div class="dir-name">Logseq</div><div class="dir-by">by Logseq</div></div></div>
         <p class="dir-desc">Local-first outliner and knowledge graph for linked markdown notes.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Notes</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-open-source-software-alternatives-2026#logseq">Read our review →</a><a class="dir-ext" href="https://logseq.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="opensource" data-tag="" data-pricing="open-source" data-added="2026-07-01" data-name="bitwarden">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:120">B</span><div class="dir-name">Bitwarden</div><div class="dir-by">by Bitwarden</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:120">B</span><div class="dir-card-id"><div class="dir-name">Bitwarden</div><div class="dir-by">by Bitwarden</div></div></div>
         <p class="dir-desc">Open-source password manager with a strong free cloud-synced plan.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Security</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-open-source-software-alternatives-2026#bitwarden">Read our review →</a><a class="dir-ext" href="https://bitwarden.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="opensource" data-tag="" data-pricing="open-source" data-added="2026-07-01" data-name="keepassxc">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:89">K</span><div class="dir-name">KeePassXC</div><div class="dir-by">by KeePassXC Team</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:89">K</span><div class="dir-card-id"><div class="dir-name">KeePassXC</div><div class="dir-by">by KeePassXC Team</div></div></div>
         <p class="dir-desc">Local encrypted password vault with no account and no subscription.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Security</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-open-source-software-alternatives-2026#keepassxc">Read our review →</a><a class="dir-ext" href="https://keepassxc.org/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="linux" data-tag="popular" data-pricing="free" data-added="2026-07-02" data-name="linux-mint">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:155">L</span><div class="dir-name">Linux Mint</div><div class="dir-by">by Linux Mint Team</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:155">L</span><div class="dir-card-id"><div class="dir-name">Linux Mint</div><div class="dir-by">by Linux Mint Team</div></div></div>
         <p class="dir-desc">Most Windows switchers who want a calm, familiar desktop.</p>
         <div class="dir-badges"><span class="dir-badge">Best Overall</span><span class="dir-badge">Windows-like</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-linux-distros-beginners-2026#linux-mint">Read our review →</a><a class="dir-ext" href="https://linuxmint.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="linux" data-tag="popular" data-pricing="free" data-added="2026-07-02" data-name="ubuntu">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:45">U</span><div class="dir-name">Ubuntu</div><div class="dir-by">by Canonical</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:45">U</span><div class="dir-card-id"><div class="dir-name">Ubuntu</div><div class="dir-by">by Canonical</div></div></div>
         <p class="dir-desc">Beginners who want the most tutorials, vendor support and predictable releases.</p>
         <div class="dir-badges"><span class="dir-badge">Largest Ecosystem</span><span class="dir-badge">LTS</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-linux-distros-beginners-2026#ubuntu">Read our review →</a><a class="dir-ext" href="https://ubuntu.com/desktop" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="linux" data-tag="" data-pricing="free" data-added="2026-07-02" data-name="fedora-workstation">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:317">F</span><div class="dir-name">Fedora Workstation</div><div class="dir-by">by Fedora Project</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:317">F</span><div class="dir-card-id"><div class="dir-name">Fedora Workstation</div><div class="dir-by">by Fedora Project</div></div></div>
         <p class="dir-desc">Curious beginners who want a clean, current Linux desktop with strong upstream defaults.</p>
         <div class="dir-badges"><span class="dir-badge">Modern</span><span class="dir-badge">Clean GNOME</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-linux-distros-beginners-2026#fedora-workstation">Read our review →</a><a class="dir-ext" href="https://fedoraproject.org/workstation/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="linux" data-tag="" data-pricing="free" data-added="2026-07-02" data-name="zorin-os">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:271">Z</span><div class="dir-name">Zorin OS</div><div class="dir-by">by Zorin Group</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:271">Z</span><div class="dir-card-id"><div class="dir-name">Zorin OS</div><div class="dir-by">by Zorin Group</div></div></div>
         <p class="dir-desc">Windows refugees who care about polish and a low-anxiety first boot.</p>
         <div class="dir-badges"><span class="dir-badge">Windows-like</span><span class="dir-badge">Polished</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-linux-distros-beginners-2026#zorin-os">Read our review →</a><a class="dir-ext" href="https://zorin.com/os/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="linux" data-tag="" data-pricing="free" data-added="2026-07-02" data-name="pop-os">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:42">P</span><div class="dir-name">Pop!_OS</div><div class="dir-by">by System76</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:42">P</span><div class="dir-card-id"><div class="dir-name">Pop!_OS</div><div class="dir-by">by System76</div></div></div>
         <p class="dir-desc">Laptop users, developers, creators and NVIDIA GPU owners.</p>
         <div class="dir-badges"><span class="dir-badge">Creators</span><span class="dir-badge">NVIDIA-friendly</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-linux-distros-beginners-2026#pop-os">Read our review →</a><a class="dir-ext" href="https://pop.system76.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="linux" data-tag="" data-pricing="free" data-added="2026-07-02" data-name="elementary-os">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:43">E</span><div class="dir-name">elementary OS</div><div class="dir-by">by elementary, Inc.</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:43">E</span><div class="dir-card-id"><div class="dir-name">elementary OS</div><div class="dir-by">by elementary, Inc.</div></div></div>
         <p class="dir-desc">Mac switchers who value visual consistency and simplicity.</p>
         <div class="dir-badges"><span class="dir-badge">Mac-like</span><span class="dir-badge">Beautiful</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-linux-distros-beginners-2026#elementary-os">Read our review →</a><a class="dir-ext" href="https://elementary.io/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="linux" data-tag="" data-pricing="free" data-added="2026-07-02" data-name="kde-neon">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:175">K</span><div class="dir-name">KDE neon</div><div class="dir-by">by KDE Community</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:175">K</span><div class="dir-card-id"><div class="dir-name">KDE neon</div><div class="dir-by">by KDE Community</div></div></div>
         <p class="dir-desc">Beginners who want a Windows-like layout with more customization power.</p>
         <div class="dir-badges"><span class="dir-badge">Customizable</span><span class="dir-badge">KDE Plasma</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-linux-distros-beginners-2026#kde-neon">Read our review →</a><a class="dir-ext" href="https://neon.kde.org/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="linux" data-tag="" data-pricing="free" data-added="2026-07-02" data-name="mx-linux">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:318">M</span><div class="dir-name">MX Linux</div><div class="dir-by">by MX Linux Community</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:318">M</span><div class="dir-card-id"><div class="dir-name">MX Linux</div><div class="dir-by">by MX Linux Community</div></div></div>
         <p class="dir-desc">Older laptops, low-resource desktops and people who value stability.</p>
         <div class="dir-badges"><span class="dir-badge">Old PCs</span><span class="dir-badge">Stable</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-linux-distros-beginners-2026#mx-linux">Read our review →</a><a class="dir-ext" href="https://mxlinux.org/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="linux" data-tag="" data-pricing="free" data-added="2026-07-02" data-name="linux-lite">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:45">L</span><div class="dir-name">Linux Lite</div><div class="dir-by">by Linux Lite Team</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:45">L</span><div class="dir-card-id"><div class="dir-name">Linux Lite</div><div class="dir-by">by Linux Lite Team</div></div></div>
         <p class="dir-desc">Windows users reviving an older laptop with minimum drama.</p>
         <div class="dir-badges"><span class="dir-badge">Very Easy</span><span class="dir-badge">Old Laptop</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-linux-distros-beginners-2026#linux-lite">Read our review →</a><a class="dir-ext" href="https://www.linuxliteos.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="linux" data-tag="" data-pricing="free" data-added="2026-07-02" data-name="nobara">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:309">N</span><div class="dir-name">Nobara</div><div class="dir-by">by Nobara Project</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:309">N</span><div class="dir-card-id"><div class="dir-name">Nobara</div><div class="dir-by">by Nobara Project</div></div></div>
         <p class="dir-desc">Gamers who want Linux gaming tweaks without assembling everything manually.</p>
         <div class="dir-badges"><span class="dir-badge">Gaming</span><span class="dir-badge">Fedora-based</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-linux-distros-beginners-2026#nobara">Read our review →</a><a class="dir-ext" href="https://nobaraproject.org/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="itch-io-free-games">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:106">I</span><div class="dir-name">itch.io Free Games</div><div class="dir-by">by Indie creators</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:106">I</span><div class="dir-card-id"><div class="dir-name">itch.io Free Games</div><div class="dir-by">by Indie creators</div></div></div>
         <p class="dir-desc">A living shelf of experimental free indie games.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Indie</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#itch-io-free-games">Read our review →</a><a class="dir-ext" href="https://itch.io/games/free" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="image" data-tag="popular" data-pricing="open-source" data-added="2026-07-03" data-name="krita">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:133">K</span><div class="dir-name">Krita</div><div class="dir-by">by Official project</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:133">K</span><div class="dir-card-id"><div class="dir-name">Krita</div><div class="dir-by">by Official project</div></div></div>
         <p class="dir-desc">Illustration, comics, and digital painting.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Brush engines</span></div>
         <div class="dir-actions"><a class="dir-review" href="/free-alternative-to-photoshop#krita">Read our review →</a><a class="dir-ext" href="https://krita.org/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="image" data-tag="" data-pricing="open-source" data-added="2026-07-13" data-name="inkscape">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:162">I</span><div class="dir-name">Inkscape</div><div class="dir-by">by Official project</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:162">I</span><div class="dir-card-id"><div class="dir-name">Inkscape</div><div class="dir-by">by Official project</div></div></div>
         <p class="dir-desc">Logos, icons, diagrams, and scalable illustration.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">SVG</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-graphic-design-tools-2026#inkscape">Read our review →</a><a class="dir-ext" href="https://inkscape.org/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="image" data-tag="" data-pricing="free-tier" data-added="2026-07-03" data-name="photopea">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:288">P</span><div class="dir-name">Photopea</div><div class="dir-by">by Official project</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:288">P</span><div class="dir-card-id"><div class="dir-name">Photopea</div><div class="dir-by">by Official project</div></div></div>
         <p class="dir-desc">PSD editing in a browser with nothing to install.</p>
         <div class="dir-badges"><span class="dir-badge">Free Tier</span><span class="dir-badge">PSD</span></div>
         <div class="dir-actions"><a class="dir-review" href="/free-alternative-to-photoshop#photopea">Read our review →</a><a class="dir-ext" href="https://www.photopea.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="image" data-tag="popular" data-pricing="free-tier" data-added="2026-07-13" data-name="canva-free">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:168">C</span><div class="dir-name">Canva Free</div><div class="dir-by">by Official project</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:168">C</span><div class="dir-card-id"><div class="dir-name">Canva Free</div><div class="dir-by">by Official project</div></div></div>
         <p class="dir-desc">Fast social graphics, presentations, and marketing designs.</p>
         <div class="dir-badges"><span class="dir-badge">Free Tier</span><span class="dir-badge">Templates</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-graphic-design-tools-2026#canva-free">Read our review →</a><a class="dir-ext" href="https://www.canva.com/pricing/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="image" data-tag="" data-pricing="open-source" data-added="2026-07-13" data-name="penpot">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:154">P</span><div class="dir-name">Penpot</div><div class="dir-by">by Official project</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:154">P</span><div class="dir-card-id"><div class="dir-name">Penpot</div><div class="dir-by">by Official project</div></div></div>
         <p class="dir-desc">Open-standard interface design and prototyping.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">UI Design</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-graphic-design-tools-2026#penpot">Read our review →</a><a class="dir-ext" href="https://penpot.app/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="image" data-tag="" data-pricing="open-source" data-added="2026-07-03" data-name="darktable">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:166">D</span><div class="dir-name">darktable</div><div class="dir-by">by Official project</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:166">D</span><div class="dir-card-id"><div class="dir-name">darktable</div><div class="dir-by">by Official project</div></div></div>
         <p class="dir-desc">Non-destructive RAW development and photo management.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">RAW</span></div>
         <div class="dir-actions"><a class="dir-review" href="/free-alternative-to-photoshop#darktable">Read our review →</a><a class="dir-ext" href="https://www.darktable.org/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="image" data-tag="" data-pricing="open-source" data-added="2026-07-13" data-name="scribus">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:221">S</span><div class="dir-name">Scribus</div><div class="dir-by">by Official project</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:221">S</span><div class="dir-card-id"><div class="dir-name">Scribus</div><div class="dir-by">by Official project</div></div></div>
         <p class="dir-desc">Print-ready brochures, magazines, and PDFs.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Publishing</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-graphic-design-tools-2026#scribus">Read our review →</a><a class="dir-ext" href="https://www.scribus.net/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="image" data-tag="new" data-pricing="free" data-added="2026-07-03" data-name="paint-net">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:24">P</span><div class="dir-name">Paint.NET</div><div class="dir-by">by Official project</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:24">P</span><div class="dir-card-id"><div class="dir-name">Paint.NET</div><div class="dir-by">by Official project</div></div></div>
         <p class="dir-desc">Simple, fast photo editing and retouching for Windows.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Windows</span></div>
         <div class="dir-actions"><a class="dir-review" href="/free-alternative-to-photoshop#paint-net">Read our review →</a><a class="dir-ext" href="https://www.getpaint.net/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="image" data-tag="new" data-pricing="free-tier" data-added="2026-07-03" data-name="pixlr">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:353">P</span><div class="dir-name">Pixlr</div><div class="dir-by">by Official project</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:353">P</span><div class="dir-card-id"><div class="dir-name">Pixlr</div><div class="dir-by">by Official project</div></div></div>
         <p class="dir-desc">Browser photo editor with AI cutout and retouch tools.</p>
         <div class="dir-badges"><span class="dir-badge">Free Tier</span><span class="dir-badge">Browser</span></div>
         <div class="dir-actions"><a class="dir-review" href="/free-alternative-to-photoshop#pixlr">Read our review →</a><a class="dir-ext" href="https://pixlr.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="image" data-tag="new" data-pricing="free-tier" data-added="2026-07-03" data-name="photoscape-x">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:101">P</span><div class="dir-name">Photoscape X</div><div class="dir-by">by Official project</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:101">P</span><div class="dir-card-id"><div class="dir-name">Photoscape X</div><div class="dir-by">by Official project</div></div></div>
         <p class="dir-desc">Batch photo editing, collages, and quick fixes.</p>
         <div class="dir-badges"><span class="dir-badge">Free Tier</span><span class="dir-badge">Batch Editing</span></div>
         <div class="dir-actions"><a class="dir-review" href="/free-alternative-to-photoshop#photoscape-x">Read our review →</a><a class="dir-ext" href="https://x.photoscape.org/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="video" data-tag="popular" data-pricing="free-tier" data-added="2026-07-13" data-name="davinci-resolve">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:349">D</span><div class="dir-name">DaVinci Resolve</div><div class="dir-by">by Official project</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:349">D</span><div class="dir-card-id"><div class="dir-name">DaVinci Resolve</div><div class="dir-by">by Official project</div></div></div>
         <p class="dir-desc">Editing, color, audio, and VFX in one application.</p>
         <div class="dir-badges"><span class="dir-badge">Free Tier</span><span class="dir-badge">Pro Editing</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-video-editing-software-2026#davinci-resolve">Read our review →</a><a class="dir-ext" href="https://www.blackmagicdesign.com/products/davinciresolve" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="video" data-tag="" data-pricing="open-source" data-added="2026-07-13" data-name="openshot">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:320">O</span><div class="dir-name">OpenShot</div><div class="dir-by">by Official project</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:320">O</span><div class="dir-card-id"><div class="dir-name">OpenShot</div><div class="dir-by">by Official project</div></div></div>
         <p class="dir-desc">Simple cuts, titles, and home-video projects.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Beginner</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-video-editing-software-2026#openshot">Read our review →</a><a class="dir-ext" href="https://www.openshot.org/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="video" data-tag="" data-pricing="open-source" data-added="2026-07-13" data-name="blender-video-sequence-editor">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:142">B</span><div class="dir-name">Blender Video Sequence Editor</div><div class="dir-by">by Official project</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:142">B</span><div class="dir-card-id"><div class="dir-name">Blender Video Sequence Editor</div><div class="dir-by">by Official project</div></div></div>
         <p class="dir-desc">Video editing, animation, compositing, and 3D.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">3D + Video</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-video-editing-software-2026#blender-video-sequence-editor">Read our review →</a><a class="dir-ext" href="https://www.blender.org/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="video" data-tag="" data-pricing="open-source" data-added="2026-07-13" data-name="flowblade">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:88">F</span><div class="dir-name">Flowblade</div><div class="dir-by">by Official project</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:88">F</span><div class="dir-card-id"><div class="dir-name">Flowblade</div><div class="dir-by">by Official project</div></div></div>
         <p class="dir-desc">Focused multi-track video editing on Linux.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Linux</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-video-editing-software-2026#flowblade">Read our review →</a><a class="dir-ext" href="https://jliljebl.github.io/flowblade/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="video" data-tag="" data-pricing="open-source" data-added="2026-07-13" data-name="olive">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:321">O</span><div class="dir-name">Olive</div><div class="dir-by">by Official project</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:321">O</span><div class="dir-card-id"><div class="dir-name">Olive</div><div class="dir-by">by Official project</div></div></div>
         <p class="dir-desc">Modern experimental open-source video editing.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Experimental</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-video-editing-software-2026#olive">Read our review →</a><a class="dir-ext" href="https://www.olivevideoeditor.org/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="video" data-tag="" data-pricing="open-source" data-added="2026-07-13" data-name="losslesscut">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:100">L</span><div class="dir-name">LosslessCut</div><div class="dir-by">by Official project</div></div>
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:100">L</span><div class="dir-card-id"><div class="dir-name">LosslessCut</div><div class="dir-by">by Official project</div></div></div>
         <p class="dir-desc">Fast cuts, splits, and joins without re-encoding.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Lossless</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-video-editing-software-2026#losslesscut">Read our review →</a><a class="dir-ext" href="https://github.com/mifi/lossless-cut" target="_blank" rel="nofollow noopener">Site ↗</a></div>
