@@ -178,6 +178,16 @@
     .filter-tab:hover { border-color: var(--accent); color: var(--text); }
     .filter-tab.active { background: var(--accent); border-color: var(--accent); color: #fff; }
 
+    .filter-row2 { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
+    .pricing-chips { display: flex; gap: 8px; flex-wrap: wrap; }
+    .p-chip { font-family: inherit; font-size: .74rem; font-weight: 600; color: var(--text-3);
+      background: transparent; border: 1px solid var(--border-2); border-radius: 99px;
+      padding: 5px 12px; cursor: pointer; transition: all .15s; }
+    .p-chip:hover { color: var(--text); border-color: var(--text-3); }
+    .p-chip.active { color: var(--accent); border-color: var(--accent); }
+    #dir-sort { margin-left: auto; font-family: inherit; font-size: .78rem; color: var(--text-2);
+      background: var(--bg-2); border: 1px solid var(--border-2); border-radius: 8px; padding: 6px 10px; }
+
     .dir-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; margin-top: 32px; }
     .dir-card {
       display: flex; flex-direction: column; gap: 8px;
@@ -317,6 +327,19 @@
       <button class="filter-tab" data-filter="gaming">🎮 Gaming (29)</button>
       <button class="filter-tab" data-filter="opensource">🌐 Open Source (16)</button>
       <button class="filter-tab" data-filter="linux">🐧 Linux (10)</button>
+    </div>
+    <div class="filter-row2">
+      <div class="pricing-chips" id="pricing-chips">
+        <button class="p-chip active" data-pricing="all">All prices</button>
+        <button class="p-chip" data-pricing="open-source">Open source</button>
+        <button class="p-chip" data-pricing="free">Free</button>
+        <button class="p-chip" data-pricing="free-tier">Free tier</button>
+      </div>
+      <select id="dir-sort" aria-label="Sort tools">
+        <option value="featured">Featured</option>
+        <option value="az">A–Z</option>
+        <option value="new">Newest</option>
+      </select>
     </div>
   </div>
 </div>
@@ -1305,6 +1328,7 @@
     var countEl = document.getElementById('dir-count');
     var emptyEl = document.getElementById('dir-empty');
     var activeFilter = 'all';
+    var activePricing = 'all';
 
     function applyFilters() {
       var query = searchInput.value.trim().toLowerCase();
@@ -1312,7 +1336,8 @@
       cards.forEach(function(card) {
         var matchesCat = activeFilter === 'all' || card.dataset.cat === activeFilter || card.dataset.tag === activeFilter;
         var matchesQuery = !query || card.textContent.toLowerCase().indexOf(query) !== -1;
-        var show = matchesCat && matchesQuery;
+        var pricingOk = activePricing === 'all' || card.getAttribute('data-pricing') === activePricing;
+        var show = matchesCat && matchesQuery && pricingOk;
         card.style.display = show ? '' : 'none';
         if (show) visible++;
       });
@@ -1327,6 +1352,27 @@
         activeFilter = tab.dataset.filter;
         applyFilters();
       });
+    });
+
+    document.querySelectorAll('.p-chip').forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        document.querySelectorAll('.p-chip').forEach(function (c) { c.classList.remove('active'); });
+        chip.classList.add('active');
+        activePricing = chip.getAttribute('data-pricing');
+        applyFilters();
+      });
+    });
+
+    var grid = document.getElementById('dir-grid');
+    var originalOrder = Array.prototype.slice.call(cards);
+    document.getElementById('dir-sort').addEventListener('change', function () {
+      var v = this.value;
+      var sorted = originalOrder.slice();
+      if (v === 'az') sorted.sort(function (a, b) {
+        return a.getAttribute('data-name') < b.getAttribute('data-name') ? -1 : 1; });
+      if (v === 'new') sorted.sort(function (a, b) {
+        return b.getAttribute('data-added').localeCompare(a.getAttribute('data-added')); });
+      sorted.forEach(function (c) { grid.appendChild(c); });
     });
 
     searchInput.addEventListener('input', applyFilters);
