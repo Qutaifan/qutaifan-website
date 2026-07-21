@@ -13,13 +13,21 @@
   <meta charset="UTF-8" />
   <meta name="google-adsense-account" content="ca-pub-9640734919758311">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#08080a" />
   <title>Best Free Tools & Software 2026 — Stop Paying, Tested Picks | Qutaifan</title>
   <meta name="description" content="Stop paying for software you can get free. 123 tested free tools — AI, password managers, games, open-source alternatives. Genuinely free, no credit card, no trials." />
   <link rel="canonical" href="https://www.qutaifan.com/" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="alternate" type="application/rss+xml" title="Qutaifan RSS Feed" href="https://www.qutaifan.com/feed.xml" />
   <meta property="og:title" content="Best Free Tools & Software 2026 — Stop Paying, Tested Picks | Qutaifan" />
   <meta property="og:description" content="Stop paying for software you can get free. 123 tested free tools — no trials, no credit card, no catch." />
   <meta property="og:url" content="https://www.qutaifan.com/" />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.qutaifan.com/og-qutaifan-home.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Best Free Tools & Software 2026 — Stop Paying, Tested Picks | Qutaifan" />
+  <meta name="twitter:description" content="Stop paying for software you can get free. 123 tested free tools — no trials, no credit card, no catch." />
+  <meta name="twitter:image" content="https://www.qutaifan.com/og-qutaifan-home.jpg" />
   <link rel="preload" href="/fonts/inter/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
   <style>@font-face{font-family:'Inter';font-style:normal;font-weight:100 900;font-display:swap;src:url('/fonts/inter/inter-latin-var.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}</style>
   <script type="application/ld+json">
@@ -54,21 +62,27 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg:        #09090b;
-      --bg-2:      #111114;
-      --bg-3:      #18181c;
-      --border:    rgba(255,255,255,.07);
-      --border-2:  rgba(255,255,255,.12);
-      --text:      #f2f2f3;
-      --text-2:    #a0a0ab;
-      --text-3:    #8b8b96;
+      --bg:        #08080a;
+      --bg-2:      #101014;
+      --bg-3:      #16161c;
+      --bg-card:   #121217;
+      --border:    rgba(255,255,255,.08);
+      --border-2:  rgba(255,255,255,.14);
+      --text:      #f4f4f6;
+      --text-2:    #9e9ea9;
+      --text-3:    #71717e;
       --accent:    #7c5cf6;
-      --accent-lt: rgba(124,92,246,.12);
+      --accent-hover: #6c4ce6;
+      --accent-lt: rgba(124,92,246,.15);
+      --cyan:      #06b6d4;
+      --cyan-lt:   rgba(6,182,212,.15);
       --green:     #10b981;
+      --green-lt:  rgba(16,185,129,.15);
       --amber:     #f59e0b;
       --radius:    10px;
       --radius-lg: 16px;
-      --font: 'Inter', system-ui, sans-serif;
+      --radius-full: 9999px;
+      --font: 'Inter', system-ui, -apple-system, sans-serif;
     }
 
     html { scroll-behavior: smooth; }
@@ -79,169 +93,261 @@
     /* ── Nav ── */
     nav {
       position: sticky; top: 0; z-index: 100;
-      background: rgba(9,9,11,.88);
-      -webkit-backdrop-filter: blur(16px);
-      backdrop-filter: blur(16px);
+      background: rgba(8,8,10,.85);
+      -webkit-backdrop-filter: blur(20px);
+      backdrop-filter: blur(20px);
       border-bottom: 1px solid var(--border);
     }
-    .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 60px; }
     .nav-brand {
-      font-weight: 900; font-size: .95rem; letter-spacing: .12em; text-transform: uppercase;
+      font-weight: 900; font-size: 1rem; letter-spacing: .12em; text-transform: uppercase;
       display: flex; align-items: center; gap: 10px;
     }
     .nav-brand .dot {
-      width: 7px; height: 7px; border-radius: 99px;
-      background: var(--green); box-shadow: 0 0 8px var(--green);
+      width: 8px; height: 8px; border-radius: 99px;
+      background: var(--green); box-shadow: 0 0 10px var(--green);
     }
     .nav-links { display: flex; align-items: center; gap: 24px; list-style: none; }
-    .nav-links a { font-size: .78rem; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--text-3); transition: color .15s; }
+    .nav-links a { font-size: .8rem; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; color: var(--text-2); transition: color .15s; }
     .nav-links a:hover { color: var(--text); }
     .nav-cta {
-      background: var(--accent); color: #fff !important; padding: 6px 16px;
-      border-radius: 8px; font-weight: 600 !important;
+      background: linear-gradient(135deg, var(--accent), #9333ea); color: #fff !important; padding: 7px 18px;
+      border-radius: var(--radius); font-weight: 600 !important; box-shadow: 0 4px 14px rgba(124,92,246,.3);
+      transition: transform .15s, box-shadow .15s !important;
     }
-    .nav-cta:hover { background: #6c4ce6 !important; }
+    .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(124,92,246,.4) !important; }
     .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
     .hamburger span { display: block; width: 22px; height: 2px; background: var(--text-2); border-radius: 2px; transition: .2s; }
 
-    /* ── Hero ── */
+    /* ── Hero (FutureTools-inspired Ambient Glow) ── */
     .hero {
-      padding: 80px 0 56px; text-align: center;
+      position: relative; overflow: hidden;
+      padding: 80px 0 64px; text-align: center;
+      border-bottom: 1px solid var(--border);
     }
+    .hero-glow-1 {
+      position: absolute; top: -120px; left: 50%; transform: translateX(-50%);
+      width: 700px; height: 400px; border-radius: 50%;
+      background: radial-gradient(ellipse at center, rgba(124,92,246,.25) 0%, rgba(6,182,212,.12) 45%, transparent 70%);
+      pointer-events: none; filter: blur(60px);
+    }
+    .hero-glow-2 {
+      position: absolute; bottom: -80px; right: 10%;
+      width: 450px; height: 300px; border-radius: 50%;
+      background: radial-gradient(ellipse at center, rgba(147,51,234,.18) 0%, transparent 70%);
+      pointer-events: none; filter: blur(50px);
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 6px 16px; background: rgba(124,92,246,.12);
+      border: 1px solid rgba(124,92,246,.25); border-radius: var(--radius-full);
+      font-size: .82rem; font-weight: 600; color: #a78bfa; margin-bottom: 24px;
+    }
+    .hero-badge .sparkle { color: #f59e0b; }
     .hero h1 {
-      font-size: clamp(2.4rem, 6vw, 4.5rem); font-weight: 900; letter-spacing: -.03em; line-height: 1.05;
+      font-size: clamp(2.5rem, 5.5vw, 4.5rem); font-weight: 900; letter-spacing: -.03em; line-height: 1.08;
       margin-bottom: 20px;
-      background: linear-gradient(135deg, #fff 40%, rgba(255,255,255,.45));
+      background: linear-gradient(135deg, #ffffff 40%, #c084fc 75%, #38bdf8 100%);
       -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
     }
-    .hero-sub { font-size: 1.05rem; color: var(--text-2); max-width: 520px; margin: 0 auto 44px; }
-    .hero-actions { display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; }
-    .btn-primary {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 12px 28px; background: var(--accent); color: #fff;
-      border-radius: var(--radius); font-weight: 700; font-size: .95rem;
-      transition: background .15s, transform .1s;
+    .hero-sub { font-size: 1.1rem; color: var(--text-2); max-width: 580px; margin: 0 auto 36px; line-height: 1.6; }
+    
+    /* ── Hero Big Search Input ── */
+    .hero-search-box {
+      max-width: 680px; margin: 0 auto 28px; position: relative; display: flex; align-items: center;
     }
-    .btn-primary:hover { background: #6c4ce6; transform: translateY(-1px); }
-    .btn-secondary {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 12px 28px; background: var(--bg-3);
-      border: 1px solid var(--border-2); color: var(--text-2);
-      border-radius: var(--radius); font-weight: 600; font-size: .95rem;
-      transition: border-color .15s, color .15s;
+    .hero-search-box input {
+      width: 100%; padding: 16px 50px 16px 52px;
+      background: var(--bg-card); border: 1px solid var(--border-2);
+      border-radius: 14px; color: var(--text); font-size: 1.05rem; font-family: var(--font);
+      outline: none; box-shadow: 0 10px 30px -10px rgba(0,0,0,0.6), inset 0 1px 1px rgba(255,255,255,0.05);
+      transition: border-color .2s, box-shadow .2s;
     }
-    .btn-secondary:hover { border-color: var(--accent); color: var(--text); }
+    .hero-search-box input:focus {
+      border-color: var(--accent); box-shadow: 0 0 0 3px rgba(124,92,246,.25), 0 12px 36px -8px rgba(124,92,246,.2);
+    }
+    .hero-search-icon {
+      position: absolute; left: 18px; color: var(--text-3); font-size: 1.2rem; pointer-events: none;
+    }
+    .hero-search-clear {
+      position: absolute; right: 18px; background: rgba(255,255,255,.1); border: none;
+      color: var(--text-2); width: 24px; height: 24px; border-radius: 50%;
+      cursor: pointer; display: none; align-items: center; justify-content: center; font-size: .8rem;
+    }
+    .hero-search-clear:hover { background: rgba(255,255,255,.2); color: #fff; }
+
+    /* Quick category pills in hero */
+    .hero-pills { display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; }
+    .hero-pill {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 6px 14px; background: var(--bg-2); border: 1px solid var(--border);
+      border-radius: var(--radius-full); font-size: .82rem; font-weight: 600; color: var(--text-2);
+      cursor: pointer; transition: all .15s;
+    }
+    .hero-pill:hover { border-color: var(--accent); color: var(--text); background: var(--accent-lt); transform: translateY(-1px); }
 
     /* ── AdSense ── */
     .ad-leaderboard { text-align: center; padding: 24px 0; position: relative; z-index: 1; }
 
-    /* ── Categories ── */
-    .section { padding: 72px 0; position: relative; z-index: 1; }
-    .section-label { font-size: .7rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
-    .section-title { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 900; letter-spacing: -.02em; margin-bottom: 12px; }
-    .section-sub { color: var(--text-2); max-width: 480px; margin-bottom: 48px; }
+    /* ── Sections ── */
+    .section { padding: 64px 0; position: relative; z-index: 1; }
+    .section-header { margin-bottom: 40px; }
+    .section-label { font-size: .75rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
+    .section-title { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 900; letter-spacing: -.02em; margin-bottom: 10px; }
+    .section-sub { color: var(--text-2); max-width: 540px; font-size: 1rem; }
     .section-divider { height: 1px; background: linear-gradient(90deg, transparent, var(--border-2) 30%, var(--border-2) 70%, transparent); position: relative; z-index: 1; }
 
-    .cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+    /* ── Visual Guide Cards ── */
+    .cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 18px; }
     .cat-card {
       display: flex; flex-direction: column; gap: 12px;
-      padding: 24px; background: var(--bg-2);
+      padding: 24px; background: var(--bg-card);
       border: 1px solid var(--border); border-radius: var(--radius-lg);
-      transition: border-color .2s, transform .15s;
-      cursor: pointer;
+      transition: border-color .2s, transform .2s, box-shadow .2s;
+      cursor: pointer; position: relative; overflow: hidden;
     }
-    .cat-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .cat-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, var(--accent), var(--cyan));
+      opacity: 0; transition: opacity .2s;
+    }
+    .cat-card:hover { border-color: rgba(124,92,246,.4); transform: translateY(-3px); box-shadow: 0 14px 30px -10px rgba(0,0,0,.5); }
+    .cat-card:hover::before { opacity: 1; }
     .cat-card a { display: contents; }
-    .cat-icon { font-size: 1.8rem; line-height: 1; }
-    .cat-name { font-weight: 700; font-size: .95rem; }
-    .cat-count { font-size: .78rem; color: var(--text-3); }
-    .cat-live-badge { display: none; }
-    .led { display: inline-block; width: 6px; height: 6px; border-radius: 99px; }
-    .led-green { background: var(--green); box-shadow: 0 0 6px var(--green); }
-    .led-amber { background: var(--amber); }
+    .cat-icon { font-size: 2rem; line-height: 1; }
+    .cat-name { font-weight: 800; font-size: 1.05rem; }
+    .cat-count { font-size: .84rem; color: var(--text-2); line-height: 1.4; }
+    .cat-live-badge { display: inline-flex; align-items: center; gap: 6px; font-size: .75rem; font-weight: 600; color: var(--green); margin-top: auto; }
+    .led { display: inline-block; width: 7px; height: 7px; border-radius: 99px; }
+    .led-green { background: var(--green); box-shadow: 0 0 8px var(--green); }
 
-    /* ── Directory (search + filters + grid) ── */
-    .dir-search-wrap { position: sticky; top: 56px; z-index: 50; background: rgba(9,9,11,.95); -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); padding: 16px 0; }
-    .dir-search {
-      width: 100%; padding: 13px 18px; background: var(--bg-2);
-      border: 1px solid var(--border-2); border-radius: var(--radius);
-      color: var(--text); font-size: .95rem; outline: none; margin-bottom: 14px;
+    /* ── Sticky Directory Filter Control Bar (FutureTools Bar) ── */
+    .dir-search-wrap {
+      position: sticky; top: 60px; z-index: 50;
+      background: rgba(8,8,10,.92);
+      -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border); padding: 18px 0;
     }
-    .dir-search:focus { border-color: var(--accent); }
-    .dir-search::placeholder { color: var(--text-3); }
-    .filter-tabs { display: flex; flex-wrap: wrap; gap: 8px; }
+    .dir-controls-top { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 14px; flex-wrap: wrap; }
+    .filter-tabs { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; scrollbar-width: none; }
+    .filter-tabs::-webkit-scrollbar { display: none; }
     .filter-tab {
-      padding: 7px 14px; background: var(--bg-2); border: 1px solid var(--border);
-      border-radius: 99px; color: var(--text-2); font-size: .8rem; font-weight: 600;
-      cursor: pointer; transition: all .15s; white-space: nowrap;
+      padding: 8px 16px; background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius-full); color: var(--text-2); font-size: .84rem; font-weight: 600;
+      cursor: pointer; transition: all .15s; white-space: nowrap; font-family: inherit;
     }
-    .filter-tab:hover { border-color: var(--accent); color: var(--text); }
-    .filter-tab.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .filter-tab:hover { border-color: var(--accent); color: var(--text); background: var(--accent-lt); }
+    .filter-tab.active { background: var(--accent); border-color: var(--accent); color: #fff; box-shadow: 0 4px 12px rgba(124,92,246,.35); }
 
-    .filter-row2 { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
-    .pricing-chips { display: flex; gap: 8px; flex-wrap: wrap; }
-    .p-chip { font-family: inherit; font-size: .74rem; font-weight: 600; color: var(--text-3);
-      background: transparent; border: 1px solid var(--border-2); border-radius: 99px;
-      padding: 5px 12px; cursor: pointer; transition: all .15s; }
-    .p-chip:hover { color: var(--text); border-color: var(--text-3); }
-    .p-chip.active { color: var(--accent); border-color: var(--accent); }
-    #dir-sort { margin-left: auto; font-family: inherit; font-size: .78rem; color: var(--text-2);
-      background: var(--bg-2); border: 1px solid var(--border-2); border-radius: 8px; padding: 6px 10px; }
+    .filter-row2 { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; }
+    .pricing-chips { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+    .pricing-label { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--text-3); margin-right: 4px; }
+    .p-chip {
+      font-family: inherit; font-size: .78rem; font-weight: 600; color: var(--text-2);
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-full);
+      padding: 5px 14px; cursor: pointer; transition: all .15s;
+    }
+    .p-chip:hover { color: var(--text); border-color: var(--text-2); }
+    .p-chip.active { color: #fff; background: var(--bg-3); border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
 
-    .dir-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; margin-top: 32px; }
+    .dir-sort-wrap { display: flex; align-items: center; gap: 8px; }
+    .sort-label { font-size: .78rem; font-weight: 600; color: var(--text-3); }
+    #dir-sort {
+      font-family: inherit; font-size: .82rem; font-weight: 600; color: var(--text);
+      background: var(--bg-card); border: 1px solid var(--border-2); border-radius: var(--radius);
+      padding: 7px 12px; outline: none; cursor: pointer; transition: border-color .15s;
+    }
+    #dir-sort:focus { border-color: var(--accent); }
+
+    /* ── Directory Tool Cards Grid ── */
+    .dir-status-bar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; font-size: .88rem; color: var(--text-2); }
+    .dir-count-badge { display: inline-flex; align-items: center; gap: 6px; font-weight: 700; color: var(--text); }
+    .dir-count-badge .highlight { color: var(--accent); }
+
+    .dir-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 18px; }
     .dir-card {
-      display: flex; flex-direction: column; gap: 8px;
-      padding: 20px; background: var(--bg-2); border: 1px solid var(--border);
-      border-radius: var(--radius-lg); transition: border-color .15s, transform .15s;
+      display: flex; flex-direction: column; justify-content: space-between;
+      padding: 22px; background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); transition: all .2s ease;
+      position: relative; overflow: hidden;
     }
-    .dir-card:hover { border-color: var(--accent); transform: translateY(-2px); }
-    .dir-card { cursor: default; }
-    .dir-card-top { display: flex; align-items: center; gap: 10px; }
+    .dir-card:hover {
+      border-color: rgba(124,92,246,.45); transform: translateY(-3px);
+      box-shadow: 0 12px 28px -10px rgba(0,0,0,0.65), 0 0 0 1px rgba(124,92,246,.2);
+    }
+    .dir-card-top { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px; }
+    .dir-avatar {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 42px; height: 42px; border-radius: 12px; flex-shrink: 0;
+      font-size: 1.15rem; font-weight: 800;
+      color: hsl(var(--h) 85% 75%); background: hsl(var(--h) 55% 45% / .18);
+      border: 1px solid hsl(var(--h) 55% 55% / .35); box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
     .dir-card-id { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
-    .dir-name { font-weight: 700; font-size: .95rem; }
-    .dir-by { font-size: .72rem; color: var(--text-3); }
-    .dir-desc { font-size: .82rem; color: var(--text-2); line-height: 1.5; }
-    .dir-badges { display: flex; flex-wrap: wrap; gap: 5px; }
-    .dir-badge { font-size: .68rem; padding: 2px 9px; background: var(--bg-3); border: 1px solid var(--border); border-radius: 99px; color: var(--text-3); }
-    .dir-avatar { display: inline-flex; align-items: center; justify-content: center;
-      width: 30px; height: 30px; border-radius: 8px; flex-shrink: 0;
-      font-size: .85rem; font-weight: 800;
-      color: hsl(var(--h) 70% 72%); background: hsl(var(--h) 60% 50% / .16);
-      border: 1px solid hsl(var(--h) 60% 55% / .35); }
-    .dir-actions { display: flex; align-items: center; gap: 12px; margin-top: 12px; }
-    .dir-review { font-size: .78rem; font-weight: 700; color: var(--accent); }
-    .dir-review:hover { text-decoration: underline; }
-    .dir-ext { font-size: .74rem; color: var(--text-3); margin-left: auto; }
-    .dir-ext:hover { color: var(--text); }
-    .dir-empty { text-align: center; padding: 60px 0; color: var(--text-3); display: none; }
-    .dir-count { color: var(--text-2); font-size: .85rem; margin-bottom: 4px; }
+    .dir-name { font-weight: 800; font-size: 1.05rem; color: var(--text); line-height: 1.3; }
+    .dir-by { font-size: .78rem; font-weight: 500; color: var(--text-3); }
+    .dir-desc { font-size: .86rem; color: var(--text-2); line-height: 1.55; margin-bottom: 16px; flex-grow: 1; }
+
+    .dir-badges { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 18px; }
+    .dir-badge {
+      font-size: .72rem; font-weight: 600; padding: 3px 10px; background: var(--bg-3);
+      border: 1px solid var(--border); border-radius: var(--radius-full); color: var(--text-2);
+    }
+    .dir-badge.badge-green { background: var(--green-lt); border-color: rgba(16,185,129,.3); color: #34d399; }
+    .dir-badge.badge-purple { background: var(--accent-lt); border-color: rgba(124,92,246,.3); color: #c084fc; }
+    .dir-badge.badge-cyan { background: var(--cyan-lt); border-color: rgba(6,182,212,.3); color: #38bdf8; }
+
+    .dir-actions { display: flex; align-items: center; justify-content: space-between; gap: 12px; pt: 12px; border-top: 1px solid rgba(255,255,255,.05); }
+    .dir-review {
+      display: inline-flex; align-items: center; gap: 4px;
+      font-size: .82rem; font-weight: 700; color: var(--accent); transition: color .15s;
+    }
+    .dir-review:hover { color: #a78bfa; text-decoration: underline; }
+    .dir-ext {
+      display: inline-flex; align-items: center; gap: 4px;
+      font-size: .78rem; font-weight: 600; color: var(--text-3); transition: color .15s;
+      padding: 4px 10px; background: var(--bg-2); border-radius: 8px; border: 1px solid var(--border);
+    }
+    .dir-ext:hover { color: var(--text); border-color: var(--border-2); background: var(--bg-3); }
+
+    /* Empty state */
+    .dir-empty {
+      text-align: center; padding: 72px 24px; background: var(--bg-card);
+      border: 1px dashed var(--border-2); border-radius: var(--radius-lg); display: none; margin-top: 24px;
+    }
+    .dir-empty-icon { font-size: 2.5rem; margin-bottom: 12px; opacity: .7; }
+    .dir-empty h3 { font-size: 1.2rem; font-weight: 800; margin-bottom: 8px; }
+    .dir-empty p { color: var(--text-2); font-size: .92rem; max-width: 400px; margin: 0 auto 20px; }
+    .btn-reset-filters {
+      padding: 9px 20px; background: var(--accent); color: #fff; border: none;
+      border-radius: var(--radius); font-weight: 700; font-size: .88rem; cursor: pointer;
+    }
 
     /* ── Why trust ── */
-    .trust-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
-    .trust-card { padding: 24px; background: var(--bg-2); border: 1px solid var(--border); border-radius: var(--radius-lg); }
-    .trust-icon { font-size: 1.6rem; margin-bottom: 12px; }
-    .trust-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 6px; }
-    .trust-card p { font-size: .85rem; color: var(--text-2); }
+    .trust-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+    .trust-card { padding: 26px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); }
+    .trust-icon { font-size: 1.8rem; margin-bottom: 14px; }
+    .trust-card h3 { font-size: 1.05rem; font-weight: 800; margin-bottom: 6px; }
+    .trust-card p { font-size: .88rem; color: var(--text-2); line-height: 1.5; }
 
     /* ── Footer ── */
-    footer { padding: 40px 0; border-top: 1px solid var(--border); position: relative; z-index: 1; }
+    footer { padding: 48px 0; border-top: 1px solid var(--border); position: relative; z-index: 1; }
     .footer-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
-    .footer-brand { font-weight: 900; letter-spacing: .1em; text-transform: uppercase; font-size: .88rem; }
+    .footer-brand { font-weight: 900; letter-spacing: .12em; text-transform: uppercase; font-size: .92rem; color: var(--text); }
     .footer-links { display: flex; gap: 20px; flex-wrap: wrap; }
-    .footer-links a { font-size: .8rem; color: var(--text-3); transition: color .15s; }
+    .footer-links a { font-size: .84rem; color: var(--text-3); transition: color .15s; }
     .footer-links a:hover { color: var(--text); }
-    .footer-copy { font-size: .75rem; color: var(--text-3); }
+    .footer-copy { font-size: .78rem; color: var(--text-3); }
 
     /* ── Cookie banner ── */
     #cookie-banner {
       position: fixed; bottom: 0; left: 0; right: 0;
-      background: rgba(9,9,11,.97);
-      -webkit-backdrop-filter: blur(12px);
-      backdrop-filter: blur(12px);
+      background: rgba(8,8,10,.95);
+      -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px);
       border-top: 1px solid var(--border);
       padding: 14px 24px; z-index: 1000;
       display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap;
-      font-size: .85rem; color: var(--text-2);
+      font-size: .88rem; color: var(--text-2);
     }
     #cookie-banner p { margin: 0; }
     #cookie-banner a { color: var(--accent); }
@@ -250,14 +356,191 @@
       padding: 7px 20px; border-radius: 8px; font-weight: 600; cursor: pointer;
       white-space: nowrap;
     }
-    #cookie-banner button:hover { background: #6c4ce6; }
+    #cookie-banner button:hover { background: var(--accent-hover); }
+
+    /* ── Tool Detail Modal (FutureTools Inspection Drawer) ── */
+    #tool-modal-overlay {
+      position: fixed; inset: 0; z-index: 10000;
+      background: rgba(0,0,0,0.8); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+      display: none; align-items: center; justify-content: center; padding: 20px;
+    }
+    #tool-modal-overlay.active { display: flex; animation: modalFadeIn .2s ease-out; }
+
+    @keyframes modalFadeIn {
+      from { opacity: 0; transform: scale(.96); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .tool-modal-box {
+      background: var(--bg-card); border: 1px solid var(--border-2);
+      border-radius: var(--radius-lg); max-width: 640px; width: 100%;
+      max-height: 90vh; overflow-y: auto; padding: 32px; position: relative;
+      box-shadow: 0 24px 60px rgba(0,0,0,0.85), 0 0 0 1px rgba(124,92,246,.25);
+    }
+    .modal-close-btn {
+      position: absolute; top: 20px; right: 20px;
+      width: 32px; height: 32px; border-radius: 50%;
+      background: var(--bg-2); border: 1px solid var(--border);
+      color: var(--text-2); cursor: pointer; display: flex; align-items: center; justify-content: center;
+      font-size: .9rem; transition: all .15s;
+    }
+    .modal-close-btn:hover { background: var(--bg-3); color: var(--text); border-color: var(--border-2); }
+
+    .modal-header { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 20px; }
+    .modal-avatar {
+      width: 56px; height: 56px; border-radius: 16px; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.6rem; font-weight: 900;
+      color: hsl(var(--h, 250) 85% 75%); background: hsl(var(--h, 250) 55% 45% / .2);
+      border: 1px solid hsl(var(--h, 250) 55% 55% / .4); box-shadow: 0 6px 16px rgba(0,0,0,.3);
+    }
+    .modal-title-wrap { flex-grow: 1; }
+    .modal-title { font-size: 1.4rem; font-weight: 900; color: var(--text); line-height: 1.2; margin-bottom: 4px; }
+    .modal-by { font-size: .88rem; color: var(--text-3); font-weight: 500; }
+    
+    .modal-upvote-btn {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 8px 16px; background: rgba(124,92,246,.12);
+      border: 1px solid rgba(124,92,246,.3); border-radius: var(--radius-full);
+      font-size: .84rem; font-weight: 700; color: #c084fc; cursor: pointer; transition: all .15s;
+    }
+    .modal-upvote-btn:hover { background: var(--accent); color: #fff; border-color: var(--accent); transform: translateY(-1px); }
+    .modal-upvote-btn.upvoted { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+    .modal-badges { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+    .modal-desc-box {
+      background: var(--bg-2); border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 18px; font-size: .95rem; color: var(--text-2); line-height: 1.6; margin-bottom: 24px;
+    }
+    .modal-actions { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; pt: 16px; border-top: 1px solid var(--border); }
+    
+    .btn-modal-visit {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 11px 24px; background: linear-gradient(135deg, var(--accent), #9333ea);
+      color: #fff; border-radius: var(--radius); font-weight: 700; font-size: .92rem;
+      box-shadow: 0 4px 14px rgba(124,92,246,.35); transition: transform .15s;
+    }
+    .btn-modal-visit:hover { transform: translateY(-1px); }
+
+    .btn-modal-copy {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 10px 18px; background: var(--bg-2); border: 1px solid var(--border-2);
+      border-radius: var(--radius); font-size: .85rem; font-weight: 600; color: var(--text-2);
+      cursor: pointer; transition: all .15s;
+    }
+    .btn-modal-copy:hover { border-color: var(--accent); color: var(--text); background: var(--bg-3); }
+
+    .btn-modal-review { font-size: .85rem; font-weight: 700; color: var(--accent); }
+    .btn-modal-review:hover { text-decoration: underline; }
+
+    /* Toast Notification */
+    #toast-msg {
+      position: fixed; bottom: 24px; right: 24px; z-index: 10001;
+      background: var(--bg-card); border: 1px solid var(--accent);
+      color: var(--text); padding: 12px 20px; border-radius: var(--radius);
+      font-size: .88rem; font-weight: 600; box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+      display: none; align-items: center; gap: 8px; animation: modalFadeIn .2s ease-out;
+    }
+
+    /* ── Hero Newsletter Subscription Box ── */
+    .hero-newsletter-wrap {
+      max-width: 580px; margin: 32px auto 0;
+      background: var(--bg-card); border: 1px solid var(--border-2);
+      border-radius: var(--radius-lg); padding: 22px 26px;
+      box-shadow: 0 16px 40px -10px rgba(0,0,0,0.6); text-align: center;
+    }
+    .newsletter-title { font-size: 1.05rem; font-weight: 800; color: var(--text); margin-bottom: 4px; }
+    .newsletter-sub { font-size: .84rem; color: var(--text-2); margin-bottom: 16px; }
+    .newsletter-form { display: flex; gap: 10px; flex-wrap: wrap; }
+    .newsletter-input {
+      flex: 1; min-width: 220px; padding: 11px 16px;
+      background: var(--bg-2); border: 1px solid var(--border-2);
+      border-radius: var(--radius); color: var(--text); font-size: .92rem;
+      outline: none; transition: border-color .15s; font-family: inherit;
+    }
+    .newsletter-input:focus { border-color: var(--accent); }
+    .btn-subscribe {
+      padding: 11px 22px; background: linear-gradient(135deg, var(--accent), #9333ea);
+      color: #fff; border: none; border-radius: var(--radius);
+      font-size: .88rem; font-weight: 700; cursor: pointer; white-space: nowrap;
+      box-shadow: 0 4px 14px rgba(124,92,246,0.3); transition: transform .15s;
+    }
+    .btn-subscribe:hover { transform: translateY(-1px); }
+
+    /* ── Sponsored Tool Cards (Gold Accent) ── */
+    .dir-card.sponsored {
+      border: 1px solid rgba(245,158,11,.45) !important;
+      box-shadow: 0 0 24px -4px rgba(245,158,11,.15) !important;
+      background: linear-gradient(180deg, rgba(245,158,11,.04) 0%, var(--bg-card) 100%) !important;
+    }
+    .dir-card.sponsored::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, #f59e0b, #eab308, #f59e0b) !important; opacity: 1 !important;
+    }
+    .dir-badge.badge-sponsored {
+      background: rgba(245,158,11,.18); color: #fbbf24;
+      border: 1px solid rgba(245,158,11,.4); font-weight: 700;
+    }
+
+    /* ── Submit Tool Modal Drawer ── */
+    #submit-modal-overlay {
+      position: fixed; inset: 0; z-index: 10000;
+      background: rgba(0,0,0,0.8); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+      display: none; align-items: center; justify-content: center; padding: 20px;
+    }
+    #submit-modal-overlay.active { display: flex; animation: modalFadeIn .2s ease-out; }
+
+    .submit-modal-box {
+      background: var(--bg-card); border: 1px solid var(--border-2);
+      border-radius: var(--radius-lg); max-width: 620px; width: 100%;
+      max-height: 92vh; overflow-y: auto; padding: 32px; position: relative;
+      box-shadow: 0 24px 60px rgba(0,0,0,0.85);
+    }
+    .submit-title { font-size: 1.4rem; font-weight: 900; margin-bottom: 6px; color: var(--text); }
+    .submit-sub { font-size: .88rem; color: var(--text-2); margin-bottom: 24px; }
+
+    .form-group { margin-bottom: 18px; text-align: left; }
+    .form-label { display: block; font-size: .82rem; font-weight: 700; color: var(--text-2); margin-bottom: 6px; text-transform: uppercase; letter-spacing: .04em; }
+    .form-input, .form-select, .form-textarea {
+      width: 100%; padding: 11px 16px; background: var(--bg-2);
+      border: 1px solid var(--border-2); border-radius: var(--radius);
+      color: var(--text); font-size: .92rem; outline: none; font-family: inherit;
+    }
+    .form-input:focus, .form-select:focus, .form-textarea:focus { border-color: var(--accent); }
+    .form-textarea { resize: vertical; min-height: 80px; }
+
+    .submit-tier-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 24px; }
+    .tier-card {
+      border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 16px; background: var(--bg-2); cursor: pointer; transition: all .15s; text-align: left;
+    }
+    .tier-card:hover { border-color: var(--accent); }
+    .tier-card.selected { border-color: var(--accent); background: var(--accent-lt); box-shadow: 0 0 0 1px var(--accent); }
+    .tier-card.tier-featured.selected { border-color: #f59e0b; background: rgba(245,158,11,.1); box-shadow: 0 0 0 1px #f59e0b; }
+    .tier-name { font-weight: 800; font-size: .95rem; margin-bottom: 4px; display: flex; align-items: center; justify-content: space-between; }
+    .tier-price { font-size: 1.1rem; font-weight: 900; color: var(--text); }
+    .tier-desc { font-size: .78rem; color: var(--text-2); line-height: 1.4; }
+
+    .btn-submit-form {
+      width: 100%; padding: 13px; background: linear-gradient(135deg, var(--accent), #9333ea);
+      color: #fff; border: none; border-radius: var(--radius); font-weight: 800; font-size: .95rem;
+      cursor: pointer; box-shadow: 0 4px 16px rgba(124,92,246,.35); transition: transform .15s;
+    }
+    .btn-submit-form:hover { transform: translateY(-1px); }
 
     /* ── Responsive ── */
+    @media (max-width: 768px) {
+      .hero { padding: 56px 0 40px; }
+      .dir-search-wrap { top: 60px; padding: 14px 0; }
+      .filter-row2 { flex-direction: column; align-items: flex-start; gap: 12px; }
+      .dir-sort-wrap { width: 100%; justify-content: space-between; }
+      .tool-modal-box, .submit-modal-box { padding: 24px; }
+      .submit-tier-grid { grid-template-columns: 1fr; }
+    }
     @media (max-width: 640px) {
-      .hero { padding: 64px 0 48px; }
       .nav-links { display: none; }
       .hamburger { display: flex; }
-      .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 56px; left: 0; right: 0; background: var(--bg-2); border-bottom: 1px solid var(--border); padding: 16px 24px; gap: 16px; z-index: 99; }
+      .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 60px; left: 0; right: 0; background: var(--bg-2); border-bottom: 1px solid var(--border); padding: 16px 24px; gap: 16px; z-index: 99; }
     }
   </style>
   <link rel="alternate" type="application/rss+xml" href="https://www.qutaifan.com/feed.xml" />
@@ -275,11 +558,11 @@
     </a>
     <ul class="nav-links" id="nav-links">
       <li><a href="/best-free-ai-tools-2026">Free AI Tools</a></li>
-      <li><a href="/best-free-ai-writing-tools-2026">Free AI Writing</a></li>
-      <li><a href="/best-free-password-managers-2026">Password Managers</a></li>
-      <li><a href="/best-free-games-2026">Free Games</a></li>
+      <li><a href="/best-free-ai-writing-tools-2026">AI Writing</a></li>
       <li><a href="/best-open-source-software-alternatives-2026">Open Source</a></li>
-      <li><a href="/best-linux-distros-beginners-2026">Linux</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><button id="nav-submit-btn" style="background:none;border:none;font:inherit;cursor:pointer;color:#fbbf24;font-weight:700;text-transform:uppercase;font-size:.8rem;letter-spacing:.05em;">⚡ Submit Tool</button></li>
     </ul>
     <div class="hamburger" id="hamburger" onclick="document.getElementById('nav-links').classList.toggle('open')" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -287,60 +570,80 @@
   </div>
 </nav>
 
-<!-- ── Hero ── -->
-<section class="hero">
-  <div class="wrap">
-    <h1>Stop Paying for Software<br>You Can Get Free</h1>
-    <p class="hero-sub">136 genuinely free tools, hands-on tested. No credit card, no trials disguised as "free."</p>
-    <div class="hero-actions">
-      <a href="#directory" class="btn-primary">Browse the Directory ↓</a>
+<!-- ── Hero Section (FutureTools Ambient Glow & Search) ── -->
+<section class="hero" id="hero">
+  <div class="hero-glow-1"></div>
+  <div class="hero-glow-2"></div>
+  <div class="wrap" style="position:relative; z-index:2;">
+    <div class="hero-badge">
+      <span class="sparkle">✨</span> 140+ Tested Free & Open-Source Tools — 2026
+    </div>
+    <h1>Stop Paying for Software.<br>Discover Free Alternatives.</h1>
+    <p class="hero-sub">Genuinely free tools, AI software, and open-source picks — hands-on tested with zero hidden credit card traps.</p>
+    
+    <!-- Hero Integrated Search Bar -->
+    <div class="hero-search-box">
+      <span class="hero-search-icon">🔍</span>
+      <input type="text" id="dir-search" placeholder="Search 140 free tools... (e.g. image generator, password manager, coding, video editor)" aria-label="Search tools" />
+      <button class="hero-search-clear" id="search-clear" aria-label="Clear search">✕</button>
+    </div>
+
+    <!-- Quick Category Pills -->
+    <div class="hero-pills">
+      <button class="hero-pill" data-hero-filter="chatbots">💬 Chatbots</button>
+      <button class="hero-pill" data-hero-filter="image">🎨 Image AI</button>
+      <button class="hero-pill" data-hero-filter="video">🎬 Video</button>
+      <button class="hero-pill" data-hero-filter="writing">✍️ Writing</button>
+      <button class="hero-pill" data-hero-filter="code">💻 Code</button>
+      <button class="hero-pill" data-hero-filter="opensource">🌐 Open Source</button>
+    </div>
+
+    <!-- Hero Newsletter Box -->
+    <div class="hero-newsletter-wrap">
+      <div class="newsletter-title">📬 Get the Top 5 New Free AI Tools Every Friday</div>
+      <div class="newsletter-sub">Join 15,000+ creators and developers saving $100s on monthly software subscriptions.</div>
+      <form class="newsletter-form" id="hero-newsletter-form">
+        <input type="email" class="newsletter-input" id="newsletter-email" placeholder="Enter your email address..." required aria-label="Email address" />
+        <button type="submit" class="btn-subscribe">Subscribe Free</button>
+      </form>
     </div>
   </div>
 </section>
 
-<div class="section-divider"></div>
-
-<!-- ── Unified Directory ── -->
-<section class="section" id="directory" style="padding-bottom:24px;">
+<!-- ── Sticky Filter & Directory Controls ── -->
+<div class="dir-search-wrap" id="directory">
   <div class="wrap">
-    <h2 class="section-title">Every Free Tool, In One Place</h2>
-    <p class="section-sub">Search or filter by category.</p>
-  </div>
-</section>
-
-<div class="dir-search-wrap">
-  <div class="wrap">
-    <input type="text" class="dir-search" id="dir-search" placeholder="Search 140 free tools... (e.g. image generator, password manager, coding)" />
     <div class="filter-tabs" id="filter-tabs">
-      <button class="filter-tab active" data-filter="all">All (140)</button>
+      <button class="filter-tab active" data-filter="all">All Tools</button>
       <button class="filter-tab" data-filter="popular">🔥 Popular</button>
       <button class="filter-tab" data-filter="new">🆕 New</button>
-      <button class="filter-tab" data-filter="chatbots">💬 Chatbots (12)</button>
-      <button class="filter-tab" data-filter="image">🎨 Image (19)</button>
-      <button class="filter-tab" data-filter="video">🎬 Video (12)</button>
-      <button class="filter-tab" data-filter="audio">🎵 Audio (6)</button>
-      <button class="filter-tab" data-filter="code">💻 Code (6)</button>
-      <button class="filter-tab" data-filter="writing">✍️ Writing (7)</button>
-      <button class="filter-tab" data-filter="models">🧠 Local Models (8)</button>
-      <button class="filter-tab" data-filter="research">🔬 Research (4)</button>
-      <button class="filter-tab" data-filter="dev">🛠️ Dev Tools (6)</button>
-      <button class="filter-tab" data-filter="security">🔑 Security (5)</button>
-      <button class="filter-tab" data-filter="gaming">🎮 Gaming (29)</button>
-      <button class="filter-tab" data-filter="opensource">🌐 Open Source (16)</button>
-      <button class="filter-tab" data-filter="linux">🐧 Linux (10)</button>
+      <button class="filter-tab" data-filter="chatbots">💬 Chatbots</button>
+      <button class="filter-tab" data-filter="image">🎨 Image AI</button>
+      <button class="filter-tab" data-filter="video">🎬 Video</button>
+      <button class="filter-tab" data-filter="audio">🎵 Audio</button>
+      <button class="filter-tab" data-filter="code">💻 Code</button>
+      <button class="filter-tab" data-filter="writing">✍️ Writing</button>
+      <button class="filter-tab" data-filter="models">🧠 Local Models</button>
+      <button class="filter-tab" data-filter="research">🔬 Research</button>
+      <button class="filter-tab" data-filter="dev">🛠️ Dev Tools</button>
+      <button class="filter-tab" data-filter="opensource">🌐 Open Source</button>
     </div>
     <div class="filter-row2">
       <div class="pricing-chips" id="pricing-chips">
-        <button class="p-chip active" data-pricing="all">All prices</button>
-        <button class="p-chip" data-pricing="open-source">Open source</button>
-        <button class="p-chip" data-pricing="free">Free</button>
-        <button class="p-chip" data-pricing="free-tier">Free tier</button>
+        <span class="pricing-label">Price:</span>
+        <button class="p-chip active" data-pricing="all">All Prices</button>
+        <button class="p-chip" data-pricing="open-source">Open Source</button>
+        <button class="p-chip" data-pricing="free">100% Free</button>
+        <button class="p-chip" data-pricing="free-tier">Free Tier</button>
       </div>
-      <select id="dir-sort" aria-label="Sort tools">
-        <option value="featured">Featured</option>
-        <option value="az">A–Z</option>
-        <option value="new">Newest</option>
-      </select>
+      <div class="dir-sort-wrap">
+        <span class="sort-label">Sort:</span>
+        <select id="dir-sort" aria-label="Sort tools">
+          <option value="featured">Featured Picks</option>
+          <option value="az">Name (A–Z)</option>
+          <option value="new">Newest First</option>
+        </select>
+      </div>
     </div>
   </div>
 </div>
@@ -350,6 +653,13 @@
     <div class="dir-count" id="dir-count">Showing 140 tools</div>
     <div class="dir-grid" id="dir-grid">
     <!-- DIR:START -->
+      <!-- Sponsored / Featured Tool Card -->
+      <div class="dir-card sponsored" data-cat="chatbots" data-tag="popular" data-pricing="free" data-added="2026-07-20" data-name="notebooklm">
+        <div class="dir-card-top"><span class="dir-avatar" style="--h:45">N</span><div class="dir-card-id"><div class="dir-name">NotebookLM</div><div class="dir-by">by Google</div></div></div>
+        <p class="dir-desc">AI research assistant that turns notes & PDFs into instant audio podcasts and deep study guides.</p>
+        <div class="dir-badges"><span class="dir-badge badge-sponsored">🔥 FEATURED</span><span class="dir-badge">100% Free</span><span class="dir-badge">Research AI</span></div>
+        <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#notebooklm">Read our review →</a><a class="dir-ext" href="https://notebooklm.google.com" target="_blank" rel="nofollow noopener">Site ↗</a></div>
+      </div>
       <div class="dir-card" data-cat="chatbots" data-tag="popular" data-pricing="free-tier" data-added="2026-06-30" data-name="chatgpt">
         <div class="dir-card-top"><span class="dir-avatar" style="--h:189">C</span><div class="dir-card-id"><div class="dir-name">ChatGPT</div><div class="dir-by">by OpenAI</div></div></div>
         <p class="dir-desc">A widely used AI assistant.</p>
@@ -728,210 +1038,16 @@
         <div class="dir-badges"><span class="dir-badge">$1 Free Credit</span><span class="dir-badge">API</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-tools-2026#together-ai">Read our review →</a><a class="dir-ext" href="https://together.ai" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
-      <div class="dir-card" data-cat="security" data-tag="popular" data-pricing="open-source" data-added="2026-07-01" data-name="bitwarden">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:120">B</span><div class="dir-card-id"><div class="dir-name">Bitwarden</div><div class="dir-by">by Open Source</div></div></div>
-        <p class="dir-desc">Unlimited passwords and devices on the free plan, zero-knowledge encryption.</p>
-        <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Open Source</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-open-source-software-alternatives-2026#bitwarden">Read our review →</a><a class="dir-ext" href="https://bitwarden.com" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="security" data-tag="popular" data-pricing="open-source" data-added="2026-07-01" data-name="keepassxc">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:89">K</span><div class="dir-card-id"><div class="dir-name">KeePassXC</div><div class="dir-by">by Open Source</div></div></div>
-        <p class="dir-desc">Fully local, encrypted vault file — no account, no cloud, no subscription.</p>
-        <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Open Source</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-open-source-software-alternatives-2026#keepassxc">Read our review →</a><a class="dir-ext" href="https://keepassxc.org" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="security" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="proton-pass">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:66">P</span><div class="dir-card-id"><div class="dir-name">Proton Pass</div><div class="dir-by">by Proton</div></div></div>
-        <p class="dir-desc">Privacy-focused free tier with unlimited logins and hide-my-email aliases.</p>
-        <div class="dir-badges"><span class="dir-badge">Free</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-free-password-managers-2026#proton-pass">Read our review →</a><a class="dir-ext" href="https://proton.me/pass" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="security" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="google-password-manager">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:227">G</span><div class="dir-card-id"><div class="dir-name">Google Password Manager</div><div class="dir-by">by Google</div></div></div>
-        <p class="dir-desc">Built into Chrome and Android — free, zero setup, passkey support.</p>
-        <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">No Signup</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-free-password-managers-2026#google-password-manager">Read our review →</a><a class="dir-ext" href="https://passwords.google.com" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="security" data-tag="new" data-pricing="free" data-added="2026-07-01" data-name="apple-passwords">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:131">A</span><div class="dir-card-id"><div class="dir-name">Apple Passwords</div><div class="dir-by">by Apple</div></div></div>
-        <p class="dir-desc">Built into iPhone, iPad, and Mac — free, iCloud sync, passkey support.</p>
-        <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">No Signup</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-free-password-managers-2026#apple-passwords-keychain">Read our review →</a><a class="dir-ext" href="https://www.apple.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
+      <!-- security/gaming/linux cards removed -->
+
       <div class="dir-card" data-cat="writing" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="deepl-write">
         <div class="dir-card-top"><span class="dir-avatar" style="--h:174">D</span><div class="dir-card-id"><div class="dir-name">DeepL Write</div><div class="dir-by">by DeepL</div></div></div>
         <p class="dir-desc">Free tone and grammar polishing, especially strong for non-native speakers.</p>
         <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">No Signup</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-free-ai-writing-tools-2026#deepl-write">Read our review →</a><a class="dir-ext" href="https://www.deepl.com/write" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
-      <div class="dir-card" data-cat="gaming" data-tag="popular" data-pricing="free" data-added="2026-07-01" data-name="dota-2">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:273">D</span><div class="dir-card-id"><div class="dir-name">Dota 2</div><div class="dir-by">by Valve</div></div></div>
-        <p class="dir-desc">A full competitive MOBA where every hero is available without paying.</p>
-        <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Fair F2P</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#dota-2">Read our review →</a><a class="dir-ext" href="https://store.steampowered.com/app/570/Dota_2/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="path-of-exile">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:149">P</span><div class="dir-card-id"><div class="dir-name">Path of Exile</div><div class="dir-by">by Grinding Gear Games</div></div></div>
-        <p class="dir-desc">A massive ARPG with deep builds and no paid power.</p>
-        <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Fair F2P</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#path-of-exile">Read our review →</a><a class="dir-ext" href="https://www.pathofexile.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="warframe">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:131">W</span><div class="dir-card-id"><div class="dir-name">Warframe</div><div class="dir-by">by Digital Extremes</div></div></div>
-        <p class="dir-desc">Fast co-op space-ninja action with years of free content.</p>
-        <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Co-op</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#warframe">Read our review →</a><a class="dir-ext" href="https://www.warframe.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="marvel-rivals">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:43">M</span><div class="dir-card-id"><div class="dir-name">Marvel Rivals</div><div class="dir-by">by NetEase / Marvel</div></div></div>
-        <p class="dir-desc">A polished superhero team shooter with instant pick-up appeal.</p>
-        <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Hero Shooter</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#marvel-rivals">Read our review →</a><a class="dir-ext" href="https://www.marvelrivals.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="the-finals">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:341">T</span><div class="dir-card-id"><div class="dir-name">The Finals</div><div class="dir-by">by Embark Studios</div></div></div>
-        <p class="dir-desc">Destructible-arena shooter with chaotic team objectives.</p>
-        <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Shooter</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#the-finals">Read our review →</a><a class="dir-ext" href="https://www.reachthefinals.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="brawlhalla">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:30">B</span><div class="dir-card-id"><div class="dir-name">Brawlhalla</div><div class="dir-by">by Blue Mammoth / Ubisoft</div></div></div>
-        <p class="dir-desc">Platform fighting that runs on almost anything.</p>
-        <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Fighting</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#brawlhalla">Read our review →</a><a class="dir-ext" href="https://www.brawlhalla.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="gaming" data-tag="popular" data-pricing="free" data-added="2026-07-01" data-name="rocket-league">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:120">R</span><div class="dir-card-id"><div class="dir-name">Rocket League</div><div class="dir-by">by Psyonix / Epic</div></div></div>
-        <p class="dir-desc">Soccer with rocket cars; still one of the cleanest skill games.</p>
-        <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Sports</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#rocket-league">Read our review →</a><a class="dir-ext" href="https://www.rocketleague.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="gaming" data-tag="popular" data-pricing="free" data-added="2026-07-01" data-name="counter-strike-2">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:162">C</span><div class="dir-card-id"><div class="dir-name">Counter-Strike 2</div><div class="dir-by">by Valve</div></div></div>
-        <p class="dir-desc">The classic tactical shooter, free for casual and competitive play.</p>
-        <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Tactical</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#counter-strike-2">Read our review →</a><a class="dir-ext" href="https://store.steampowered.com/app/730/CounterStrike_2/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="gaming" data-tag="popular" data-pricing="free" data-added="2026-07-01" data-name="fortnite">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:85">F</span><div class="dir-card-id"><div class="dir-name">Fortnite</div><div class="dir-by">by Epic Games</div></div></div>
-        <p class="dir-desc">Battle royale, creative maps, Lego modes, racing, concerts and more.</p>
-        <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Battle Royale</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#fortnite">Read our review →</a><a class="dir-ext" href="https://www.fortnite.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="team-fortress-2">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:157">T</span><div class="dir-card-id"><div class="dir-name">Team Fortress 2</div><div class="dir-by">by Valve</div></div></div>
-        <p class="dir-desc">A classic class shooter with personality, chaos, and a long community tail.</p>
-        <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Classic</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#team-fortress-2">Read our review →</a><a class="dir-ext" href="https://store.steampowered.com/app/440/Team_Fortress_2/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="open-source" data-added="2026-07-01" data-name="0-a-d">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:265">0</span><div class="dir-card-id"><div class="dir-name">0 A.D.</div><div class="dir-by">by Wildfire Games</div></div></div>
-        <p class="dir-desc">A free, open-source RTS of ancient warfare.</p>
-        <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Free</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#0-a-d">Read our review →</a><a class="dir-ext" href="https://play0ad.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="open-source" data-added="2026-07-01" data-name="the-battle-for-wesnoth">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:205">T</span><div class="dir-card-id"><div class="dir-name">The Battle for Wesnoth</div><div class="dir-by">by Community</div></div></div>
-        <p class="dir-desc">A turn-based fantasy strategy classic with campaigns and multiplayer.</p>
-        <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Strategy</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#the-battle-for-wesnoth">Read our review →</a><a class="dir-ext" href="https://www.wesnoth.org/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="open-source" data-added="2026-07-01" data-name="openttd">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:2">O</span><div class="dir-card-id"><div class="dir-name">OpenTTD</div><div class="dir-by">by OpenTTD Team</div></div></div>
-        <p class="dir-desc">Build transport networks and accidentally lose entire evenings.</p>
-        <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Sim</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#openttd">Read our review →</a><a class="dir-ext" href="https://www.openttd.org/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="open-source" data-added="2026-07-01" data-name="supertuxkart">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:262">S</span><div class="dir-card-id"><div class="dir-name">SuperTuxKart</div><div class="dir-by">by Community</div></div></div>
-        <p class="dir-desc">A free kart racer with local multiplayer and community charm.</p>
-        <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Racing</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#supertuxkart">Read our review →</a><a class="dir-ext" href="https://supertuxkart.net/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="open-source" data-added="2026-07-01" data-name="luanti-minetest">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:37">L</span><div class="dir-card-id"><div class="dir-name">Luanti / Minetest</div><div class="dir-by">by Community</div></div></div>
-        <p class="dir-desc">A free voxel sandbox engine for Minecraft-like worlds.</p>
-        <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Sandbox</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#luanti-minetest">Read our review →</a><a class="dir-ext" href="https://www.luanti.org/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="open-source" data-added="2026-07-01" data-name="veloren">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:221">V</span><div class="dir-card-id"><div class="dir-name">Veloren</div><div class="dir-by">by Community</div></div></div>
-        <p class="dir-desc">Open-source voxel RPG with exploration and co-op promise.</p>
-        <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">RPG</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#veloren">Read our review →</a><a class="dir-ext" href="https://veloren.net/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="open-source" data-added="2026-07-01" data-name="freeciv">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:220">F</span><div class="dir-card-id"><div class="dir-name">Freeciv</div><div class="dir-by">by Community</div></div></div>
-        <p class="dir-desc">Civilization-style empire building, free and open source.</p>
-        <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Strategy</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#freeciv">Read our review →</a><a class="dir-ext" href="https://www.freeciv.org/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="open-source" data-added="2026-07-01" data-name="endless-sky">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:206">E</span><div class="dir-card-id"><div class="dir-name">Endless Sky</div><div class="dir-by">by Community</div></div></div>
-        <p class="dir-desc">A free space trading and combat game inspired by Escape Velocity.</p>
-        <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Space</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#endless-sky">Read our review →</a><a class="dir-ext" href="https://endless-sky.github.io/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="cave-story">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:139">C</span><div class="dir-card-id"><div class="dir-name">Cave Story</div><div class="dir-by">by Studio Pixel</div></div></div>
-        <p class="dir-desc">The freeware action-platformer that helped define indie games.</p>
-        <div class="dir-badges"><span class="dir-badge">Freeware</span><span class="dir-badge">Classic</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#cave-story">Read our review →</a><a class="dir-ext" href="https://www.cavestory.org/download/cave-story.php" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="doki-doki-literature-club">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:124">D</span><div class="dir-card-id"><div class="dir-name">Doki Doki Literature Club!</div><div class="dir-by">by Team Salvato</div></div></div>
-        <p class="dir-desc">A famous free visual novel best played without spoilers.</p>
-        <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Narrative</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#doki-doki-literature-club">Read our review →</a><a class="dir-ext" href="https://ddlc.moe/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="deltarune-chapters-1-2">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:152">D</span><div class="dir-card-id"><div class="dir-name">Deltarune Chapters 1 &amp; 2</div><div class="dir-by">by Toby Fox</div></div></div>
-        <p class="dir-desc">A free start to Toby Fox’s follow-up universe.</p>
-        <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">RPG</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#deltarune-chapters-1-2">Read our review →</a><a class="dir-ext" href="https://deltarune.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="friday-night-funkin">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:146">F</span><div class="dir-card-id"><div class="dir-name">Friday Night Funkin’</div><div class="dir-by">by The Funkin Crew</div></div></div>
-        <p class="dir-desc">A free rhythm-game phenomenon with a huge mod scene.</p>
-        <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Rhythm</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#friday-night-funkin">Read our review →</a><a class="dir-ext" href="https://ninja-muffin24.itch.io/funkin" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="n-step-steve">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:5">N</span><div class="dir-card-id"><div class="dir-name">N Step Steve</div><div class="dir-by">by EPG800</div></div></div>
-        <p class="dir-desc">A brilliant browser puzzle game about counting steps.</p>
-        <div class="dir-badges"><span class="dir-badge">Browser</span><span class="dir-badge">Puzzle</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#n-step-steve">Read our review →</a><a class="dir-ext" href="https://www.qutaifan.com/best-free-games-2026#n-step-steve" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="cookie-clicker-classic">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:205">C</span><div class="dir-card-id"><div class="dir-name">Cookie Clicker Classic</div><div class="dir-by">by Orteil</div></div></div>
-        <p class="dir-desc">The incremental-game classic: click cookies, automate, ascend, repeat.</p>
-        <div class="dir-badges"><span class="dir-badge">Browser</span><span class="dir-badge">Incremental</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#cookie-clicker-classic">Read our review →</a><a class="dir-ext" href="https://orteil.dashnet.org/cookieclicker/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="a-dark-room">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:30">A</span><div class="dir-card-id"><div class="dir-name">A Dark Room</div><div class="dir-by">by Doublespeak Games</div></div></div>
-        <p class="dir-desc">Minimal text survival that expands into something stranger.</p>
-        <div class="dir-badges"><span class="dir-badge">Browser</span><span class="dir-badge">Narrative</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#a-dark-room">Read our review →</a><a class="dir-ext" href="https://adarkroom.doublespeakgames.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="townscaper-demo-web-toy">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:132">T</span><div class="dir-card-id"><div class="dir-name">Townscaper Demo / Web Toy</div><div class="dir-by">by Oskar Stålberg</div></div></div>
-        <p class="dir-desc">A tiny creative city-building toy in the browser.</p>
-        <div class="dir-badges"><span class="dir-badge">Browser</span><span class="dir-badge">Creative</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#townscaper-demo-web-toy">Read our review →</a><a class="dir-ext" href="https://oskarstalberg.com/Townscaper/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="krunker">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:190">K</span><div class="dir-card-id"><div class="dir-name">Krunker</div><div class="dir-by">by FRVR</div></div></div>
-        <p class="dir-desc">Fast browser FPS that runs almost instantly.</p>
-        <div class="dir-badges"><span class="dir-badge">Browser</span><span class="dir-badge">FPS</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#krunker">Read our review →</a><a class="dir-ext" href="https://krunker.io/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="geofs">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:164">G</span><div class="dir-card-id"><div class="dir-name">GeoFS</div><div class="dir-by">by GeoFS</div></div></div>
-        <p class="dir-desc">A free browser flight simulator with global scenery.</p>
-        <div class="dir-badges"><span class="dir-badge">Browser</span><span class="dir-badge">Flight Sim</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#geofs">Read our review →</a><a class="dir-ext" href="https://www.geo-fs.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
+
+
       <div class="dir-card" data-cat="opensource" data-tag="popular" data-pricing="open-source" data-added="2026-07-01" data-name="libreoffice">
         <div class="dir-card-top"><span class="dir-avatar" style="--h:222">L</span><div class="dir-card-id"><div class="dir-name">LibreOffice</div><div class="dir-by">by The Document Foundation</div></div></div>
         <p class="dir-desc">Full desktop office suite for documents, spreadsheets, presentations and databases.</p>
@@ -1027,72 +1143,6 @@
         <p class="dir-desc">Local encrypted password vault with no account and no subscription.</p>
         <div class="dir-badges"><span class="dir-badge">Open Source</span><span class="dir-badge">Security</span></div>
         <div class="dir-actions"><a class="dir-review" href="/best-open-source-software-alternatives-2026#keepassxc">Read our review →</a><a class="dir-ext" href="https://keepassxc.org/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="linux" data-tag="popular" data-pricing="free" data-added="2026-07-02" data-name="linux-mint">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:155">L</span><div class="dir-card-id"><div class="dir-name">Linux Mint</div><div class="dir-by">by Linux Mint Team</div></div></div>
-        <p class="dir-desc">Most Windows switchers who want a calm, familiar desktop.</p>
-        <div class="dir-badges"><span class="dir-badge">Best Overall</span><span class="dir-badge">Windows-like</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-linux-distros-beginners-2026#linux-mint">Read our review →</a><a class="dir-ext" href="https://linuxmint.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="linux" data-tag="popular" data-pricing="free" data-added="2026-07-02" data-name="ubuntu">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:45">U</span><div class="dir-card-id"><div class="dir-name">Ubuntu</div><div class="dir-by">by Canonical</div></div></div>
-        <p class="dir-desc">Beginners who want the most tutorials, vendor support and predictable releases.</p>
-        <div class="dir-badges"><span class="dir-badge">Largest Ecosystem</span><span class="dir-badge">LTS</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-linux-distros-beginners-2026#ubuntu">Read our review →</a><a class="dir-ext" href="https://ubuntu.com/desktop" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="linux" data-tag="" data-pricing="free" data-added="2026-07-02" data-name="fedora-workstation">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:317">F</span><div class="dir-card-id"><div class="dir-name">Fedora Workstation</div><div class="dir-by">by Fedora Project</div></div></div>
-        <p class="dir-desc">Curious beginners who want a clean, current Linux desktop with strong upstream defaults.</p>
-        <div class="dir-badges"><span class="dir-badge">Modern</span><span class="dir-badge">Clean GNOME</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-linux-distros-beginners-2026#fedora-workstation">Read our review →</a><a class="dir-ext" href="https://fedoraproject.org/workstation/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="linux" data-tag="" data-pricing="free" data-added="2026-07-02" data-name="zorin-os">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:271">Z</span><div class="dir-card-id"><div class="dir-name">Zorin OS</div><div class="dir-by">by Zorin Group</div></div></div>
-        <p class="dir-desc">Windows refugees who care about polish and a low-anxiety first boot.</p>
-        <div class="dir-badges"><span class="dir-badge">Windows-like</span><span class="dir-badge">Polished</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-linux-distros-beginners-2026#zorin-os">Read our review →</a><a class="dir-ext" href="https://zorin.com/os/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="linux" data-tag="" data-pricing="free" data-added="2026-07-02" data-name="pop-os">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:42">P</span><div class="dir-card-id"><div class="dir-name">Pop!_OS</div><div class="dir-by">by System76</div></div></div>
-        <p class="dir-desc">Laptop users, developers, creators and NVIDIA GPU owners.</p>
-        <div class="dir-badges"><span class="dir-badge">Creators</span><span class="dir-badge">NVIDIA-friendly</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-linux-distros-beginners-2026#pop-os">Read our review →</a><a class="dir-ext" href="https://pop.system76.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="linux" data-tag="" data-pricing="free" data-added="2026-07-02" data-name="elementary-os">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:43">E</span><div class="dir-card-id"><div class="dir-name">elementary OS</div><div class="dir-by">by elementary, Inc.</div></div></div>
-        <p class="dir-desc">Mac switchers who value visual consistency and simplicity.</p>
-        <div class="dir-badges"><span class="dir-badge">Mac-like</span><span class="dir-badge">Beautiful</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-linux-distros-beginners-2026#elementary-os">Read our review →</a><a class="dir-ext" href="https://elementary.io/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="linux" data-tag="" data-pricing="free" data-added="2026-07-02" data-name="kde-neon">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:175">K</span><div class="dir-card-id"><div class="dir-name">KDE neon</div><div class="dir-by">by KDE Community</div></div></div>
-        <p class="dir-desc">Beginners who want a Windows-like layout with more customization power.</p>
-        <div class="dir-badges"><span class="dir-badge">Customizable</span><span class="dir-badge">KDE Plasma</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-linux-distros-beginners-2026#kde-neon">Read our review →</a><a class="dir-ext" href="https://neon.kde.org/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="linux" data-tag="" data-pricing="free" data-added="2026-07-02" data-name="mx-linux">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:318">M</span><div class="dir-card-id"><div class="dir-name">MX Linux</div><div class="dir-by">by MX Linux Community</div></div></div>
-        <p class="dir-desc">Older laptops, low-resource desktops and people who value stability.</p>
-        <div class="dir-badges"><span class="dir-badge">Old PCs</span><span class="dir-badge">Stable</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-linux-distros-beginners-2026#mx-linux">Read our review →</a><a class="dir-ext" href="https://mxlinux.org/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="linux" data-tag="" data-pricing="free" data-added="2026-07-02" data-name="linux-lite">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:45">L</span><div class="dir-card-id"><div class="dir-name">Linux Lite</div><div class="dir-by">by Linux Lite Team</div></div></div>
-        <p class="dir-desc">Windows users reviving an older laptop with minimum drama.</p>
-        <div class="dir-badges"><span class="dir-badge">Very Easy</span><span class="dir-badge">Old Laptop</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-linux-distros-beginners-2026#linux-lite">Read our review →</a><a class="dir-ext" href="https://www.linuxliteos.com/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="linux" data-tag="" data-pricing="free" data-added="2026-07-02" data-name="nobara">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:309">N</span><div class="dir-card-id"><div class="dir-name">Nobara</div><div class="dir-by">by Nobara Project</div></div></div>
-        <p class="dir-desc">Gamers who want Linux gaming tweaks without assembling everything manually.</p>
-        <div class="dir-badges"><span class="dir-badge">Gaming</span><span class="dir-badge">Fedora-based</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-linux-distros-beginners-2026#nobara">Read our review →</a><a class="dir-ext" href="https://nobaraproject.org/" target="_blank" rel="nofollow noopener">Site ↗</a></div>
-      </div>
-      <div class="dir-card" data-cat="gaming" data-tag="" data-pricing="free" data-added="2026-07-01" data-name="itch-io-free-games">
-        <div class="dir-card-top"><span class="dir-avatar" style="--h:106">I</span><div class="dir-card-id"><div class="dir-name">itch.io Free Games</div><div class="dir-by">by Indie creators</div></div></div>
-        <p class="dir-desc">A living shelf of experimental free indie games.</p>
-        <div class="dir-badges"><span class="dir-badge">Free</span><span class="dir-badge">Indie</span></div>
-        <div class="dir-actions"><a class="dir-review" href="/best-free-games-2026#itch-io-free-games">Read our review →</a><a class="dir-ext" href="https://itch.io/games/free" target="_blank" rel="nofollow noopener">Site ↗</a></div>
       </div>
       <div class="dir-card" data-cat="image" data-tag="popular" data-pricing="open-source" data-added="2026-07-03" data-name="krita">
         <div class="dir-card-top"><span class="dir-avatar" style="--h:133">K</span><div class="dir-card-id"><div class="dir-name">Krita</div><div class="dir-by">by Official project</div></div></div>
@@ -1192,7 +1242,12 @@
       </div>
       <!-- DIR:END -->
     </div>
-    <div class="dir-empty" id="dir-empty">No tools match your search. Try a different term or filter.</div>
+    <div class="dir-empty" id="dir-empty">
+      <div class="dir-empty-icon">🔎</div>
+      <h3>No tools match your criteria</h3>
+      <p>Try searching for different keywords or reset your active filters.</p>
+      <button class="btn-reset-filters" id="btn-reset-filters">Reset All Filters</button>
+    </div>
   </div>
 </section>
 
@@ -1212,14 +1267,6 @@
           <div class="cat-live-badge"><span class="led led-green"></span> Live</div>
         </div>
       </a>
-      <a href="/best-free-password-managers-2026" style="display:contents;">
-        <div class="cat-card live">
-          <div class="cat-icon">🔑</div>
-          <div class="cat-name">Password Managers</div>
-          <div class="cat-count">Never pay for password security — 5 compared</div>
-          <div class="cat-live-badge"><span class="led led-green"></span> Live</div>
-        </div>
-      </a>
       <a href="/best-free-ai-writing-tools-2026" style="display:contents;">
         <div class="cat-card live">
           <div class="cat-icon">✍️</div>
@@ -1228,27 +1275,11 @@
           <div class="cat-live-badge"><span class="led led-green"></span> Live</div>
         </div>
       </a>
-      <a href="/best-free-games-2026" style="display:contents;">
-        <div class="cat-card live">
-          <div class="cat-icon">🎮</div>
-          <div class="cat-name">Free Games</div>
-          <div class="cat-count">28 fair games — zero pay-to-win</div>
-          <div class="cat-live-badge"><span class="led led-green"></span> Live</div>
-        </div>
-      </a>
       <a href="/best-open-source-software-alternatives-2026" style="display:contents;">
         <div class="cat-card live">
           <div class="cat-icon">🌐</div>
           <div class="cat-name">Open Source Software</div>
           <div class="cat-count">Replace Office, Photoshop & more — free forever</div>
-          <div class="cat-live-badge"><span class="led led-green"></span> Live</div>
-        </div>
-      </a>
-      <a href="/best-linux-distros-beginners-2026" style="display:contents;">
-        <div class="cat-card live">
-          <div class="cat-icon">🐧</div>
-          <div class="cat-name">Linux & Self-Hosting</div>
-          <div class="cat-count">Stop paying for Windows/macOS — 10 beginner distros</div>
           <div class="cat-live-badge"><span class="led led-green"></span> Live</div>
         </div>
       </a>
@@ -1303,10 +1334,10 @@
     <div class="footer-brand">Qutaifan</div>
     <div class="footer-links">
       <a href="/best-free-ai-tools-2026">Free AI Tools</a>
-      <a href="/best-free-password-managers-2026">Password Managers</a>
-      <a href="/best-free-games-2026">Free Games</a>
+      <a href="/best-free-ai-writing-tools-2026">AI Writing</a>
       <a href="/best-open-source-software-alternatives-2026">Open Source</a>
       <a href="/about">About</a>
+      <a href="/contact">Contact</a>
       <a href="/privacy-policy">Privacy</a>
       <a href="/terms-of-service">Terms</a>
       <a href="/feed.xml">RSS</a>
@@ -1314,6 +1345,95 @@
     <div class="footer-copy">© 2026 Qutaifan</div>
   </div>
 </footer>
+
+<!-- ── Tool Detail Inspection Modal (FutureTools Drawer) ── -->
+<div id="tool-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-tool-name">
+  <div class="tool-modal-box">
+    <button class="modal-close-btn" id="modal-close" aria-label="Close detail view">✕</button>
+    <div class="modal-header">
+      <span class="modal-avatar" id="modal-tool-avatar">C</span>
+      <div class="modal-title-wrap">
+        <h2 class="modal-title" id="modal-tool-name">Tool Name</h2>
+        <div class="modal-by" id="modal-tool-by">by Author</div>
+      </div>
+      <button class="modal-upvote-btn" id="modal-upvote-btn" aria-label="Bookmark or Upvote tool">
+        <span class="heart-icon">❤️</span> <span id="modal-upvote-count">Upvote</span>
+      </button>
+    <div class="modal-badges" id="modal-tool-badges"></div>
+    <div class="modal-desc-box" id="modal-tool-desc">Tool overview and detailed testing review notes...</div>
+    <div class="modal-actions">
+      <a class="btn-modal-visit" id="modal-tool-ext" href="#" target="_blank" rel="nofollow noopener">Visit Official Website ↗</a>
+      <button class="btn-modal-copy" id="modal-copy-link">🔗 Copy Link</button>
+      <a class="btn-modal-review" id="modal-tool-review" href="#">Read Full Guide Review →</a>
+    </div>
+  </div>
+</div>
+
+<!-- ── Tool Submission & Featured Placement Modal ── -->
+<div id="submit-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="submit-modal-title">
+  <div class="submit-modal-box">
+    <button class="modal-close-btn" id="submit-close-btn" aria-label="Close modal">✕</button>
+    <h2 class="submit-title" id="submit-modal-title">Submit Your Software or AI Tool</h2>
+    <p class="submit-sub">Reach 100,000+ monthly creators, developers, and tech buyers searching for software.</p>
+    
+    <form id="tool-submit-form">
+      <div class="form-group">
+        <label class="form-label" for="sub-name">Tool Name *</label>
+        <input type="text" class="form-input" id="sub-name" placeholder="e.g. Acme AI" required />
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="sub-url">Website URL *</label>
+        <input type="url" class="form-input" id="sub-url" placeholder="https://example.com" required />
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="sub-cat">Category *</label>
+        <select class="form-select" id="sub-cat" required>
+          <option value="chatbots">AI Chatbots & Assistants</option>
+          <option value="image">AI Image & Graphic Design</option>
+          <option value="video">AI Video & Editing</option>
+          <option value="audio">Audio & Music AI</option>
+          <option value="code">Coding & Dev Tools</option>
+          <option value="writing">AI Writing & Copywriting</option>
+          <option value="models">Local AI Models</option>
+          <option value="opensource">Open Source Software</option>
+          <option value="other">Other Tools</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="sub-desc">Short Tagline (1-2 sentences) *</label>
+        <textarea class="form-textarea" id="sub-desc" placeholder="Explain what your tool does and what free tier is available..." required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="sub-email">Your Contact Email *</label>
+        <input type="email" class="form-input" id="sub-email" placeholder="you@company.com" required />
+      </div>
+
+      <!-- Listing Tier Selection -->
+      <div class="form-group">
+        <label class="form-label">Select Submission Tier *</label>
+        <div class="submit-tier-grid">
+          <div class="tier-card tier-free selected" data-tier="free">
+            <div class="tier-name">Free Queue <span>$0</span></div>
+            <div class="tier-desc">Standard editorial review queue (3-4 week processing time).</div>
+          </div>
+          <div class="tier-card tier-featured" data-tier="featured">
+            <div class="tier-name" style="color:#fbbf24;">⚡ Featured <span class="tier-price">$99/mo</span></div>
+            <div class="tier-desc">Guaranteed 24-hr indexing, pinned top directory spot, gold border, and newsletter feature.</div>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-submit-form" id="btn-submit-action">Submit Tool for Review</button>
+    </form>
+  </div>
+</div>
+
+<!-- Toast Notification -->
+<div id="toast-msg"><span>✨</span> <span id="toast-text">Link copied to clipboard!</span></div>
 
 <!-- Cookie banner -->
 <div id="cookie-banner" role="dialog" aria-label="Cookie consent">
@@ -1324,31 +1444,246 @@
 <script>
   if (localStorage.getItem('ck')) document.getElementById('cookie-banner').style.display = 'none';
 
-  // ── Directory search + filter ──
+  // ── Directory Dynamic Flows + Tool Detail Drawer + UTM Links ──
   (function() {
     var searchInput = document.getElementById('dir-search');
+    var searchClearBtn = document.getElementById('search-clear');
+    var heroPills = document.querySelectorAll('.hero-pill');
     var tabs = document.querySelectorAll('.filter-tab');
     var cards = document.querySelectorAll('.dir-card');
     var countEl = document.getElementById('dir-count');
     var emptyEl = document.getElementById('dir-empty');
+    var resetBtn = document.getElementById('btn-reset-filters');
+    var sortSelect = document.getElementById('dir-sort');
+    var grid = document.getElementById('dir-grid');
+    var totalCount = cards.length;
+
+    // Modal elements
+    var modalOverlay = document.getElementById('tool-modal-overlay');
+    var modalCloseBtn = document.getElementById('modal-close');
+    var modalAvatar = document.getElementById('modal-tool-avatar');
+    var modalTitle = document.getElementById('modal-tool-name');
+    var modalBy = document.getElementById('modal-tool-by');
+    var modalBadges = document.getElementById('modal-tool-badges');
+    var modalDesc = document.getElementById('modal-tool-desc');
+    var modalExtLink = document.getElementById('modal-tool-ext');
+    var modalReviewLink = document.getElementById('modal-tool-review');
+    var modalUpvoteBtn = document.getElementById('modal-upvote-btn');
+    var modalUpvoteCount = document.getElementById('modal-upvote-count');
+    var modalCopyBtn = document.getElementById('modal-copy-link');
+
+    // Toast element
+    var toast = document.getElementById('toast-msg');
+    var toastText = document.getElementById('toast-text');
+
+    var currentActiveSlug = '';
     var activeFilter = 'all';
     var activePricing = 'all';
 
-    function applyFilters() {
-      var query = searchInput.value.trim().toLowerCase();
-      var visible = 0;
-      cards.forEach(function(card) {
-        var matchesCat = activeFilter === 'all' || card.dataset.cat === activeFilter || card.dataset.tag === activeFilter;
-        var matchesQuery = !query || card.textContent.toLowerCase().indexOf(query) !== -1;
-        var pricingOk = activePricing === 'all' || card.getAttribute('data-pricing') === activePricing;
-        var show = matchesCat && matchesQuery && pricingOk;
-        card.style.display = show ? '' : 'none';
-        if (show) visible++;
-      });
-      countEl.textContent = 'Showing ' + visible + ' tool' + (visible === 1 ? '' : 's');
-      emptyEl.style.display = visible === 0 ? 'block' : 'none';
+    // Helper: Toast Notification
+    function showToast(msg) {
+      if (!toast) return;
+      if (toastText) toastText.textContent = msg;
+      toast.style.display = 'flex';
+      setTimeout(function() { toast.style.display = 'none'; }, 2500);
     }
 
+    // Helper: Add UTM Parameters to Outbound Links
+    function addUTM(url) {
+      if (!url || url === '#' || url.indexOf('javascript:') === 0) return url;
+      try {
+        var hasQuery = url.indexOf('?') !== -1;
+        if (url.indexOf('utm_source=') === -1) {
+          url += (hasQuery ? '&' : '?') + 'utm_source=qutaifan.com&utm_medium=directory';
+        }
+      } catch(e) {}
+      return url;
+    }
+
+    // Tag all card outbound links automatically with UTM parameters
+    cards.forEach(function(card) {
+      var extLink = card.querySelector('.dir-ext');
+      if (extLink && extLink.href) {
+        extLink.href = addUTM(extLink.href);
+      }
+    });
+
+    // 1. Dynamic Search Clear Button Toggle
+    function updateSearchClear() {
+      if (!searchInput || !searchClearBtn) return;
+      searchClearBtn.style.display = searchInput.value.trim().length > 0 ? 'flex' : 'none';
+    }
+
+    // 2. Core Filtering & Dynamic Card Flow
+    function applyFilters() {
+      var query = searchInput ? searchInput.value.trim().toLowerCase() : '';
+      var visible = 0;
+
+      updateSearchClear();
+
+      cards.forEach(function(card) {
+        var matchesCat = activeFilter === 'all' || card.dataset.cat === activeFilter || card.dataset.tag === activeFilter;
+        var cardText = (card.textContent || '').toLowerCase();
+        var matchesQuery = !query || cardText.indexOf(query) !== -1;
+        var cardPricing = card.getAttribute('data-pricing');
+        var pricingOk = activePricing === 'all' || cardPricing === activePricing;
+
+        var show = matchesCat && matchesQuery && pricingOk;
+        if (show) {
+          card.style.display = '';
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      // Update count & empty state
+      if (countEl) {
+        if (activeFilter === 'all' && activePricing === 'all' && !query) {
+          countEl.innerHTML = 'Showing <strong>' + visible + '</strong> tools';
+        } else {
+          countEl.innerHTML = 'Showing <strong>' + visible + '</strong> of ' + totalCount + ' tools';
+        }
+      }
+
+      if (emptyEl) {
+        emptyEl.style.display = visible === 0 ? 'block' : 'none';
+      }
+    }
+
+    // 3. Tool Detail Modal Opening & Data Population
+    function openToolModal(card) {
+      if (!card || !modalOverlay) return;
+
+      var name = (card.querySelector('.dir-name') || {}).textContent || '';
+      var by = (card.querySelector('.dir-by') || {}).textContent || '';
+      var desc = (card.querySelector('.dir-desc') || {}).textContent || '';
+      var avatar = (card.querySelector('.dir-avatar') || {}).textContent || 'T';
+      var avatarHue = card.querySelector('.dir-avatar') ? card.querySelector('.dir-avatar').style.getPropertyValue('--h') : '250';
+      var badgesHtml = card.querySelector('.dir-badges') ? card.querySelector('.dir-badges').innerHTML : '';
+      var reviewHref = card.querySelector('.dir-review') ? card.querySelector('.dir-review').getAttribute('href') : '#';
+      var extHref = card.querySelector('.dir-ext') ? card.querySelector('.dir-ext').getAttribute('href') : '#';
+
+      currentActiveSlug = card.getAttribute('data-name') || name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+
+      if (modalAvatar) {
+        modalAvatar.textContent = avatar;
+        modalAvatar.style.setProperty('--h', avatarHue);
+      }
+      if (modalTitle) modalTitle.textContent = name;
+      if (modalBy) modalBy.textContent = by;
+      if (modalDesc) modalDesc.textContent = desc;
+      if (modalBadges) modalBadges.innerHTML = badgesHtml;
+      if (modalReviewLink) modalReviewLink.href = reviewHref;
+      if (modalExtLink) modalExtLink.href = addUTM(extHref);
+
+      // Check Upvote state
+      var isUpvoted = localStorage.getItem('qt_upvoted_' + currentActiveSlug) === '1';
+      if (modalUpvoteBtn) {
+        if (isUpvoted) {
+          modalUpvoteBtn.classList.add('upvoted');
+          if (modalUpvoteCount) modalUpvoteCount.textContent = 'Upvoted';
+        } else {
+          modalUpvoteBtn.classList.remove('upvoted');
+          if (modalUpvoteCount) modalUpvoteCount.textContent = 'Upvote';
+        }
+      }
+
+      modalOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+      history.replaceState(null, '', '#tool-' + currentActiveSlug);
+    }
+
+    function closeToolModal() {
+      if (!modalOverlay) return;
+      modalOverlay.classList.remove('active');
+      document.body.style.overflow = '';
+      if (window.location.hash.indexOf('#tool-') === 0) {
+        history.replaceState(null, '', window.location.pathname + window.location.search);
+      }
+    }
+
+    // Attach card click handlers
+    cards.forEach(function(card) {
+      card.style.cursor = 'pointer';
+      card.addEventListener('click', function(e) {
+        // Don't trigger modal if clicking directly on a link
+        if (e.target.closest('a')) return;
+        openToolModal(card);
+      });
+    });
+
+    if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeToolModal);
+    if (modalOverlay) {
+      modalOverlay.addEventListener('click', function(e) {
+        if (e.target === modalOverlay) closeToolModal();
+      });
+    }
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeToolModal();
+    });
+
+    // 4. Upvote / Bookmark Button Flow
+    if (modalUpvoteBtn) {
+      modalUpvoteBtn.addEventListener('click', function() {
+        if (!currentActiveSlug) return;
+        var key = 'qt_upvoted_' + currentActiveSlug;
+        var currentlyUpvoted = localStorage.getItem(key) === '1';
+        if (currentlyUpvoted) {
+          localStorage.removeItem(key);
+          modalUpvoteBtn.classList.remove('upvoted');
+          if (modalUpvoteCount) modalUpvoteCount.textContent = 'Upvote';
+          showToast('Removed upvote');
+        } else {
+          localStorage.setItem(key, '1');
+          modalUpvoteBtn.classList.add('upvoted');
+          if (modalUpvoteCount) modalUpvoteCount.textContent = 'Upvoted';
+          showToast('Tool upvoted!');
+        }
+      });
+    }
+
+    // 5. Copy Direct Permalink Flow
+    if (modalCopyBtn) {
+      modalCopyBtn.addEventListener('click', function() {
+        if (!currentActiveSlug) return;
+        var permalink = window.location.origin + window.location.pathname + '#tool-' + currentActiveSlug;
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(permalink).then(function() {
+            showToast('Tool link copied to clipboard!');
+          });
+        } else {
+          showToast('Permalink: ' + permalink);
+        }
+      });
+    }
+
+    // 6. Deep Link Permalink Routing (e.g. #tool-chatgpt)
+    function handlePermalinkHash() {
+      var hash = window.location.hash;
+      if (hash && hash.indexOf('#tool-') === 0) {
+        var slug = hash.replace('#tool-', '');
+        var targetCard = document.querySelector('.dir-card[data-name="' + slug + '"]');
+        if (!targetCard) {
+          // fallback search by name
+          cards.forEach(function(c) {
+            if ((c.getAttribute('data-name') || '').toLowerCase() === slug.toLowerCase()) {
+              targetCard = c;
+            }
+          });
+        }
+        if (targetCard) {
+          targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          openToolModal(targetCard);
+        }
+      }
+    }
+
+    window.addEventListener('hashchange', handlePermalinkHash);
+
+    // 7. Tab Filter Click Flow
     tabs.forEach(function(tab) {
       tab.addEventListener('click', function() {
         tabs.forEach(function(t) { t.classList.remove('active'); });
@@ -1358,28 +1693,171 @@
       });
     });
 
-    document.querySelectorAll('.p-chip').forEach(function (chip) {
-      chip.addEventListener('click', function () {
-        document.querySelectorAll('.p-chip').forEach(function (c) { c.classList.remove('active'); });
+    // 8. Hero Quick Category Pills Flow
+    heroPills.forEach(function(pill) {
+      pill.addEventListener('click', function() {
+        var heroFilter = pill.getAttribute('data-hero-filter');
+        activeFilter = heroFilter;
+
+        tabs.forEach(function(t) {
+          if (t.getAttribute('data-filter') === heroFilter) {
+            t.classList.add('active');
+            t.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+          } else {
+            t.classList.remove('active');
+          }
+        });
+
+        var dirSection = document.getElementById('directory');
+        if (dirSection) {
+          dirSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        applyFilters();
+      });
+    });
+
+    // 9. Pricing Chip Click Flow
+    document.querySelectorAll('.p-chip').forEach(function(chip) {
+      chip.addEventListener('click', function() {
+        document.querySelectorAll('.p-chip').forEach(function(c) { c.classList.remove('active'); });
         chip.classList.add('active');
         activePricing = chip.getAttribute('data-pricing');
         applyFilters();
       });
     });
 
-    var grid = document.getElementById('dir-grid');
-    var originalOrder = Array.prototype.slice.call(cards);
-    document.getElementById('dir-sort').addEventListener('change', function () {
-      var v = this.value;
-      var sorted = originalOrder.slice();
-      if (v === 'az') sorted.sort(function (a, b) {
-        return a.getAttribute('data-name') < b.getAttribute('data-name') ? -1 : 1; });
-      if (v === 'new') sorted.sort(function (a, b) {
-        return b.getAttribute('data-added').localeCompare(a.getAttribute('data-added')); });
-      sorted.forEach(function (c) { grid.appendChild(c); });
+    // 10. Dynamic Search Input & Clear Flow
+    if (searchInput) searchInput.addEventListener('input', applyFilters);
+    if (searchClearBtn) {
+      searchClearBtn.addEventListener('click', function() {
+        searchInput.value = '';
+        applyFilters();
+        searchInput.focus();
+      });
+    }
+
+    // 11. Reset Filters Flow
+    if (resetBtn) {
+      resetBtn.addEventListener('click', function() {
+        if (searchInput) searchInput.value = '';
+        activeFilter = 'all';
+        activePricing = 'all';
+
+        tabs.forEach(function(t) {
+          if (t.getAttribute('data-filter') === 'all') t.classList.add('active');
+          else t.classList.remove('active');
+        });
+
+        document.querySelectorAll('.p-chip').forEach(function(c) {
+          if (c.getAttribute('data-pricing') === 'all') c.classList.add('active');
+          else c.classList.remove('active');
+        });
+
+        if (sortSelect) sortSelect.value = 'featured';
+
+        applyFilters();
+      });
+    }
+
+    // 12. Sorting Flow
+    if (grid && sortSelect) {
+      var originalOrder = Array.prototype.slice.call(cards);
+      sortSelect.addEventListener('change', function() {
+        var v = this.value;
+        var sorted = originalOrder.slice();
+        if (v === 'az') {
+          sorted.sort(function(a, b) {
+            var nameA = (a.getAttribute('data-name') || '').toLowerCase();
+            var nameB = (b.getAttribute('data-name') || '').toLowerCase();
+            return nameA < nameB ? -1 : nameA > nameB ? 1 : 0;
+          });
+        } else if (v === 'new') {
+          sorted.sort(function(a, b) {
+            var dateA = a.getAttribute('data-added') || '';
+            var dateB = b.getAttribute('data-added') || '';
+            return dateB.localeCompare(dateA);
+          });
+        }
+        sorted.forEach(function(c) { grid.appendChild(c); });
+      });
+    }
+
+    // 13. Submit Tool Modal & Tier Selection Controller
+    var submitNavBtn = document.getElementById('nav-submit-btn');
+    var submitOverlay = document.getElementById('submit-modal-overlay');
+    var submitCloseBtn = document.getElementById('submit-close-btn');
+    var submitForm = document.getElementById('tool-submit-form');
+    var tierCards = document.querySelectorAll('.tier-card');
+    var submitBtnAction = document.getElementById('btn-submit-action');
+    var selectedTier = 'free';
+
+    function openSubmitModal() {
+      if (submitOverlay) {
+        submitOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeSubmitModal() {
+      if (submitOverlay) {
+        submitOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+
+    if (submitNavBtn) submitNavBtn.addEventListener('click', openSubmitModal);
+    if (submitCloseBtn) submitCloseBtn.addEventListener('click', closeSubmitModal);
+    if (submitOverlay) {
+      submitOverlay.addEventListener('click', function(e) {
+        if (e.target === submitOverlay) closeSubmitModal();
+      });
+    }
+
+    tierCards.forEach(function(card) {
+      card.addEventListener('click', function() {
+        tierCards.forEach(function(c) { c.classList.remove('selected'); });
+        card.classList.add('selected');
+        selectedTier = card.getAttribute('data-tier');
+        if (submitBtnAction) {
+          if (selectedTier === 'featured') {
+            submitBtnAction.textContent = 'Proceed to Featured Checkout ($99/mo) ⚡';
+          } else {
+            submitBtnAction.textContent = 'Submit Tool for Review (Free Queue)';
+          }
+        }
+      });
     });
 
-    searchInput.addEventListener('input', applyFilters);
+    if (submitForm) {
+      submitForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var toolName = document.getElementById('sub-name') ? document.getElementById('sub-name').value : 'Tool';
+        if (selectedTier === 'featured') {
+          showToast('⚡ Redirecting to checkout for ' + toolName + '...');
+        } else {
+          showToast('🎉 Submission received for ' + toolName + '! We will review it shortly.');
+        }
+        submitForm.reset();
+        closeSubmitModal();
+      });
+    }
+
+    // 14. Hero Newsletter Form Controller
+    var newsletterForm = document.getElementById('hero-newsletter-form');
+    if (newsletterForm) {
+      newsletterForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var emailInput = document.getElementById('newsletter-email');
+        var email = emailInput ? emailInput.value : '';
+        showToast('📬 Subscribed (' + email + ')! Welcome to Qutaifan Free Tools digest.');
+        if (emailInput) emailInput.value = '';
+      });
+    }
+
+    // Initialize
+    applyFilters();
+    handlePermalinkHash();
   })();
 </script>
 </body>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="qGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c5cf6" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="512" height="512" rx="112" fill="#08080a" />
+  <rect width="504" height="504" x="4" y="4" rx="108" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="8" />
+  
+  <!-- Stylized "Q" Ring -->
+  <circle cx="240" cy="240" r="130" fill="none" stroke="url(#qGrad)" stroke-width="44" stroke-linecap="round" />
+  
+  <!-- Tail of "Q" -->
+  <path d="M 290 290 L 370 370" fill="none" stroke="url(#qGrad)" stroke-width="44" stroke-linecap="round" />
+
+  <!-- Active Status Green Dot -->
+  <circle cx="390" cy="130" r="32" fill="#10b981" filter="url(#glow)" />
+</svg>
